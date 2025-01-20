@@ -1,0 +1,267 @@
+\babel@toc {french}{}\relax 
+\contentsline {part}{I\hspace {1em}Période 1}{2}{part.1}%
+\contentsline {xpart}{Période 1}{4}{part.1}%
+\contentsline {chapter}{\numberline {1}Economie industrielle}{4}{chapter.1}%
+\contentsline {section}{\numberline {1}17-09-24}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1}Les différentes structures}{6}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.2}Quelques notions théoriques de l'organisation industrielle selon la séquence SCP}{7}{subsection.1.1.2}%
+\contentsline {section}{\numberline {2}18-09-24}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {2.1}Etablissement du pont entre la réalité économique et la théorie économique}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {2.2}Difficultés et tensions}{8}{subsection.1.2.2}%
+\contentsline {section}{\numberline {3}24-09-24}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {3.1}Conférence sur la décarbonisation des transports en Afrique (Dr Mafini Dosso)}{9}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {3.2}Suite du cours}{10}{subsection.1.3.2}%
+\contentsline {section}{\numberline {4}25-09-24}{12}{section.1.4}%
+\contentsline {subsection}{\numberline {4.1}Les comportements des firmes}{13}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {4.2}Etude du cas Google (infomédiaire)}{16}{subsection.1.4.2}%
+\contentsline {section}{\numberline {5}03-10-24}{21}{section.1.5}%
+\contentsline {section}{\numberline {6}10-10-24}{21}{section.1.6}%
+\contentsline {subsection}{\numberline {6.1}Stratégies : quelques exemples d'entreprises (source : https://pascalkermarrec.com/2020/03/31/les-strategies-de-domaines-ou-strategies-generiques/)}{22}{subsection.1.6.1}%
+\contentsline {section}{\numberline {7}08-10-24}{28}{section.1.7}%
+\contentsline {subsection}{\numberline {7.1}Réalisation d'études de cas en économie industrielle}{28}{subsection.1.7.1}%
+\contentsline {chapter}{\numberline {2}Génie logiciel et programation orientée objet}{33}{chapter.2}%
+\contentsline {section}{\numberline {1}18-09-24}{34}{section.2.1}%
+\contentsline {section}{\numberline {2}25-09-24}{39}{section.2.2}%
+\contentsline {section}{\numberline {3}02-10-24}{43}{section.2.3}%
+\contentsline {section}{\numberline {4}23-10-24}{69}{section.2.4}%
+\contentsline {subsection}{\numberline {4.1}Opérateurs, flux et autres abstractions}{69}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {4.2}Effectuer des conversions automatiques}{69}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {4.3}Notion de flux}{71}{subsection.2.4.3}%
+\contentsline {section}{\numberline {5}25-10-24}{73}{section.2.5}%
+\contentsline {section}{\numberline {6}06-11-24}{73}{section.2.6}%
+\contentsline {subsection}{\numberline {6.1}C++20 : Contrats \& Spécialisation}{73}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {6.2}Spécialiser le code en fonction des paramètres de template}{74}{subsection.2.6.2}%
+\contentsline {section}{\numberline {7}13-11-24}{75}{section.2.7}%
+\contentsline {section}{\numberline {8}18-11-24}{77}{section.2.8}%
+\contentsline {subsection}{\numberline {8.1}Polymorphisme}{77}{subsection.2.8.1}%
+\contentsline {section}{\numberline {9}02-12-24}{79}{section.2.9}%
+\contentsline {subsection}{\numberline {9.1}Parallélisme et objets}{79}{subsection.2.9.1}%
+\contentsline {paragraph}{Abstraction d'un processus par un objet}{79}{paragraph*.29}%
+\contentsline {section}{\numberline {10}09-12-24 : suite cours précédent}{80}{section.2.10}%
+\contentsline {section}{\numberline {11}09-12-24 : Gestion de l'allocation dans le tas}{80}{section.2.11}%
+\contentsline {section}{\numberline {12}16-12-24}{81}{section.2.12}%
+\contentsline {section}{\numberline {13}16-12-24 : scéance 12}{81}{section.2.13}%
+\contentsline {chapter}{\numberline {3}Systèmes d'exploitation}{82}{chapter.3}%
+\contentsline {section}{\numberline {1}19-09-24 : Cours 1}{83}{section.3.1}%
+\contentsline {subsection}{\numberline {1.1}18-11-24 : Résumé chap 1}{83}{subsection.3.1.1}%
+\contentsline {section}{\numberline {2}26-09-24 : cours 2}{85}{section.3.2}%
+\contentsline {subsection}{\numberline {2.1}Organisation de la mémoire (programme C)}{91}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3}03-10-24 : cours 3}{92}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1}Synchronisation}{93}{subsection.3.3.1}%
+\contentsline {section}{\numberline {4}17-10-24 : cours 4}{95}{section.3.4}%
+\contentsline {section}{\numberline {5}24-10-24 : cours 5}{101}{section.3.5}%
+\contentsline {paragraph}{Comment un process peut sortir du confinement?}{102}{paragraph*.51}%
+\contentsline {section}{\numberline {6}07-11-24 : cours 6}{103}{section.3.6}%
+\contentsline {subsection}{\numberline {6.1}Cloud computing}{104}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {6.2}Sandboxing}{104}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {6.3}Plus}{105}{subsection.3.6.3}%
+\contentsline {chapter}{\numberline {4}TD Systèmes d'exploitation}{106}{chapter.4}%
+\contentsline {section}{\numberline {1}19-09-24}{107}{section.4.1}%
+\contentsline {section}{\numberline {2}20-09-24}{107}{section.4.2}%
+\contentsline {section}{\numberline {3}21-09-24}{110}{section.4.3}%
+\contentsline {section}{\numberline {4}26-09-24}{112}{section.4.4}%
+\contentsline {section}{\numberline {5}03-10-24}{112}{section.4.5}%
+\contentsline {section}{\numberline {6}17-10-24}{113}{section.4.6}%
+\contentsline {section}{\numberline {7}07-11-24}{116}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Notes sur linux}{117}{chapter.5}%
+\contentsline {section}{\numberline {1}Notes cours préformation}{118}{section.5.1}%
+\contentsline {subsection}{\numberline {1.1}Arborscence de fichiers}{118}{subsection.5.1.1}%
+\contentsline {section}{\numberline {2}02-09-2024}{119}{section.5.2}%
+\contentsline {subsection}{\numberline {2.1}ERE}{119}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {2.2}SCRIPTS}{119}{subsection.5.2.2}%
+\contentsline {section}{\numberline {3}23-09-24}{120}{section.5.3}%
+\contentsline {section}{\numberline {4}24-09-24}{120}{section.5.4}%
+\contentsline {chapter}{\numberline {6}MOOC Gestion de projets}{123}{chapter.6}%
+\contentsline {section}{\numberline {1}19-09-24}{125}{section.6.1}%
+\contentsline {subsection}{\numberline {1.1}Charge de travail conseillée}{125}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {1.2}Un questionnaire de validation de chaque semaine}{125}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {1.3}Après le tronc commun : 2 spécialisations}{125}{subsection.6.1.3}%
+\contentsline {section}{\numberline {2}26-09-24}{126}{section.6.2}%
+\contentsline {subsection}{\numberline {2.1}Qu'es ce qu'un projet?}{126}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {2.2}Les organigrames projet}{126}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {2.3}Conférence jeudi 26 septembre 2024}{129}{subsection.6.2.3}%
+\contentsline {section}{\numberline {3}27-09-24}{130}{section.6.3}%
+\contentsline {subsection}{\numberline {3.1}Profils de projets}{130}{subsection.6.3.1}%
+\contentsline {section}{\numberline {4}28-09-24}{131}{section.6.4}%
+\contentsline {subsection}{\numberline {4.1}Dualité projets opérations}{131}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {4.2}Coût global et investissement}{132}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {4.3}Pilotage et gouvernance des projets}{133}{subsection.6.4.3}%
+\contentsline {section}{\numberline {5}01-10-24}{134}{section.6.5}%
+\contentsline {section}{\numberline {6}03-10-24}{136}{section.6.6}%
+\contentsline {subsection}{\numberline {6.1}Pertinence d'un projet - la matrice SWOT}{136}{subsection.6.6.1}%
+\contentsline {section}{\numberline {7}04-10-24}{138}{section.6.7}%
+\contentsline {subsection}{\numberline {7.1}Etre efficace en équipe avec le PDCA}{138}{subsection.6.7.1}%
+\contentsline {section}{\numberline {8}05-06-24}{139}{section.6.8}%
+\contentsline {subsection}{\numberline {8.1}Animation et efficacité des réunions}{139}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {8.2}La répartition des taches}{145}{subsection.6.8.2}%
+\contentsline {subsection}{\numberline {8.3}Jalonner un projet et effet tunnel}{147}{subsection.6.8.3}%
+\contentsline {section}{\numberline {9}08-10-24}{150}{section.6.9}%
+\contentsline {subsection}{\numberline {9.1}Charte de projet}{150}{subsection.6.9.1}%
+\contentsline {section}{\numberline {10}10-10-24}{153}{section.6.10}%
+\contentsline {subsection}{\numberline {10.1}Lots et responsabilités}{153}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {10.2}La matrice RACI}{155}{subsection.6.10.2}%
+\contentsline {section}{\numberline {11}12-10-24}{158}{section.6.11}%
+\contentsline {subsection}{\numberline {11.1}La planification}{158}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {11.2}Le montage global d'un projet}{161}{subsection.6.11.2}%
+\contentsline {section}{\numberline {12}13-10-24}{163}{section.6.12}%
+\contentsline {subsection}{\numberline {12.1}Le cycle de projet et les méthodes agiles}{163}{subsection.6.12.1}%
+\contentsline {section}{\numberline {13}16-10-24}{165}{section.6.13}%
+\contentsline {subsection}{\numberline {13.1}Définir efficacement les objectifs d'un projet}{165}{subsection.6.13.1}%
+\contentsline {subsection}{\numberline {13.2}Identifier les menaces}{166}{subsection.6.13.2}%
+\contentsline {section}{\numberline {14}18-10-24}{168}{section.6.14}%
+\contentsline {subsection}{\numberline {14.1}Prioriser les risques}{168}{subsection.6.14.1}%
+\contentsline {section}{\numberline {15}Prévénir et analyser les risques d'un projet}{170}{section.6.15}%
+\contentsline {section}{\numberline {16}19-10-24}{173}{section.6.16}%
+\contentsline {subsection}{\numberline {16.1}Management, les bons comportements}{173}{subsection.6.16.1}%
+\contentsline {section}{\numberline {17}19-10-24}{175}{section.6.17}%
+\contentsline {subsection}{\numberline {17.1}Assurer un suivi des risques}{175}{subsection.6.17.1}%
+\contentsline {subsection}{\numberline {17.2}Introduction et mise à niveau d'un projet}{177}{subsection.6.17.2}%
+\contentsline {subsection}{\numberline {17.3}Dessiner le PERT complet d'un projet}{178}{subsection.6.17.3}%
+\contentsline {section}{\numberline {18}12-10-24}{178}{section.6.18}%
+\contentsline {subsection}{\numberline {18.1}Date de début au plus tot et plus tard}{178}{subsection.6.18.1}%
+\contentsline {subsection}{\numberline {18.2}Calcul du chemoin critique, des marges totales et des marges libres}{179}{subsection.6.18.2}%
+\contentsline {subsection}{\numberline {18.3}Présentation d'OpenProj}{183}{subsection.6.18.3}%
+\contentsline {subsection}{\numberline {18.4}Analyse comparative}{183}{subsection.6.18.4}%
+\contentsline {section}{\numberline {19}13-11-24}{185}{section.6.19}%
+\contentsline {subsection}{\numberline {19.1}Qu'es ce qu'une approche agile}{185}{subsection.6.19.1}%
+\contentsline {subsection}{\numberline {19.2}Fonctionenment de SCRUM}{186}{subsection.6.19.2}%
+\contentsline {subsection}{\numberline {19.3}Les 8 leviers de réussite}{187}{subsection.6.19.3}%
+\contentsline {subsection}{\numberline {19.4}Le role du Scurm Master}{188}{subsection.6.19.4}%
+\contentsline {subsection}{\numberline {19.5}Animation de la rétrospective}{189}{subsection.6.19.5}%
+\contentsline {chapter}{\numberline {7}Ingénierie Systèmes}{191}{chapter.7}%
+\contentsline {section}{\numberline {1}20-09-24}{193}{section.7.1}%
+\contentsline {section}{\numberline {2}27-09-24}{195}{section.7.2}%
+\contentsline {section}{\numberline {3}04-10-24}{196}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Statistique}{200}{chapter.8}%
+\contentsline {section}{\numberline {1}23-09-24}{201}{section.8.1}%
+\contentsline {section}{\numberline {2}07-10-24}{203}{section.8.2}%
+\contentsline {section}{\numberline {3}14-10-24}{203}{section.8.3}%
+\contentsline {section}{\numberline {4}21-10-24}{203}{section.8.4}%
+\contentsline {section}{\numberline {5}01-11-24}{204}{section.8.5}%
+\contentsline {section}{\numberline {6}4-11-24}{206}{section.8.6}%
+\contentsline {section}{\numberline {7}13-11-24}{206}{section.8.7}%
+\contentsline {subsection}{\numberline {7.1}Résultats utiles}{206}{subsection.8.7.1}%
+\contentsline {chapter}{\numberline {9}Français Objectifs Spécifiques}{208}{chapter.9}%
+\contentsline {section}{\numberline {1}02-10-25}{209}{section.9.1}%
+\contentsline {subsection}{\numberline {1.1}Production orale}{211}{subsection.9.1.1}%
+\contentsline {section}{\numberline {2}23-10-24}{213}{section.9.2}%
+\contentsline {section}{\numberline {3}06-11-24}{214}{section.9.3}%
+\contentsline {subsection}{\numberline {3.1}Version améliorée}{214}{subsection.9.3.1}%
+\contentsline {section}{\numberline {4}13-11-24}{215}{section.9.4}%
+\contentsline {section}{\numberline {5}04-12-24}{215}{section.9.5}%
+\contentsline {section}{\numberline {6}10-12-24 : prépa composition}{215}{section.9.6}%
+\contentsline {chapter}{\numberline {10}Projet d'ingénierie en Equipe}{220}{chapter.10}%
+\contentsline {section}{\numberline {1}25-10-24}{221}{section.10.1}%
+\contentsline {subsection}{\numberline {1.1}Notes sur la vidéo (https://www.youtube.com/watch?v=aBVGKoNZQUw)}{221}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {1.2}Taxe carbone}{221}{subsection.10.1.2}%
+\contentsline {section}{\numberline {2}15-11-24}{221}{section.10.2}%
+\contentsline {part}{II\hspace {1em}Période 2}{222}{part.2}%
+\contentsline {xpart}{Période 2}{224}{part.2}%
+\contentsline {chapter}{\numberline {11}Machine learning}{224}{chapter.11}%
+\contentsline {section}{\numberline {1}05-11-24 : cours 1}{225}{section.11.1}%
+\contentsline {subsection}{\numberline {1.1}ML pour classfication}{225}{subsection.11.1.1}%
+\contentsline {section}{\numberline {2}19-11-24 : cours 2}{226}{section.11.2}%
+\contentsline {subsection}{\numberline {2.1}Arbres de décision}{226}{subsection.11.2.1}%
+\contentsline {section}{\numberline {3}26-11-24}{227}{section.11.3}%
+\contentsline {subsection}{\numberline {3.1}SVM}{228}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {3.2}Multiclasse}{228}{subsection.11.3.2}%
+\contentsline {section}{\numberline {4}03-12-24}{228}{section.11.4}%
+\contentsline {subsection}{\numberline {4.1}Introduction au deep learning}{228}{subsection.11.4.1}%
+\contentsline {section}{\numberline {5}10-12-24}{228}{section.11.5}%
+\contentsline {subsection}{\numberline {5.1}Visual transformer}{228}{subsection.11.5.1}%
+\contentsline {section}{\numberline {6}17-12-24}{229}{section.11.6}%
+\contentsline {section}{\numberline {7}07-01-25}{230}{section.11.7}%
+\contentsline {subsection}{\numberline {7.1}Notes sur le projet 1 (Attaque)}{230}{subsection.11.7.1}%
+\contentsline {chapter}{\numberline {12}Bases de données}{231}{chapter.12}%
+\contentsline {section}{\numberline {1}21-11-24}{233}{section.12.1}%
+\contentsline {subsection}{\numberline {1.1}L'approche des bases de données (SGF (gesetion de fichiers) vs. SGBD)}{233}{subsection.12.1.1}%
+\contentsline {section}{\numberline {2}28-11-24}{234}{section.12.2}%
+\contentsline {subsection}{\numberline {2.1}Algèbre relationnelle}{234}{subsection.12.2.1}%
+\contentsline {section}{\numberline {3}05-12-24}{235}{section.12.3}%
+\contentsline {subsection}{\numberline {3.1}Propriété des bases de données}{235}{subsection.12.3.1}%
+\contentsline {section}{\numberline {4}06-12-24}{236}{section.12.4}%
+\contentsline {subsection}{\numberline {4.1}Méthodologie}{237}{subsection.12.4.1}%
+\contentsline {subsubsection}{Erreurs dans l'écriture de requetes}{239}{subsubsection*.133}%
+\contentsline {subsubsection}{Solutions}{239}{subsubsection*.134}%
+\contentsline {section}{\numberline {5}19-12-24}{239}{section.12.5}%
+\contentsline {section}{\numberline {6}09-01-25}{239}{section.12.6}%
+\contentsline {subsection}{\numberline {6.1}Problème de la concurrence d'accès}{240}{subsection.12.6.1}%
+\contentsline {section}{\numberline {7}21-11-24}{242}{section.12.7}%
+\contentsline {subsection}{\numberline {7.1}TP1}{242}{subsection.12.7.1}%
+\contentsline {section}{\numberline {8}28-11-24}{243}{section.12.8}%
+\contentsline {subsection}{\numberline {8.1}TP2}{243}{subsection.12.8.1}%
+\contentsline {subsubsection}{Calculs et expressionis en français}{243}{subsubsection*.137}%
+\contentsline {subsection}{\numberline {8.2}}{244}{subsection.12.8.2}%
+\contentsline {subsection}{\numberline {8.3}}{245}{subsection.12.8.3}%
+\contentsline {section}{\numberline {9}05-12-24}{245}{section.12.9}%
+\contentsline {section}{\numberline {10}06-12-24}{245}{section.12.10}%
+\contentsline {subsection}{\numberline {10.1}}{245}{subsection.12.10.1}%
+\contentsline {subsection}{\numberline {10.2}}{245}{subsection.12.10.2}%
+\contentsline {subsection}{\numberline {10.3}}{245}{subsection.12.10.3}%
+\contentsline {subsection}{\numberline {10.4}}{246}{subsection.12.10.4}%
+\contentsline {subsection}{\numberline {10.5}}{246}{subsection.12.10.5}%
+\contentsline {subsection}{\numberline {10.6}}{246}{subsection.12.10.6}%
+\contentsline {subsection}{\numberline {10.7}Quels fournisseurs offrent à la fois des produits à moins de 50 et à plus de 400 euros ?(on pouvait aussi faire l'union de \dots et \dots )}{246}{subsection.12.10.7}%
+\contentsline {subsection}{\numberline {10.8}}{246}{subsection.12.10.8}%
+\contentsline {subsection}{\numberline {10.9}}{246}{subsection.12.10.9}%
+\contentsline {subsection}{\numberline {10.10}}{246}{subsection.12.10.10}%
+\contentsline {subsection}{\numberline {10.11}}{246}{subsection.12.10.11}%
+\contentsline {subsection}{\numberline {10.12}(corriger)}{246}{subsection.12.10.12}%
+\contentsline {section}{\numberline {11}19-12-24}{247}{section.12.11}%
+\contentsline {subsection}{\numberline {11.1}Phase préliminaire et prise en main}{247}{subsection.12.11.1}%
+\contentsline {subsection}{\numberline {11.2}Bloc PL/sql, expression conditionnelle}{248}{subsection.12.11.2}%
+\contentsline {section}{\numberline {12}09-01-25}{248}{section.12.12}%
+\contentsline {chapter}{\numberline {13}Droit}{249}{chapter.13}%
+\contentsline {section}{\numberline {1}22-11-24 (les notes de ce jour sont plus pour la culture)}{250}{section.13.1}%
+\contentsline {section}{\numberline {2}29-11-24}{251}{section.13.2}%
+\contentsline {section}{\numberline {3}13-12-24}{253}{section.13.3}%
+\contentsline {paragraph}{Résistances des cours d'appel et de cassation (faire des recherches)}{253}{paragraph*.151}%
+\contentsline {subsection}{\numberline {3.1}Droit des contrats}{254}{subsection.13.3.1}%
+\contentsline {paragraph}{Exemples de nullités autre que le vice du consentement}{255}{paragraph*.154}%
+\contentsline {paragraph}{Fiche 10 : Interprétation du contrat}{255}{paragraph*.155}%
+\contentsline {paragraph}{Code du commerce L442-1}{257}{paragraph*.157}%
+\contentsline {section}{\numberline {4}20-12-24}{257}{section.13.4}%
+\contentsline {paragraph}{L’inexécution du Contrat Fiche 15}{257}{paragraph*.159}%
+\contentsline {paragraph}{Conditions suspensives}{258}{paragraph*.160}%
+\contentsline {subsection}{\numberline {4.1}Propriété intellectuelle}{258}{subsection.13.4.1}%
+\contentsline {section}{\numberline {5}10-01-25}{259}{section.13.5}%
+\contentsline {section}{\numberline {6}17-01-25}{261}{section.13.6}%
+\contentsline {chapter}{\numberline {14}Principes des réseaux informatiques}{262}{chapter.14}%
+\contentsline {section}{\numberline {1}27-11-24}{263}{section.14.1}%
+\contentsline {section}{\numberline {2}11-12-24}{264}{section.14.2}%
+\contentsline {section}{\numberline {3}18-12-24}{264}{section.14.3}%
+\contentsline {section}{\numberline {4}08-01-25}{265}{section.14.4}%
+\contentsline {chapter}{\numberline {15}TD Principes des réseaux informatiques}{266}{chapter.15}%
+\contentsline {section}{\numberline {1}27-11-24 :TP1}{267}{section.15.1}%
+\contentsline {subsection}{\numberline {1.1}Exercice 4}{267}{subsection.15.1.1}%
+\contentsline {section}{\numberline {2}04-12-24}{267}{section.15.2}%
+\contentsline {subsection}{\numberline {2.1}Exercice 7}{267}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {2.2}Exercice 8}{268}{subsection.15.2.2}%
+\contentsline {subsection}{\numberline {2.3}Exercice 9}{268}{subsection.15.2.3}%
+\contentsline {subsection}{\numberline {2.4}Exercice 10}{268}{subsection.15.2.4}%
+\contentsline {section}{\numberline {3}04-12-24 : TP2}{269}{section.15.3}%
+\contentsline {subsection}{\numberline {3.1}Exercice 1}{269}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {3.2}Exercice 2}{269}{subsection.15.3.2}%
+\contentsline {section}{\numberline {4}04-12-24 : TP2 Analyse de trames avec wireshark}{271}{section.15.4}%
+\contentsline {section}{\numberline {5}11-12-24 : TP3}{271}{section.15.5}%
+\contentsline {subsection}{\numberline {5.1}Exercice 3}{271}{subsection.15.5.1}%
+\contentsline {section}{\numberline {6}18-12-24}{271}{section.15.6}%
+\contentsline {section}{\numberline {7}08-01-25}{273}{section.15.7}%
+\contentsline {subsection}{\numberline {7.1}Exercice 1}{273}{subsection.15.7.1}%
+\contentsline {subsection}{\numberline {7.2}Exercice 2}{273}{subsection.15.7.2}%
+\contentsline {subsection}{\numberline {7.3}Exercice 3}{273}{subsection.15.7.3}%
+\contentsline {subsubsection}{1.}{273}{subsubsection*.168}%
+\contentsline {subsubsection}{2.}{273}{subsubsection*.169}%
+\contentsline {subsection}{\numberline {7.4}Exercice 6}{274}{subsection.15.7.4}%
+\contentsline {subsection}{\numberline {7.5}Exercice 4}{278}{subsection.15.7.5}%
+\contentsline {subsubsection}{1. Nombre d'adresses IPV4 disponibles par $\text {km}^2$}{278}{subsubsection*.175}%
+\contentsline {subsubsection}{2. Nombre d'adresses IPV6 disponibles par $\text {mm}^2$}{278}{subsubsection*.176}%
+\contentsline {subsection}{\numberline {7.6}Exercice 5}{278}{subsection.15.7.6}%
+\contentsline {subsubsection}{1.}{278}{subsubsection*.177}%
+\contentsline {subsubsection}{2.}{278}{subsubsection*.178}%
+\contentsline {subsection}{\numberline {7.7}Exercice 7}{279}{subsection.15.7.7}%
+\contentsline {subsubsection}{Initiation de la connexion}{279}{subsubsection*.179}%
+\contentsline {subsubsection}{Connexion acceptée? Répérer l'ensemble de l'initialisation de la connexion}{279}{subsubsection*.180}%
+\contentsline {subsubsection}{Fin}{279}{subsubsection*.181}%
+\contentsline {subsubsection}{Représenter les échanges}{279}{subsubsection*.182}%
+\contentsline {subsection}{\numberline {7.8}Exercice 8}{279}{subsection.15.7.8}%
