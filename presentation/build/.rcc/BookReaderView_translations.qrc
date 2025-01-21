@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/i18n">
+    <file alias="BookReaderView_en_US.qm">/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/BookReaderView_en_US.qm</file>
+  </qresource>
+</RCC>
+

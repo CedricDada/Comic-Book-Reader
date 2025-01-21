@@ -1,0 +1,6 @@
+# Hashes of file build rules.
+b30dc81a9357c0e309b1df324d5016c6 .rcc/qrc_BookReaderView_translations.cpp
+3de06cd1dd5dee22fe7aa5d17d98c559 BookReaderView_en_US.qm
+38640f3de002cd7aba42c21bc7b4d4b2 CMakeFiles/BookReaderView_autogen
+8eea046ee41d67da580f6049dfa2cf93 CMakeFiles/BookReaderView_lrelease
+24760620b72a2b7aa97deb4ad1af5605 CMakeFiles/BookReaderView_lupdate
