@@ -78,7 +78,7 @@
 											"top": 70,
 											"width": 2039,
 											"height": 13,
-											"text": "Couche Présentation"
+											"text": "presentation"
 										},
 										{
 											"_type": "LabelView",
@@ -215,7 +215,7 @@
 											"top": 264,
 											"width": 159.681640625,
 											"height": 13,
-											"text": "(from Couche Présentation)"
+											"text": "(from presentation)"
 										},
 										{
 											"_type": "LabelView",
@@ -424,7 +424,7 @@
 											"top": 288,
 											"width": 159.681640625,
 											"height": 13,
-											"text": "(from Couche Présentation)"
+											"text": "(from presentation)"
 										},
 										{
 											"_type": "LabelView",
@@ -671,7 +671,7 @@
 											"top": 264,
 											"width": 159.681640625,
 											"height": 13,
-											"text": "(from Couche Présentation)"
+											"text": "(from presentation)"
 										},
 										{
 											"_type": "LabelView",
@@ -954,7 +954,7 @@
 											"top": 240,
 											"width": 159.681640625,
 											"height": 13,
-											"text": "(from Couche Présentation)"
+											"text": "(from presentation)"
 										},
 										{
 											"_type": "LabelView",
@@ -1222,7 +1222,7 @@
 											"top": 406,
 											"width": 2095,
 											"height": 13,
-											"text": "Couche métier"
+											"text": "model"
 										},
 										{
 											"_type": "LabelView",
@@ -1402,7 +1402,7 @@
 											"top": 312,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -1721,7 +1721,7 @@
 											"top": 864,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -3342,7 +3342,7 @@
 											"top": -2050,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -3770,7 +3770,7 @@
 											"top": -298,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -4054,7 +4054,7 @@
 											"top": -690,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -4373,7 +4373,7 @@
 											"top": 238,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -4710,7 +4710,7 @@
 											"top": -186,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -5011,7 +5011,7 @@
 											"top": -1666,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -5276,7 +5276,7 @@
 											"top": -146,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -5631,7 +5631,7 @@
 											"top": -1706,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -5820,7 +5820,7 @@
 											"top": -1698,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -6009,7 +6009,7 @@
 											"top": 918,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -6307,7 +6307,7 @@
 											"top": 462,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -6496,7 +6496,7 @@
 											"top": 446,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -6685,7 +6685,7 @@
 											"top": -481,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -7059,7 +7059,7 @@
 											"top": 695,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -7248,7 +7248,7 @@
 											"top": -305,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -7437,7 +7437,7 @@
 											"top": -321,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -7626,7 +7626,7 @@
 											"top": -297,
 											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Couche métier)"
+											"text": "(from model)"
 										},
 										{
 											"_type": "LabelView",
@@ -7800,7 +7800,7 @@
 											"top": 1534,
 											"width": 2079,
 											"height": 13,
-											"text": "Couche infrastructure"
+											"text": "infrastructure"
 										},
 										{
 											"_type": "LabelView",
@@ -7928,7 +7928,7 @@
 											"top": 2032,
 											"width": 162.55078125,
 											"height": 13,
-											"text": "(from Couche infrastructure)"
+											"text": "(from infrastructure)"
 										},
 										{
 											"_type": "LabelView",
@@ -8178,7 +8178,7 @@
 											"top": 1958,
 											"width": 2079,
 											"height": 13,
-											"text": "Couche d'accès aux données"
+											"text": "repository"
 										},
 										{
 											"_type": "LabelView",
@@ -8312,7 +8312,7 @@
 											"top": 1496,
 											"width": 208.42529296875,
 											"height": 13,
-											"text": "(from Couche d'accès aux données)"
+											"text": "(from repository)"
 										},
 										{
 											"_type": "LabelView",
@@ -8596,7 +8596,7 @@
 											"top": 1256,
 											"width": 208.42529296875,
 											"height": 13,
-											"text": "(from Couche d'accès aux données)"
+											"text": "(from repository)"
 										},
 										{
 											"_type": "LabelView",
@@ -8915,7 +8915,7 @@
 											"top": 1464,
 											"width": 208.42529296875,
 											"height": 13,
-											"text": "(from Couche d'accès aux données)"
+											"text": "(from repository)"
 										},
 										{
 											"_type": "LabelView",
@@ -9128,7 +9128,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Couche Présentation",
+					"name": "presentation",
 					"ownedElements": [
 						{
 							"_type": "UMLClass",
@@ -9368,7 +9368,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Couche d'accès aux données",
+					"name": "repository",
 					"ownedElements": [
 						{
 							"_type": "UMLClass",
@@ -9624,7 +9624,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Couche métier",
+					"name": "model",
 					"ownedElements": [
 						{
 							"_type": "UMLClass",
@@ -11259,7 +11259,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Couche infrastructure",
+					"name": "infrastructure",
 					"ownedElements": [
 						{
 							"_type": "UMLClass",
