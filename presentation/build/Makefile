@@ -383,6 +383,30 @@ media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.s
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.s
 
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.o
+
+# target to build an object file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.i: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.i
+
+# target to preprocess a source file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.i
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.s: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.s
+
+# target to generate assembly for a file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.s
+
 media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.o
 
@@ -491,6 +515,9 @@ help:
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.s"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.o"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.i"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.s"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.s"

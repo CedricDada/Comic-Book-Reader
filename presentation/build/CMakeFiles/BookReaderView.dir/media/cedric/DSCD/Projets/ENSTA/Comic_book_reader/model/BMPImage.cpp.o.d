@@ -1,7 +1,7 @@
-CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o: \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/JPEGImage.cpp \
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o: \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BMPImage.cpp \
  /usr/include/stdc-predef.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/JPEGImage.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BMPImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

@@ -345,6 +345,12 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BMPImage.h",
+			"MU",
+			"WY75ZTYLUQ/moc_BMPImage.cpp",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Filter.h",
 			"MU",
 			"WY75ZTYLUQ/moc_Filter.cpp",
@@ -443,6 +449,11 @@
 	[
 		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/ImageProcessor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BMPImage.cpp",
 			"MU",
 			null
 		],

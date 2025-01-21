@@ -14,12 +14,17 @@ set(SOURCES
     PageView.cpp
     PageView.h
     ../model/PNGImage.cpp
+    ../model/PNGImage.h
     ../model/JPEGImage.cpp 
+    ../model/JPEGImage.h 
+    ../model/BMPImage.cpp 
+    ../model/BMPImage.h 
     ../repository/FileHandler.cpp
     ../repository/FileHandler.h
     ../model/AbstractImage.h
     ../infrastructure/ImageProcessor.cpp
     ../model/Filter.h 
+    
     # LibraryView.cpp
     # LibraryView.h
     # SettingView.cpp

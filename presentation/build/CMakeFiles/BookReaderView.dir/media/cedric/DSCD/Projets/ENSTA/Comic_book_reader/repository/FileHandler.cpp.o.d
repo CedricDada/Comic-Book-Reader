@@ -137,9 +137,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/PNGImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/AbstractImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/JPEGImage.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../infrastructure/ImageProcessor.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../infrastructure/../model/AbstractImage.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../infrastructure/../model/Filter.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/BMPImage.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -164,4 +162,5 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h
