@@ -8,7 +8,7 @@ sequenceDiagram
     participant PageView as PageView (Présentation)
 
     User->>MainWindow: Clic sur "Ouvrir fichier"
-    MainWindow->>FileHandler: readFile(chemin)
+    MainWindow->>FileHandler: readFile(chemin)5
   
     FileHandler->>FileHandler: Lire données binaires
     FileHandler->>FileHandler: Détecter format (signature binaire)

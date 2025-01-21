@@ -1,20 +1,32 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "ui_mainwindow.h"/*ui_mainwindow.h : Généré automatiquement par Qt à partir du fichier .ui. Contient les déclarations 
+des éléments de l'interface utilisateur.*/
 #include <QFileDialog>
+/*Utilisé pour ouvrir/sauvegarder des fichiers. */
 #include <QMessageBox>
+/*Utilisé pour afficher des messages d'erreur ou d'information*/
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
-      ui(new Ui::MainWindow),
-      m_pageView(new PageView(this)), // Maintenant compatible
+      ui(new Ui::MainWindow), //Crée une instance de l'interface utilisateur.
+      m_pageView(new PageView(this)), // Crée une instance de PageView (vue pour afficher l'image).
       m_fileHandler("") // Chemin vide initial
 {
     ui->setupUi(this);
     
     // Configuration de la vue
-    setCentralWidget(m_pageView);
+    setCentralWidget(m_pageView);//Définit m_pageView comme widget central de la fenêtre.
     
     // Connexion des signaux/slots
+    /*
+    ui->actionOpen_files : L'action "Ouvrir un fichier" dans l'interface.
+
+    &QAction::triggered : Le signal émis lorsque l'action est déclenchée.
+
+    this : L'objet qui contient le slot (ici, MainWindow).
+
+    &MainWindow::on_actionOpen_files_triggered : La méthode à appeler (slot).
+    */
     connect(ui->actionOpen_files, &QAction::triggered, 
             this, &MainWindow::on_actionOpen_files_triggered);
     // connect(ui->actionSave, &QAction::triggered, 
@@ -23,22 +35,28 @@ MainWindow::MainWindow(QWidget* parent)
     //         this, &MainWindow::on_actionZoom_in_triggered);
     // connect(ui->actionZoom_out, &QAction::triggered, 
     //         this, &MainWindow::on_actionZoom_out_triggered);
+    /*
+    Important : Automatisation avec on_<objectName>_<signal>
+    Qt permet de connecter automatiquement les signaux et slots si la méthode suit la nomenclature on_<objectName>_<signal>.
+
+    Par exemple, on_actionOpen_files_triggered() est automatiquement connecté à actionOpen_files->triggered().
+    */
 }
 
 MainWindow::~MainWindow() {
-    delete ui;
-    delete m_currentImage;
+    delete ui; //Libère la mémoire allouée pour l'interface utilisateur.
+    delete m_currentImage;//Libère la mémoire allouée pour l'image actuellement chargée.
 }
 
 // Slot : Ouverture de fichier
 void MainWindow::on_actionOpen_files_triggered() {
     QString path = QFileDialog::getOpenFileName(this, "Ouvrir une image", 
-                  "", "Images (*.png *.jpg *.bmp)");
+                  "", "Images (*.png *.jpg *.bmp)");//Ouvre une boîte de dialogue pour sélectionner un fichier
     
     if (!path.isEmpty()) {
         try {
-            m_fileHandler = FileHandler(path.toStdString());
-            m_currentImage = m_fileHandler.readFile();
+            m_fileHandler = FileHandler(path.toStdString()); //Initialise FileHandler avec le chemin du fichier.
+            m_currentImage = m_fileHandler.readFile(); //Lit le fichier et crée une instance de l'image.
             m_pageView->render(*m_currentImage);
         } 
         catch (const std::exception& e) {
