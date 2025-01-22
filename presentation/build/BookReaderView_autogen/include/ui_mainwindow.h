@@ -65,7 +65,7 @@ public:
     QAction *actionShadow;
     QAction *actionMove_forward_one_page;
     QAction *actionSeparate;
-    QAction *actionZoom;
+    QAction *actionZoom_in;
     QAction *actionZoom_out;
     QAction *actionZoom_100;
     QAction *actionZoom_125;
@@ -268,10 +268,10 @@ public:
         actionSeparate = new QAction(MainWindow);
         actionSeparate->setObjectName("actionSeparate");
         actionSeparate->setEnabled(false);
-        actionZoom = new QAction(MainWindow);
-        actionZoom->setObjectName("actionZoom");
+        actionZoom_in = new QAction(MainWindow);
+        actionZoom_in->setObjectName("actionZoom_in");
         QIcon icon20(QIcon::fromTheme(QString::fromUtf8("QIcon::ThemeIcon::ZoomIn")));
-        actionZoom->setIcon(icon20);
+        actionZoom_in->setIcon(icon20);
         actionZoom_out = new QAction(MainWindow);
         actionZoom_out->setObjectName("actionZoom_out");
         QIcon icon21(QIcon::fromTheme(QString::fromUtf8("QIcon::ThemeIcon::ZoomOut")));
@@ -450,7 +450,7 @@ public:
         menuDouble_page->addAction(actionShadow);
         menuDouble_page->addAction(actionMove_forward_one_page);
         menuDouble_page->addAction(actionSeparate);
-        menuZoom->addAction(actionZoom);
+        menuZoom->addAction(actionZoom_in);
         menuZoom->addAction(actionZoom_out);
         menuZoom->addAction(actionZoom_100);
         menuZoom->addAction(actionZoom_125);
@@ -542,9 +542,9 @@ public:
         actionShadow->setText(QCoreApplication::translate("MainWindow", "Shadow", nullptr));
         actionMove_forward_one_page->setText(QCoreApplication::translate("MainWindow", "Move forward  one page", nullptr));
         actionSeparate->setText(QCoreApplication::translate("MainWindow", "Separate", nullptr));
-        actionZoom->setText(QCoreApplication::translate("MainWindow", "Zoom", nullptr));
+        actionZoom_in->setText(QCoreApplication::translate("MainWindow", "Zoom", nullptr));
 #if QT_CONFIG(shortcut)
-        actionZoom->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+=", nullptr));
+        actionZoom_in->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+=", nullptr));
 #endif // QT_CONFIG(shortcut)
         actionZoom_out->setText(QCoreApplication::translate("MainWindow", "Zoom out", nullptr));
 #if QT_CONFIG(shortcut)
