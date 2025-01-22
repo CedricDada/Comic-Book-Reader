@@ -95,7 +95,7 @@
      <property name="toolTipsVisible">
       <bool>false</bool>
      </property>
-     <addaction name="actionZoom"/>
+     <addaction name="actionZoom_in"/>
      <addaction name="actionZoom_out"/>
      <addaction name="actionZoom_100"/>
      <addaction name="actionZoom_125"/>
@@ -563,7 +563,7 @@
     <string>Separate</string>
    </property>
   </action>
-  <action name="actionZoom">
+  <action name="actionZoom_in">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::ZoomIn"/>
    </property>

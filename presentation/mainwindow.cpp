@@ -84,3 +84,8 @@ void MainWindow::on_actionZoom_in_triggered() {
 void MainWindow::on_actionZoom_out_triggered() {
     m_pageView->setZoom(m_pageView->zoomLevel() * 0.9);
 }
+
+// Slot : Zoom arrière
+void MainWindow::on_actionZoom_100_triggered() {
+    m_pageView->setZoom(m_pageView->zoomLevel());
+}
