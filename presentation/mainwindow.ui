@@ -10,6 +10,22 @@
     <height>667</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Comic Sans MS</family>
+    <pointsize>11</pointsize>
+    <italic>false</italic>
+    <underline>false</underline>
+    <strikeout>false</strikeout>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -20,8 +36,19 @@
      <x>0</x>
      <y>0</y>
      <width>1011</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;Comic Sans MS&quot;;
+background-color: rgb(170, 170, 255);
+font: 9pt &quot;Comic Sans MS&quot;;</string>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
@@ -139,7 +166,7 @@
     </widget>
     <widget class="QMenu" name="menuAdjust_to_portrait_mode">
      <property name="focusPolicy">
-      <enum>Qt::FocusPolicy::NoFocus</enum>
+      <enum>Qt::NoFocus</enum>
      </property>
      <property name="title">
       <string>Adjust to portrait mode</string>
@@ -264,7 +291,7 @@
   </action>
   <action name="actionOpen_a_document">
    <property name="icon">
-    <iconset theme="QIcon::ThemeIcon::FolderNew"/>
+    <iconset theme="accessories-calculator"/>
    </property>
    <property name="text">
     <string>Open a document</string>
