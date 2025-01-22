@@ -1,0 +1,20 @@
+# ninja log v6
+13	113	7592186780138829	BookReaderView_en_US.qm	ea80cc96b3202311
+13	113	7592186780138829	D:/Comic-Book-Reader/build/BookReaderView_en_US.qm	ea80cc96b3202311
+114	939	7592186786973021	BookReaderView_autogen/timestamp	8d92bdc355d63007
+114	939	7592186786973021	BookReaderView_autogen/mocs_compilation.cpp	8d92bdc355d63007
+114	939	7592186786973021	D:/Comic-Book-Reader/build/BookReaderView_autogen/timestamp	8d92bdc355d63007
+114	939	7592186786973021	D:/Comic-Book-Reader/build/BookReaderView_autogen/mocs_compilation.cpp	8d92bdc355d63007
+952	1043	7592186789440701	.rcc/qrc_BookReaderView_translations.cpp	d5e6100bf9539ee9
+952	1043	7592186789440701	D:/Comic-Book-Reader/build/.rcc/qrc_BookReaderView_translations.cpp	d5e6100bf9539ee9
+1118	1254	7592186790326809	CMakeFiles/BookReaderView.dir/.rcc/qrc_BookReaderView_translations.cpp.obj	38a7a3fe6a93661f
+1103	2273	7592186790176804	CMakeFiles/BookReaderView.dir/D_/Comic-Book-Reader/repository/FileHandler.cpp.obj	1b2b00ed34584ede
+1110	4004	7592186790246793	CMakeFiles/BookReaderView.dir/D_/Comic-Book-Reader/infrastructure/ImageProcessor.cpp.obj	ee2fd1e5c46c9342
+1077	4234	7592186789924810	CMakeFiles/BookReaderView.dir/D_/Comic-Book-Reader/model/PNGImage.cpp.obj	ed11f3a638800fbf
+1086	4329	7592186790010050	CMakeFiles/BookReaderView.dir/D_/Comic-Book-Reader/model/JPEGImage.cpp.obj	365b286088f0c2f2
+1095	4430	7592186790106814	CMakeFiles/BookReaderView.dir/D_/Comic-Book-Reader/model/BMPImage.cpp.obj	8bc5cfd34338296a
+1044	5316	7592186789590680	CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.obj	d294567ef7ad3b4
+1052	5345	7592186789660688	CMakeFiles/BookReaderView.dir/main.cpp.obj	9f0bf14c65f489ac
+1069	5432	7592186789833164	CMakeFiles/BookReaderView.dir/PageView.cpp.obj	a8b174e04c2b61f1
+1060	6348	7592186789740685	CMakeFiles/BookReaderView.dir/mainwindow.cpp.obj	39d58ba0b59c245d
+6349	7041	7592186842629114	BookReaderView.exe	fc2091b667a46893
