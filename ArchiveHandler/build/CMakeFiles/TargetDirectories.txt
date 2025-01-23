@@ -1,0 +1,3 @@
+/home/cedrick/test4/build/CMakeFiles/ComicExtractor.dir
+/home/cedrick/test4/build/CMakeFiles/edit_cache.dir
+/home/cedrick/test4/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ComicExtractor.dir/main.cpp.o -o ComicExtractor  /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libarchive.so -lpoppler-cpp -lzip 
