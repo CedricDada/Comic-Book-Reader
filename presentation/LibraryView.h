@@ -16,6 +16,8 @@ void displayLibrary();
  * @param querry
  */
 void searchBooks(String querry);
+void refreshTOC();
 };
+
 
 #endif //_LIBRARYVIEW_H
