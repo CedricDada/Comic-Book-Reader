@@ -1,7 +1,7 @@
-CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o: \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.cpp \
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.o: \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/QImageAdapter.cpp \
  /usr/include/stdc-predef.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/QImageAdapter.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -312,41 +312,4 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/../infrastructure/ImageProcessor.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/../infrastructure/../model/AbstractImage.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/../infrastructure/../infrastructure/Filter.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/../infrastructure/Filter.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtaggedpointer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
- /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h

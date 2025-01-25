@@ -392,6 +392,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/Filter.h",
+			"MU",
+			"57WQWHYZIW/moc_Filter.cpp",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/ImageProcessor.h",
 			"MU",
 			"57WQWHYZIW/moc_ImageProcessor.cpp",
@@ -440,12 +446,6 @@
 			null
 		],
 		[
-			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Filter.h",
-			"MU",
-			"WY75ZTYLUQ/moc_Filter.cpp",
-			null
-		],
-		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/JPEGImage.h",
 			"MU",
 			"WY75ZTYLUQ/moc_JPEGImage.cpp",
@@ -458,6 +458,12 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PLoader.h",
+			"MU",
+			"WY75ZTYLUQ/moc_PLoader.cpp",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PNGImage.h",
 			"MU",
 			"WY75ZTYLUQ/moc_PNGImage.cpp",
@@ -467,6 +473,12 @@
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Page.h",
 			"MU",
 			"WY75ZTYLUQ/moc_Page.cpp",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/QImageAdapter.h",
+			"MU",
+			"WY75ZTYLUQ/moc_QImageAdapter.cpp",
 			null
 		],
 		[
@@ -566,12 +578,12 @@
 	"SOURCES" : 
 	[
 		[
-			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/ImageProcessor.cpp",
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/Filter.cpp",
 			"MU",
 			null
 		],
 		[
-			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/AbstractBook.cpp",
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/ImageProcessor.cpp",
 			"MU",
 			null
 		],
@@ -611,12 +623,22 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PLoader.cpp",
+			"MU",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PNGImage.cpp",
 			"MU",
 			null
 		],
 		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Page.cpp",
+			"MU",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/QImageAdapter.cpp",
 			"MU",
 			null
 		],

@@ -1,6 +1,8 @@
-CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o: \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.cpp \
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o: \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PDFBook.cpp \
  /usr/include/stdc-predef.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PDFBook.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
@@ -349,4 +351,49 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime
+ /usr/include/c++/11/ctime \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /usr/local/include/poppler/qt6/poppler-qt6.h \
+ /usr/local/include/poppler/qt6/poppler-annotation.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSharedDataPointer \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QList \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPointF \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QRectF \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QScopedPointer \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QColor \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QFont \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
+ /usr/local/include/poppler/qt6/poppler-export.h \
+ /usr/local/include/poppler/qt6/poppler-link.h \
+ /usr/local/include/poppler/qt6/poppler-optcontent.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QAbstractListModel \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /usr/local/include/poppler/qt6/poppler-page-transition.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QIODevice \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSet \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/QImageAdapter.h

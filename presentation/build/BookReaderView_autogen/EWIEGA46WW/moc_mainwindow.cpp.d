@@ -27,7 +27,6 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMap \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMutex \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QObject \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QQueue \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
@@ -321,14 +320,14 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/ImageProcessor.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BookManager.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CacheManager.h \
-  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Filter.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PLoader.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.h \
-  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PageLoader.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/PageView.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/FileHandler.h \
   /usr/include/alloca.h \

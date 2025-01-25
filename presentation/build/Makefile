@@ -238,6 +238,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.o
+
+# target to build an object file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.o
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.i: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.i
+
+# target to preprocess a source file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.i
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.s: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.s
+
+# target to generate assembly for a file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.s
+
 media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.o
 
@@ -261,30 +285,6 @@ media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.
 media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.s
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.s
-
-media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o
-.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.o
-
-# target to build an object file
-media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o
-.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o
-
-media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.i: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.i
-.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.i
-
-# target to preprocess a source file
-media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.i
-.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.i
-
-media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.s: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.s
-.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.s
-
-# target to generate assembly for a file
-media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.s
-.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.s
 
 media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.o
@@ -454,6 +454,30 @@ media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.s
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.s
 
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.o
+
+# target to build an object file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.o
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.i: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.i
+
+# target to preprocess a source file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.i
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.s: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.s
+
+# target to generate assembly for a file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.cpp.s
+
 media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.o
 
@@ -501,6 +525,30 @@ media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.s: media/cedric/DSC
 media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.s
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.s
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.o
+
+# target to build an object file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.o
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.o
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.i: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.i
+
+# target to preprocess a source file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.i
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.i
+
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.s: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.s
+
+# target to generate assembly for a file
+media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BookReaderView.dir/build.make CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.s
+.PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.cpp.s
 
 media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.o: media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o
 .PHONY : media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.o
@@ -572,12 +620,12 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.o"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.i"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.s"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.s"
-	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.o"
-	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.i"
-	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.s"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.s"
@@ -599,12 +647,18 @@ help:
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.s"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.o"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.i"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PLoader.s"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.s"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.s"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.o"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.i"
+	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/QImageAdapter.s"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.o"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.i"
 	@echo "... media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.s"

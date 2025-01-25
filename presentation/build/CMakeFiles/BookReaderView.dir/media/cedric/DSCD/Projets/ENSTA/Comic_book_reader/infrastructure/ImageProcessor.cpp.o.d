@@ -313,4 +313,4 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/../model/Filter.h
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/../infrastructure/Filter.h

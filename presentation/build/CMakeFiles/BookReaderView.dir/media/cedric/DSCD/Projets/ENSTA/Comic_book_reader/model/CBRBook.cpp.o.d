@@ -1,6 +1,8 @@
-CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o: \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.cpp \
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o: \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CBRBook.cpp \
  /usr/include/stdc-predef.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CBRBook.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
@@ -349,4 +351,69 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime
+ /usr/include/c++/11/ctime \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /usr/include/archive.h /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/inttypes.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/QImageAdapter.h \
+ /usr/include/archive_entry.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QFileInfo \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfileinfo.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfile.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfiledevice.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/ios \
+ /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
+ /usr/include/c++/11/bits/ostream.tcc \
+ /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h

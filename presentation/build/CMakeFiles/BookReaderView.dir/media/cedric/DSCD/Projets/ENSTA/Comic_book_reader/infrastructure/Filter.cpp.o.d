@@ -1,15 +1,10 @@
-CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o: \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/ArchiveHandler.cpp \
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.o: \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.cpp \
  /usr/include/stdc-predef.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/ArchiveHandler.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/IFileHandler.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVector \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImage \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -159,6 +154,18 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtresource.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qttranslation.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
  /usr/include/string.h /usr/include/strings.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
@@ -253,8 +260,6 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
@@ -276,18 +281,8 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringmatcher.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/Page.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/AbstractImage.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImage \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -313,162 +308,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/../infrastructure/ImageProcessor.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/../infrastructure/../model/AbstractImage.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/../infrastructure/../infrastructure/Filter.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/../infrastructure/Filter.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtaggedpointer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
- /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/QImageAdapter.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QFileInfo \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfileinfo.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfile.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfiledevice.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
- /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
- /usr/include/c++/11/bits/locale_facets.tcc \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/istream /usr/include/c++/11/ios \
- /usr/include/c++/11/bits/basic_ios.h \
- /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
- /usr/include/c++/11/bits/ostream.tcc \
- /usr/include/c++/11/bits/istream.tcc \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
- /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDir \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdir.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfileinfo.h \
- /usr/local/include/poppler/qt6/poppler-qt6.h \
- /usr/local/include/poppler/qt6/poppler-annotation.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSharedDataPointer \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QList \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPointF \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QRectF \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QScopedPointer \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QColor \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QFont \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
- /usr/local/include/poppler/qt6/poppler-export.h \
- /usr/local/include/poppler/qt6/poppler-link.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /usr/local/include/poppler/qt6/poppler-optcontent.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QAbstractListModel \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
- /usr/local/include/poppler/qt6/poppler-page-transition.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QIODevice \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSet \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/quazip.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/quazip_qt_compat.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/Qt \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QtGlobal \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore5Compat/QTextCodec \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore5Compat/qtextcodec.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore5Compat/qcore5global.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore5Compat/qtcore5compat-config.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSaveFile \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsavefile.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QFileInfo \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QTextStream \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/zip.h /usr/include/zlib.h \
- /usr/include/zconf.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/ioapi.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/unzip.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/quazip_global.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/quazipfileinfo.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QFile \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfile.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QHash \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/quazipfile.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/quazip.h \
- /usr/local/include/QuaZip-Qt6-1.4/quazip/quazipnewinfo.h \
- /usr/include/archive.h /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/include/inttypes.h /usr/include/archive_entry.h
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QtMath \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h

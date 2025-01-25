@@ -1,9 +1,10 @@
 /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/WY75ZTYLUQ/moc_BookManager.cpp: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BookManager.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/moc_predefs.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QCache \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QList \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMutex \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QObject \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QQueue \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
@@ -61,6 +62,7 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qminmax.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmutex.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnumeric.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
@@ -71,7 +73,6 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qprocessordetection.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qqueue.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
@@ -107,6 +108,7 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtpreprocessorsupport.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtresource.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtsan_impl.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qttranslation.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qttypetraits.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtversion.h \
@@ -134,13 +136,13 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/ImageProcessor.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CacheManager.h \
-  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Filter.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PLoader.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.h \
-  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PageLoader.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
