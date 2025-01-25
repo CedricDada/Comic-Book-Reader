@@ -3,10 +3,13 @@
 
 #include <vector>
 #include <string>
+#include <QImage>
 
 class AbstractImage {
 public:
     virtual ~AbstractImage() = default;
+
+    virtual QImage toQImage() const = 0;
     
     // Méthodes abstraites
     virtual int width() const = 0;

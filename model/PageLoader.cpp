@@ -5,23 +5,19 @@
 
 #include "PageLoader.h"
 
-/**
- * PageLoader implementation
- */
-
-
-/**
- * @param book
- */
-void PageLoader::loadPage(AbstractBook book) {
-
+void PageLoader::processImage(AbstractImage* image) {
+    QFuture<void> future = QtConcurrent::run([image](){
+        ImageProcessor::applyFilters(image);
+        ImageProcessor::optimizeForDisplay(image);
+    });
 }
 
-/**
- * @param book
- * @param start
- * @param count
- */
-void PageLoader::preloadPages(AbstractBook book, int start, int count) {
-
+void PageLoader::preloadPages(AbstractBook* book, int start, int count) {
+    for(int i = start; i < start + count; ++i) {
+        QtConcurrent::run([=](){
+            Page p = book->getPage(i);
+            ImageProcessor::processImage(p.image);
+            emit pageLoaded(i, p.image);
+        });
+    }
 }

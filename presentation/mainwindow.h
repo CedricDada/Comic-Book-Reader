@@ -2,9 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "../model/AbstractBook.h"  
 #include "PageView.h"      // Vue des pages
 #include "../repository/FileHandler.h"   // Accès aux fichiers
 #include "../infrastructure/ImageProcessor.h"// Traitement d'images
+#include "../model/BookManager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,6 +32,12 @@ private:
     PageView *m_pageView;    // Composant d'affichage
     FileHandler m_fileHandler{"chemin/par/default"}; // Initialisation directe
     AbstractImage* m_currentImage = nullptr; // Image courante
+    BookManager* m_bookManager = nullptr;
+    CacheManager* m_cacheManager = nullptr;
+    QScopedPointer<AbstractBook> m_currentBook;
+
+    void loadFirstPage(); 
+    void startPreloading(); 
 };
 
 #endif // MAINWINDOW_H

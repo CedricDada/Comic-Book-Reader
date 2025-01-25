@@ -9,6 +9,10 @@ class ImageProcessor {
 public:
     static void resize(AbstractImage* image, int width, int height);
     static void applyFilter(AbstractImage* image, const Filter& filter); // Correction
+    static QImage processImage(AbstractImage* image) {
+        return image->toQImage();
+        // Implémentation du traitement
+    }
 };
 
 #endif // IMAGEPROCESSOR_H

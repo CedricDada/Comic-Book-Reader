@@ -18,6 +18,8 @@ public:
     void resize(int newWidth, int newHeight) override;
     void saveToFile(const std::string& path) const override;
 
+    QImage toQImage() const override;
+
 private:
     std::vector<uint8_t> m_data;
     int m_width;

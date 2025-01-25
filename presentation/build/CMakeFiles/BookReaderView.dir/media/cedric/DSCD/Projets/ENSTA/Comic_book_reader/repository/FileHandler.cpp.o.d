@@ -134,27 +134,194 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImage \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
+ /usr/include/c++/11/cstddef /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/assert.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtversionchecks.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qconfig.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtcore-config.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtconfigmacros.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsystemdetection.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qprocessordetection.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcompilerdetection.h \
+ /usr/include/c++/11/version \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qassert.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtclasshelpermacros.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtversion.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontainerfwd.h \
+ /usr/include/c++/11/variant \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/parse_numbers.h /usr/include/c++/11/optional \
+ /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/tuple /usr/include/c++/11/array \
+ /usr/include/c++/11/bits/uses_allocator.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsysinfo.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcompare_impl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qatomic.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbasicatomic.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h \
+ /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qconstructormacros.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qforeach.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qttypetraits.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfunctionpointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qminmax.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnumeric.h \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/limits \
+ /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qoverload.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qswap.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtresource.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qttranslation.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
+ /usr/include/c++/11/cstring /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
+ /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
+ /usr/include/c++/11/bits/locale_classes.h \
+ /usr/include/c++/11/bits/locale_classes.tcc \
+ /usr/include/c++/11/system_error \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
+ /usr/include/c++/11/stdlib.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringtokenizer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringmatcher.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/PNGImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/AbstractImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/JPEGImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/../model/BMPImage.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
- /usr/include/c++/11/ios /usr/include/c++/11/exception \
- /usr/include/c++/11/bits/exception_ptr.h \
- /usr/include/c++/11/bits/cxxabi_init_exception.h \
- /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
- /usr/include/c++/11/bits/ios_base.h \
- /usr/include/c++/11/bits/locale_classes.h \
- /usr/include/c++/11/bits/locale_classes.tcc \
- /usr/include/c++/11/system_error \
- /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
- /usr/include/c++/11/stdexcept /usr/include/c++/11/streambuf \
- /usr/include/c++/11/bits/streambuf.tcc \
- /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
- /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
@@ -162,5 +329,4 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h
+ /usr/include/c++/11/bits/fstream.tcc

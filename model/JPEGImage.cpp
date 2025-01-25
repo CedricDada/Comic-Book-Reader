@@ -26,3 +26,7 @@ void JPEGImage::saveToFile(const std::string& path) const {
     QImage img(m_data.data(), m_width, m_height, QImage::Format_RGB888);
     img.save(QString::fromStdString(path), "JPEG", 85); // Qualité à 85%
 }
+
+QImage JPEGImage::toQImage() const {
+    return QImage::fromData(m_data.data(), m_data.size(), "JPEG");
+}

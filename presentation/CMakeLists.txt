@@ -1,11 +1,21 @@
 cmake_minimum_required(VERSION 3.19)
 project(BookReaderView LANGUAGES CXX)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# 1. Configuration Qt6
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Gui Concurrent LinguistTools)
 qt_standard_project_setup()
 
-# Liste tous les fichiers sources
+# 2. Configuration des dépendances
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(POPPLER_QT6 REQUIRED poppler-qt6)
+pkg_check_modules(LIBARCHIVE REQUIRED libarchive)
+find_package(QuaZip-Qt6 REQUIRED)
+find_package(ZLIB REQUIRED)
+
+# 3. Liste des fichiers sources (conservé inchangé)
 set(SOURCES
     main.cpp
     mainwindow.cpp
@@ -23,7 +33,21 @@ set(SOURCES
     ../repository/FileHandler.h
     ../model/AbstractImage.h
     ../infrastructure/ImageProcessor.cpp
+    ../infrastructure/ImageProcessor.h  
     ../model/Filter.h 
+    ../model/Page.cpp                   
+    ../model/Page.h 
+    ../repository/ArchiveHandler.cpp    
+    ../repository/ArchiveHandler.h 
+    ../model/CacheManager.cpp  
+    ../model/CacheManager.h 
+    ../model/BookManager.cpp
+    ../model/BookManager.h
+    ../model/AbstractBook.cpp
+    ../model/AbstractBook.h
+    ../model/CBRBook.cpp
+    ../model/CBZBook.cpp 
+    ../model/PDFBook.cpp
     
     # LibraryView.cpp
     # LibraryView.h
@@ -33,35 +57,30 @@ set(SOURCES
     # UIManager.h
 )
 
+# 4. Création de l'exécutable
 qt_add_executable(BookReaderView
     WIN32 MACOSX_BUNDLE
     ${SOURCES}
 )
 
-qt_add_translations(BookReaderView
-    TS_FILES BookReaderView_en_US.ts
+# 5. Configuration des inclusions
+target_include_directories(BookReaderView PRIVATE
+    ${POPPLER_QT6_INCLUDE_DIRS}
+    ${LIBARCHIVE_INCLUDE_DIRS}
+    ${QUAZIP_QT6_INCLUDE_DIRS}
+    /usr/local/include/QuaZip-Qt6-1.4  # Chemin explicite
+    ${Qt6Core_INCLUDE_DIRS}
 )
 
-target_link_libraries(BookReaderView
-    PRIVATE
-        Qt6::Core
-        Qt6::Widgets
+# 6. Lien des bibliothèques
+target_link_libraries(BookReaderView PRIVATE
+    Qt6::Core
+    QuaZip::QuaZip
+    Qt6::Widgets
+    Qt6::Gui
+    Qt6::Concurrent
+    ${POPPLER_QT6_LIBRARIES}
+    ${LIBARCHIVE_LIBRARIES}
+    ${QUAZIP_QT6_LIBRARIES} 
+    ZLIB::ZLIB
 )
-
-# Configurer l'installation
-include(GNUInstallDirs)
-
-install(TARGETS BookReaderView
-    BUNDLE  DESTINATION .
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-)
-
-# Générer le script de déploiement
-qt_generate_deploy_app_script(
-    TARGET BookReaderView
-    OUTPUT_SCRIPT deploy_script
-    NO_UNSUPPORTED_PLATFORM_ERROR
-)
-
-install(SCRIPT ${deploy_script})

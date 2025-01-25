@@ -1,4 +1,5 @@
 #include "PageView.h"
+#include "../model/CacheManager.h"
 #include <QGraphicsPixmapItem>
 
 PageView::PageView(QWidget* parent) // Modification ici
@@ -35,4 +36,28 @@ void PageView::setZoom(float level) {
     m_zoomLevel = level;
     resetTransform();
     scale(level, level);
+}
+
+void PageView::displayPageAsync(const Page& page) {
+    QFuture<void> future = QtConcurrent::run([=](){
+        QImage cachedImg = m_cacheManager->getPage(page.number);
+        
+        if(cachedImg.isNull()) {
+            QImage processed = ImageProcessor::processImage(page.image);
+            m_cacheManager->storePage(page.number, processed);
+            cachedImg = processed;
+        }
+
+        QMetaObject::invokeMethod(this, [=](){
+            updateDisplay(cachedImg);
+        }, Qt::QueuedConnection);
+    });
+    Q_UNUSED(future);
+}
+
+void PageView::updateDisplay(const QImage& image) {
+    m_scene->clear();
+    QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(image));
+    item->setTransformationMode(Qt::SmoothTransformation);
+    fitInView(item, Qt::KeepAspectRatio);
 }

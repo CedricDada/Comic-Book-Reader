@@ -134,7 +134,6 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/../model/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImage \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
@@ -313,4 +312,5 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/../model/Filter.h

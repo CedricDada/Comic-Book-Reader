@@ -50,25 +50,91 @@ MainWindow::~MainWindow() {
 
 // Slot : Ouverture de fichier
 void MainWindow::on_actionOpen_files_triggered() {
-    QString path = QFileDialog::getOpenFileName(this, "Ouvrir une image", 
-                  "", "Images (*.png *.jpg *.bmp)");//Ouvre une boîte de dialogue pour sélectionner un fichier
-    
-    if (!path.isEmpty()) {
-        try {
-            m_fileHandler = FileHandler(path.toStdString()); //Initialise FileHandler avec le chemin du fichier.
-            m_currentImage = m_fileHandler.readFile(); //Lit le fichier et crée une instance de l'image.
-            m_pageView->render(*m_currentImage);
-        } 
-        catch (const std::exception& e) {
-            QMessageBox::critical(this, "Erreur", e.what());
-        }
+    QStringList paths = QFileDialog::getOpenFileNames(
+        this, 
+        "Ouvrir des fichiers",
+        "",
+        "Tous les formats supportés (*.png *.jpg *.bmp *.pdf *.cbr *.cbz);;"
+        "Images (*.png *.jpg *.bmp);;"
+        "Archives BD (*.pdf *.cbr *.cbz)"
+    );
+
+    if(!paths.isEmpty()) {
+        m_bookManager = new BookManager(this);
+        m_cacheManager = new CacheManager(1024); // 1GB cache
+
+        // Connexions des signaux
+        connect(m_bookManager, &BookManager::bookReady, 
+            [this](AbstractBook* book) {
+                /*
+                Connexion signal-slot
+
+                    Quand un livre est prêt (bookReady) :
+
+                    Stocke le livre
+
+                    Affiche la première page
+
+                    Démarre le préchargement
+                */
+                m_currentBook.reset(book);
+                loadFirstPage();
+                startPreloading();
+            });
+
+        connect(m_bookManager, &BookManager::pageProcessed, 
+            [this](int index) {
+                if(index == 0 && m_currentBook && !m_currentBook->pages().empty()) {
+                    QImage img = m_currentBook->pageAt(0).image->toQImage();
+                    m_pageView->updateDisplay(img);
+                }
+            });
+
+        // Démarre le traitement
+        QThread::create([this, paths](){
+                /*
+                 Traitement asynchrone
+
+                Crée un thread séparé pour :
+
+                Ouvrir chaque fichier via BookManager
+
+                Évite de bloquer l'UI
+                 */
+            for(const auto& path : paths) {
+                this->m_bookManager->openBook(path);
+            }
+        })->start();
+    }
+}
+
+// Méthodes auxiliaires
+void MainWindow::loadFirstPage() {
+    if(m_currentBook && !m_currentBook->pages().empty()) {
+        m_pageView->displayPageAsync(m_currentBook->pages().first());
+    }
+}
+
+void MainWindow::startPreloading() {
+    if(m_currentBook) {
+        QFuture<void> future = QtConcurrent::run([this](){
+            for(int i = 1; i < m_currentBook->totalPages(); ++i) {
+                Page page = m_currentBook->pageAt(i);
+                ImageProcessor::processImage(page.image);
+                m_cacheManager->storePage(page.number, page.image->toQImage());
+                QMetaObject::invokeMethod(m_pageView, "updateDisplay", 
+                    Qt::QueuedConnection,
+                    Q_ARG(QImage, page.image->toQImage()));
+            }
+        });
+        Q_UNUSED(future); // Supprime l'avertissement
     }
 }
 
 // Slot : Sauvegarde
 void MainWindow::on_actionSave_triggered() {
     QString path = QFileDialog::getSaveFileName(this, "Enregistrer", 
-                  "", "Images (*.png *.jpg *.bmp)");
+                  "", "Images (*.png *.jpg *.bmp *.pdf *cbz)");
     
     if (!path.isEmpty() && m_currentImage) {
         FileHandler::writeFile(m_currentImage, path.toStdString());

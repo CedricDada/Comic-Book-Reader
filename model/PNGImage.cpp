@@ -25,3 +25,8 @@ void PNGImage::saveToFile(const std::string& path) const {
     QImage img(m_data.data(), m_width, m_height, QImage::Format_ARGB32);
     img.save(QString::fromStdString(path), "PNG");
 }
+QImage PNGImage::toQImage() const {
+    QImage img;
+    img.loadFromData(m_data.data(), m_data.size(), "PNG");
+    return img;
+}

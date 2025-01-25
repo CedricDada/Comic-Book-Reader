@@ -11,5 +11,4 @@ void ImageProcessor::resize(AbstractImage* image, int width, int height) {
     // Mettre à jour les données de l'image
 }
 void ImageProcessor::applyFilter(AbstractImage* image, const Filter& filter) {
-    // Implémentation des filtres avec Qt
 }

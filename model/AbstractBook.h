@@ -1,33 +1,37 @@
-/**
- * Project Untitled
- */
+#ifndef ABSTRACTBOOK_H
+#define ABSTRACTBOOK_H
 
-
-#ifndef _ABSTRACTBOOK_H
-#define _ABSTRACTBOOK_H
+#include "Page.h"
+#include <QVector>
+#include <QString>
+#include <QVariantMap>
 
 class AbstractBook {
-public: 
-    void title;
-    void author;
-    void tags;
-    void pages;
-    void tableOfContents;
-    
-/**
- * @param page
- */
-void addPage(Page page);
-    
-/**
- * @param pageNumber
- */
-void removePage(int pageNumber);
-    
-/**
- * @param number
- */
-void getPage(int number);
+public:
+    virtual ~AbstractBook() = default;
+
+    // Gestion des pages
+    virtual void addPage(const Page& page) = 0;
+    virtual void removePage(int index) = 0;
+    virtual Page getPage(int index) const = 0;
+    virtual int pageCount() const = 0;
+
+    // Métadonnées
+    virtual QVariantMap metadata() const = 0;
+    virtual void setMetadata(const QVariantMap& meta) = 0;
+
+    // Persistance
+    virtual void loadPages() = 0;
+    virtual void save(const QString& path) = 0;
+
+    const QVector<Page>& pages() const { return m_pages; }
+    int totalPages() const { return m_pages.size(); }
+    Page pageAt(int index) const { return m_pages.at(index); }
+
+protected:
+    QVector<Page> m_pages;
+    QVariantMap m_metadata;
+    QString m_filePath;
 };
 
-#endif //_ABSTRACTBOOK_H
+#endif // ABSTRACTBOOK_H

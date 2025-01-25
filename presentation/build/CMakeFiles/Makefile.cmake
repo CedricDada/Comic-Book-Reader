@@ -31,18 +31,33 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentAdditionalTargetInfo.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfig.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersion.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersionImpl.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentDependencies.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets-relwithdebinfo.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentVersionlessTargets.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake"
-  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/QtInstallPaths.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatAdditionalTargetInfo.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfig.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersion.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersionImpl.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatDependencies.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets-relwithdebinfo.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets.cmake"
+  "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessTargets.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
   "/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake"
@@ -230,6 +245,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6Config.cmake"
+  "/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6ConfigVersion.cmake"
+  "/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6_SharedTargets-release.cmake"
+  "/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6_SharedTargets.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -254,6 +273,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/FindPkgConfig.cmake"
   "/usr/share/cmake-3.22/Modules/FindThreads.cmake"
   "/usr/share/cmake-3.22/Modules/FindVulkan.cmake"
+  "/usr/share/cmake-3.22/Modules/FindZLIB.cmake"
   "/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake-3.22/Modules/Internal/CheckCompilerFlag.cmake"
   "/usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake"
@@ -262,6 +282,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake"
   )
 
 # The corresponding makefile is:
@@ -272,21 +293,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  ".rcc/BookReaderView_translations.qrc"
   "CMakeFiles/BookReaderView_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
-  ".lupdate/BookReaderView_project.cmake"
-  ".qt/deploy_BookReaderView_1aa6795883.cmake"
-  ".qt/BookReaderView-plugins.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/BookReaderView.dir/DependInfo.cmake"
-  "CMakeFiles/BookReaderView_lupdate.dir/DependInfo.cmake"
-  "CMakeFiles/update_translations.dir/DependInfo.cmake"
-  "CMakeFiles/BookReaderView_lrelease.dir/DependInfo.cmake"
-  "CMakeFiles/release_translations.dir/DependInfo.cmake"
   "CMakeFiles/BookReaderView_autogen.dir/DependInfo.cmake"
   )

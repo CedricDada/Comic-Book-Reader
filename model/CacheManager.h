@@ -1,26 +1,19 @@
-/**
- * Project Untitled
- */
-
-
+// CacheManager.h
 #ifndef _CACHEMANAGER_H
 #define _CACHEMANAGER_H
 
+#include <QCache>
+#include "Page.h"
+
 class CacheManager {
-public: 
-    void cacheSize;
-    void cachedPages;
-    void Attribute1;
+public:
+    explicit CacheManager(int maxSize = 100);
     
-/**
- * @param page
- */
-void storePage(Page page);
-    
-/**
- * @param pageNumber
- */
-void getPage(int pageNumber);
+    void storePage(int number, const QImage& image);
+    QImage getPage(int number) const;
+
+private:
+    QCache<int, QImage> m_cache;
 };
 
 #endif //_CACHEMANAGER_H

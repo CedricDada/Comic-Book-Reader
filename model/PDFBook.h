@@ -1,15 +1,27 @@
-/**
- * Project Untitled
- */
-
-
-#ifndef _PDFBOOK_H
-#define _PDFBOOK_H
+#ifndef PDFBOOK_H
+#define PDFBOOK_H
 
 #include "AbstractBook.h"
+#include <poppler-qt6.h>
 
+class PDFBook : public AbstractBook {
+public:
+    explicit PDFBook(const QString& path);
+    
+    void addPage(const Page& page) override;
+    void removePage(int index) override;
+    Page getPage(int index) const override;
+    int pageCount() const override;
+    
+    QVariantMap metadata() const override;
+    void setMetadata(const QVariantMap& meta) override;
+    
+    void loadPages() override;
+    void save(const QString& path) override;
 
-class PDFBook: public AbstractBook {
+private:
+    std::unique_ptr<Poppler::Document> m_document;
+    void extractPDFTextLayer();
 };
 
-#endif //_PDFBOOK_H
+#endif // PDFBOOK_H

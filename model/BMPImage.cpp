@@ -30,3 +30,7 @@ void BMPImage::saveToFile(const std::string& path) const {
         throw std::runtime_error("Échec de la sauvegarde BMP");
     }
 }
+
+QImage BMPImage::toQImage() const {
+    return QImage::fromData(m_data.data(), m_data.size(), "BMP");
+}

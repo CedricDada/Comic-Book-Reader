@@ -69,16 +69,10 @@ include CMakeFiles/BookReaderView.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BookReaderView.dir/flags.make
 
-.rcc/qrc_BookReaderView_translations.cpp: BookReaderView_en_US.qm
-.rcc/qrc_BookReaderView_translations.cpp: .rcc/BookReaderView_translations.qrc
-.rcc/qrc_BookReaderView_translations.cpp: /home/cedric/Qt/6.5.3/gcc_64/./libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Running rcc for resource BookReaderView_translations"
-	/home/cedric/Qt/6.5.3/gcc_64/libexec/rcc --output "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/.rcc/qrc_BookReaderView_translations.cpp" --name BookReaderView_translations "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/.rcc/BookReaderView_translations.qrc" --no-zstd
-
 CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o: BookReaderView_autogen/mocs_compilation.cpp
 CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o -MF CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/BookReaderView_autogen/mocs_compilation.cpp"
 
 CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.i: cmake_force
@@ -92,7 +86,7 @@ CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.s: cma
 CMakeFiles/BookReaderView.dir/main.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp
 CMakeFiles/BookReaderView.dir/main.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BookReaderView.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BookReaderView.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/main.cpp.o -MF CMakeFiles/BookReaderView.dir/main.cpp.o.d -o CMakeFiles/BookReaderView.dir/main.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/main.cpp"
 
 CMakeFiles/BookReaderView.dir/main.cpp.i: cmake_force
@@ -106,7 +100,7 @@ CMakeFiles/BookReaderView.dir/main.cpp.s: cmake_force
 CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp
 CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BookReaderView.dir/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BookReaderView.dir/mainwindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/mainwindow.cpp.o -MF CMakeFiles/BookReaderView.dir/mainwindow.cpp.o.d -o CMakeFiles/BookReaderView.dir/mainwindow.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/mainwindow.cpp"
 
 CMakeFiles/BookReaderView.dir/mainwindow.cpp.i: cmake_force
@@ -120,7 +114,7 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.s: cmake_force
 CMakeFiles/BookReaderView.dir/PageView.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/PageView.cpp.o: ../PageView.cpp
 CMakeFiles/BookReaderView.dir/PageView.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BookReaderView.dir/PageView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BookReaderView.dir/PageView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/PageView.cpp.o -MF CMakeFiles/BookReaderView.dir/PageView.cpp.o.d -o CMakeFiles/BookReaderView.dir/PageView.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/PageView.cpp"
 
 CMakeFiles/BookReaderView.dir/PageView.cpp.i: cmake_force
@@ -134,7 +128,7 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.s: cmake_force
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PNGImage.cpp
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PNGImage.cpp"
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PNGImage.cpp.i: cmake_force
@@ -148,7 +142,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/JPEGImage.cpp
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/JPEGImage.cpp"
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/JPEGImage.cpp.i: cmake_force
@@ -162,7 +156,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BMPImage.cpp
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BMPImage.cpp"
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.i: cmake_force
@@ -176,7 +170,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/FileHandler.cpp
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/FileHandler.cpp"
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.i: cmake_force
@@ -190,7 +184,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/ImageProcessor.cpp
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/ImageProcessor.cpp"
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.i: cmake_force
@@ -201,19 +195,117 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/ImageProcessor.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.s
 
-CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
-CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o: .rcc/qrc_BookReaderView_translations.cpp
-CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o -MF CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o.d -o CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/.rcc/qrc_BookReaderView_translations.cpp"
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Page.cpp"
 
-CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/.rcc/qrc_BookReaderView_translations.cpp" > CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.i
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Page.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.i
 
-CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/.rcc/qrc_BookReaderView_translations.cpp" -o CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.s
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Page.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.s
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/ArchiveHandler.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/ArchiveHandler.cpp"
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/ArchiveHandler.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.i
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/ArchiveHandler.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.s
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CacheManager.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CacheManager.cpp"
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CacheManager.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.i
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CacheManager.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.s
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BookManager.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BookManager.cpp"
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BookManager.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.i
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BookManager.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.s
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/AbstractBook.cpp"
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/AbstractBook.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.i
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/AbstractBook.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.s
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CBRBook.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBRBook.cpp"
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBRBook.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.i
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBRBook.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.s
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CBZBook.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBZBook.cpp"
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBZBook.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.i
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBZBook.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.s
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o: CMakeFiles/BookReaderView.dir/flags.make
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PDFBook.cpp
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o: CMakeFiles/BookReaderView.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o -MF CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o.d -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o -c "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PDFBook.cpp"
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PDFBook.cpp" > CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.i
+
+CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PDFBook.cpp" -o CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.s
 
 # Object files for target BookReaderView
 BookReaderView_OBJECTS = \
@@ -226,7 +318,14 @@ BookReaderView_OBJECTS = \
 "CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o" \
 "CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o" \
 "CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o" \
-"CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o"
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o" \
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o" \
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o" \
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o" \
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o" \
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o" \
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o" \
+"CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o"
 
 # External object files for target BookReaderView
 BookReaderView_EXTERNAL_OBJECTS =
@@ -240,15 +339,26 @@ BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Co
 BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o
 BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/FileHandler.cpp.o
 BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o
-BookReaderView: CMakeFiles/BookReaderView.dir/build/.rcc/qrc_BookReaderView_translations.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/Page.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/repository/ArchiveHandler.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CacheManager.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BookManager.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/AbstractBook.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBRBook.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/CBZBook.cpp.o
+BookReaderView: CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/PDFBook.cpp.o
 BookReaderView: CMakeFiles/BookReaderView.dir/build.make
+BookReaderView: /usr/local/lib/libquazip1-qt6.so.1.4
 BookReaderView: /home/cedric/Qt/6.5.3/gcc_64/lib/libQt6Widgets.so.6.5.3
 BookReaderView: /home/cedric/Qt/6.5.3/gcc_64/lib/libQt6Gui.so.6.5.3
-BookReaderView: /home/cedric/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
+BookReaderView: /home/cedric/Qt/6.5.3/gcc_64/lib/libQt6Concurrent.so.6.5.3
+BookReaderView: /usr/lib/x86_64-linux-gnu/libz.so
+BookReaderView: /home/cedric/Qt/6.5.3/gcc_64/lib/libQt6Core5Compat.so.6.5.3
 BookReaderView: /usr/lib/x86_64-linux-gnu/libGLX.so
 BookReaderView: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+BookReaderView: /home/cedric/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
 BookReaderView: CMakeFiles/BookReaderView.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable BookReaderView"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable BookReaderView"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BookReaderView.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -259,7 +369,7 @@ CMakeFiles/BookReaderView.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/BookReaderView.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/BookReaderView.dir/clean
 
-CMakeFiles/BookReaderView.dir/depend: .rcc/qrc_BookReaderView_translations.cpp
+CMakeFiles/BookReaderView.dir/depend:
 	cd "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation" "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation" "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build" "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build" "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles/BookReaderView.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/BookReaderView.dir/depend
 

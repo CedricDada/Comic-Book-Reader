@@ -312,6 +312,15 @@
 		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
 		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersion.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersionImpl.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentDependencies.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets-relwithdebinfo.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentAdditionalTargetInfo.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentVersionlessTargets.cmake",
 		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsConfigVersion.cmake",
 		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsConfigVersionImpl.cmake",
 		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsConfig.cmake",
@@ -324,8 +333,58 @@
 		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
 		"/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake",
-		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
+		"/usr/share/cmake-3.22/Modules/FindPkgConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6ConfigVersion.cmake",
+		"/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6Config.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6_SharedTargets.cmake",
+		"/usr/local/lib/cmake/QuaZip-Qt6-1.4/QuaZip-Qt6_SharedTargets-release.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtFeature.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckCXXCompilerFlag.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"/usr/share/cmake-3.22/Modules/FindThreads.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckIncludeFileCXX.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckCXXSourceCompiles.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersion.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersionImpl.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatDependencies.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets-relwithdebinfo.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatAdditionalTargetInfo.cmake",
+		"/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessTargets.cmake",
+		"/usr/share/cmake-3.22/Modules/FindZLIB.cmake",
+		"/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/usr/share/cmake-3.22/Modules/FindZLIB.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation",
 	"DEP_FILE" : "",
@@ -336,6 +395,12 @@
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/infrastructure/ImageProcessor.h",
 			"MU",
 			"57WQWHYZIW/moc_ImageProcessor.cpp",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/AbstractBook.h",
+			"MU",
+			"WY75ZTYLUQ/moc_AbstractBook.cpp",
 			null
 		],
 		[
@@ -351,6 +416,30 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BookManager.h",
+			"MU",
+			"WY75ZTYLUQ/moc_BookManager.cpp",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBRBook.h",
+			"MU",
+			"WY75ZTYLUQ/moc_CBRBook.cpp",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBZBook.h",
+			"MU",
+			"WY75ZTYLUQ/moc_CBZBook.cpp",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CacheManager.h",
+			"MU",
+			"WY75ZTYLUQ/moc_CacheManager.cpp",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Filter.h",
 			"MU",
 			"WY75ZTYLUQ/moc_Filter.cpp",
@@ -363,9 +452,21 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PDFBook.h",
+			"MU",
+			"WY75ZTYLUQ/moc_PDFBook.cpp",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PNGImage.h",
 			"MU",
 			"WY75ZTYLUQ/moc_PNGImage.cpp",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Page.h",
+			"MU",
+			"WY75ZTYLUQ/moc_Page.cpp",
 			null
 		],
 		[
@@ -381,6 +482,12 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/ArchiveHandler.h",
+			"MU",
+			"24CJ6YDPL2/moc_ArchiveHandler.cpp",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/FileHandler.h",
 			"MU",
 			"24CJ6YDPL2/moc_FileHandler.cpp",
@@ -390,7 +497,15 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/BookReaderView_autogen/include",
 	"MOC_COMPILATION_FILE" : "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/BookReaderView_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CONCURRENT_LIB",
+		"QT_CORE5COMPAT_LIB",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -400,11 +515,17 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/usr/local/include/poppler/qt6",
+		"/usr/local/include/poppler",
+		"/usr/local/include/QuaZip-Qt6-1.4",
 		"/home/cedric/Qt/6.5.3/gcc_64/include/QtCore",
 		"/home/cedric/Qt/6.5.3/gcc_64/include",
 		"/home/cedric/Qt/6.5.3/gcc_64/mkspecs/linux-g++",
+		"/usr/local/include/QuaZip-Qt6-1.4/quazip",
+		"/home/cedric/Qt/6.5.3/gcc_64/include/QtCore5Compat",
 		"/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets",
 		"/home/cedric/Qt/6.5.3/gcc_64/include/QtGui",
+		"/home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent",
 		"/usr/include",
 		"/usr/include/c++/11",
 		"/usr/include/x86_64-linux-gnu/c++/11",
@@ -433,10 +554,7 @@
 	],
 	"MOC_PREDEFS_FILE" : "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/BookReaderView_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : 
-	[
-		"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/.rcc/qrc_BookReaderView_translations.cpp"
-	],
+	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/CMakeFiles/BookReaderView_autogen.dir/ParseCache.txt",
@@ -453,7 +571,32 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/AbstractBook.cpp",
+			"MU",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BMPImage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/BookManager.cpp",
+			"MU",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBRBook.cpp",
+			"MU",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CBZBook.cpp",
+			"MU",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/CacheManager.cpp",
 			"MU",
 			null
 		],
@@ -463,7 +606,17 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PDFBook.cpp",
+			"MU",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/PNGImage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/model/Page.cpp",
 			"MU",
 			null
 		],
@@ -483,6 +636,11 @@
 			null
 		],
 		[
+			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/ArchiveHandler.cpp",
+			"MU",
+			null
+		],
+		[
 			"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/repository/FileHandler.cpp",
 			"MU",
 			null
@@ -490,10 +648,7 @@
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : 
-	[
-		"/media/cedric/DSCD/Projets/ENSTA/Comic book reader/presentation/build/.rcc/qrc_BookReaderView_translations.cpp"
-	],
+	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0
 }
