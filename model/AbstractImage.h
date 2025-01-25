@@ -19,6 +19,7 @@ public:
     virtual size_t dataSize() const = 0; 
     virtual void resize(int newWidth, int newHeight) = 0;
     virtual void saveToFile(const std::string& path) const = 0;
+    virtual AbstractImage* clone() const = 0;
 };
 
 #endif // ABSTRACTIMAGE_H

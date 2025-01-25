@@ -19,6 +19,10 @@ public:
     void saveToFile(const std::string& path) const override;
 
     QImage toQImage() const override;
+    AbstractImage* clone() const override {
+        return new JPEGImage(*this); // Utilise le constructeur de copie
+    }
+    JPEGImage(const JPEGImage& other);
 
 private:
     std::vector<uint8_t> m_data;

@@ -3,7 +3,7 @@
 // BookManager.h
 #include <QObject>
 #include "AbstractBook.h"
-#include "PageLoader.h"
+#include "PLoader.h"
 #include "CacheManager.h"
 
 class BookManager : public QObject {
@@ -13,6 +13,8 @@ public:
     explicit BookManager(QObject* parent = nullptr);
     
     void openBook(const QString& path);
+
+    std::unique_ptr<AbstractBook> createBook(const QString& path);
     
 signals:
     void bookReady(AbstractBook* book);
@@ -20,7 +22,7 @@ signals:
     void openFailed(const QString& error);
 
 private:
-    PageLoader m_pageLoader;
+    PLoader m_PLoader;
     CacheManager m_cacheManager;
     
     void setupConnections();

@@ -34,3 +34,8 @@ void BMPImage::saveToFile(const std::string& path) const {
 QImage BMPImage::toQImage() const {
     return QImage::fromData(m_data.data(), m_data.size(), "BMP");
 }
+
+BMPImage::BMPImage(const BMPImage& other) :
+    m_data(other.m_data),
+    m_width(other.m_width),
+    m_height(other.m_height) {}

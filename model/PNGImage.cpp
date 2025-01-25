@@ -30,3 +30,8 @@ QImage PNGImage::toQImage() const {
     img.loadFromData(m_data.data(), m_data.size(), "PNG");
     return img;
 }
+
+PNGImage::PNGImage(const PNGImage& other) :
+    m_data(other.m_data),
+    m_width(other.m_width),
+    m_height(other.m_height) {}

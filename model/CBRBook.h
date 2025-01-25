@@ -7,6 +7,7 @@
 class CBRBook : public AbstractBook {
 public:
     explicit CBRBook(const QString& path);
+    ~CBRBook() override; 
     
     void addPage(const Page& page) override;
     void removePage(int index) override;
@@ -22,6 +23,7 @@ public:
 private:
     struct archive* m_archive;
     void extractRarContents();
+    bool isImageFile(const QString& filename) const; 
 };
 
 #endif // CBRBOOK_H

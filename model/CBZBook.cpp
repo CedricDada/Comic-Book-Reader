@@ -1,6 +1,14 @@
 #include "CBZBook.h"
+#include "QImageAdapter.h"
 #include <quazipfile.h>
 #include <QFileInfo>
+
+
+#include "CBZBook.h"
+#include "QImageAdapter.h" // Ajout important
+#include <quazipfile.h>
+#include <QFileInfo>
+#include <algorithm>
 
 CBZBook::CBZBook(const QString& path) {
     m_filePath = path;
@@ -9,20 +17,40 @@ CBZBook::CBZBook(const QString& path) {
 
 void CBZBook::loadPages() {
     if(!m_zip.open(QuaZip::mdUnzip)) {
-        throw std::runtime_error("Failed to open CBZ file");
+        throw std::runtime_error("Échec d'ouverture du fichier CBZ");
     }
 
+    QuaZipFileInfo info;
     QuaZipFile file(&m_zip);
-    for(bool more=m_zip.goToFirstFile(); more; more=m_zip.goToNextFile()) {
-        if(file.open(QIODevice::ReadOnly)) {
-            Page page;
-            page.number = m_pages.size();
-            page.image.loadFromData(file.readAll(), QFileInfo(file.getActualFileName()).suffix().toUtf8());
-            m_pages.append(page);
+    
+    // Première passe : collecter les noms de fichiers
+    QList<QString> imageFiles;
+    for(bool more = m_zip.goToFirstFile(); more; more = m_zip.goToNextFile()) {
+        if(m_zip.getCurrentFileInfo(&info) && info.name.endsWith(".jpg", Qt::CaseInsensitive)) {
+            imageFiles.append(info.name);
+        }
+    }
+    
+    // Tri naturel des noms de fichiers
+    std::sort(imageFiles.begin(), imageFiles.end(), [](const QString& a, const QString& b) {
+        return QString::compare(a, b, Qt::CaseInsensitive) < 0;
+    });
+
+    // Deuxième passe : charger les images triées
+    for(const QString& fileName : imageFiles) {
+        if(m_zip.setCurrentFile(fileName) && file.open(QIODevice::ReadOnly)) {
+            QByteArray data = file.readAll();
+            QImage qImage;
+            if(qImage.loadFromData(data)) {
+                Page page;
+                page.number = m_pages.size();
+                page.image = new QImageAdapter(qImage); // Utilisation de l'adaptateur
+                page.metadata.insert("source", fileName);
+                m_pages.append(page);
+            }
             file.close();
         }
     }
-    sortPagesByNaturalOrder();
 }
 
 void CBZBook::addPage(const Page& page) {
@@ -46,4 +74,15 @@ Page CBZBook::getPage(int index) const {
 void CBZBook::save(const QString& path) {
     // Implémentation de la sauvegarde en format CBZ
     // Utiliser QuaZip pour recréer l'archive
+}
+int CBZBook::pageCount() const {
+    return m_pages.size();
+}
+
+QVariantMap CBZBook::metadata() const {
+    return m_metadata;
+}
+
+void CBZBook::setMetadata(const QVariantMap& meta) {
+    m_metadata = meta;
 }

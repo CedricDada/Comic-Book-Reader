@@ -30,3 +30,8 @@ void JPEGImage::saveToFile(const std::string& path) const {
 QImage JPEGImage::toQImage() const {
     return QImage::fromData(m_data.data(), m_data.size(), "JPEG");
 }
+
+JPEGImage::JPEGImage(const JPEGImage& other) :
+    m_data(other.m_data), // Copie profonde du vecteur
+    m_width(other.m_width),
+    m_height(other.m_height) {}

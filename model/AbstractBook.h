@@ -24,9 +24,9 @@ public:
     virtual void loadPages() = 0;
     virtual void save(const QString& path) = 0;
 
-    const QVector<Page>& pages() const { return m_pages; }
     int totalPages() const { return m_pages.size(); }
-    Page pageAt(int index) const { return m_pages.at(index); }
+    virtual const QVector<Page>& pages() const { return m_pages; }
+    virtual Page pageAt(int index) const { return m_pages.at(index); } 
 
 protected:
     QVector<Page> m_pages;

@@ -1,12 +1,13 @@
 #include "Page.h"
 #include "../infrastructure/ImageProcessor.h"
+#include "../infrastructure/Filter.h"
 #include <QVariant>
 
 Page::Page(int num, AbstractImage* img, const QVariantMap& meta)
     : number(num), image(img), metadata(meta) {}
 
-void Page::applyFilter(const Filter& filter) {
-    if(image) ImageProcessor::applyFilter(image, filter);
+void Page::applyFilter(ContentType contentType) {
+    if(image) ImageProcessor::applyFilter(image, contentType);
 }
 
 void Page::resize(int width, int height) {

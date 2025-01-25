@@ -21,6 +21,10 @@ public:
     void saveToFile(const std::string& path) const override;
 
     QImage toQImage() const override;
+    AbstractImage* clone() const override {
+        return new BMPImage(*this);
+    }
+    BMPImage(const BMPImage& other);
 private:
     std::vector<uint8_t> m_data;
     int m_width;

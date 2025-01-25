@@ -1,4 +1,5 @@
 #include "ArchiveHandler.h"
+#include "../model/QImageAdapter.h"
 #include <QFileInfo>
 #include <QDir>
 #include <stdexcept>
@@ -8,24 +9,14 @@
 #include <archive.h>
 #include <archive_entry.h>
 
-using namespace std;
-
-ArchiveHandler::ArchiveHandler(const string& path) : m_archivePath(path) {
+ArchiveHandler::ArchiveHandler(const std::string& path) : m_archivePath(path) {
     loadArchiveStructure();
 }
 
 QVector<Page> ArchiveHandler::getInitialPages(int count) {
     QVector<Page> pages;
-    const int limit = min(count, totalPages());
-    
-    for(int i = 0; i < limit; ++i) {
-        try {
-            Page page = extractPage(i);
-            AbstractImage* img = page.image;
-            pages.append(Page(i, img, {{"source", QString::fromStdString(m_archivePath)}}));
-        } catch (const exception& e) {
-            throw runtime_error("Erreur extraction page " + to_string(i) + ": " + e.what());
-        }
+    for(int i = 0; i < qMin(count, totalPages()); ++i) {
+        pages.append(extractPage(i)); 
     }
     return pages;
 }
@@ -46,58 +37,54 @@ void ArchiveHandler::loadArchiveStructure() {
     } else if(ext == "cbr") {
         loadCbrStructure();
     } else {
-        throw runtime_error("Format non supporté");
+        throw std::runtime_error("Format non supporté");
     }
 
     if(m_pageList.empty()) {
-        throw runtime_error("Archive vide ou corrompue");
+        throw std::runtime_error("Archive vide ou corrompue");
     }
 }
 
-AbstractImage* ArchiveHandler::extractPage(int index) const {
+Page ArchiveHandler::extractPage(int index) const {
     QFileInfo file(QString::fromStdString(m_archivePath));
     QString ext = file.suffix().toLower();
 
     if(index < 0 || index >= m_pageList.size()) {
-        throw out_of_range("Index de page invalide");
+        throw std::out_of_range("Index de page invalide");
     }
 
-    if(ext == "pdf") {
-        return extractPdfPage(index);
-    } else if(ext == "cbz") {
-        return extractCbzPage(index);
-    } else if(ext == "cbr") {
-        return extractCbrPage(index);
-    }
-    return nullptr;
+    if(ext == "pdf") return extractPdfPage(index);
+    if(ext == "cbz") return extractCbzPage(index);
+    if(ext == "cbr") return extractCbrPage(index);
+    throw std::runtime_error("Format non supporté");
 }
 
 // PDF Implementation
 void ArchiveHandler::loadPdfStructure() {
-    unique_ptr<Poppler::Document> doc(Poppler::Document::load(QString::fromStdString(m_archivePath)));
+    std::unique_ptr<Poppler::Document> doc(Poppler::Document::load(QString::fromStdString(m_archivePath)));
     
     if(!doc || doc->isLocked()) {
-        throw runtime_error("PDF inaccessible ou corrompu");
+        throw std::runtime_error("PDF inaccessible ou corrompu");
     }
 
     const int pageCount = doc->numPages();
     for(int i = 0; i < pageCount; ++i) {
-        m_pageList.push_back(to_string(i));
+        m_pageList.push_back(std::to_string(i));
     }
 }
 
-AbstractImage* ArchiveHandler::extractPdfPage(int index) const {
-    unique_ptr<Poppler::Document> doc(Poppler::Document::load(QString::fromStdString(m_archivePath)));
-    Poppler::Page* pdfPage = doc->page(index);
-    
-    if(!pdfPage) {
-        throw runtime_error("Page PDF introuvable");
-    }
+Page ArchiveHandler::extractPdfPage(int index) const {
+    auto doc = Poppler::Document::load(QString::fromStdString(m_archivePath));
+    if (!doc || doc->isLocked()) throw std::runtime_error("PDF inaccessible");
 
+    auto pdfPage = std::unique_ptr<Poppler::Page>(doc->page(index)); // Gestion mémoire
     QImage image = pdfPage->renderToImage();
-    delete pdfPage;
     
-    return new QImage(image); // Conversion vers AbstractImage
+    return Page(
+        index,
+        new QImageAdapter(image), // Supprimer la ligne avec 'adapter' redondant
+        {{"source", QString::fromStdString(m_archivePath)}, {"type", "PDF"}}
+    );
 }
 
 // CBZ Implementation
@@ -116,23 +103,25 @@ void ArchiveHandler::loadCbzStructure() {
     sort(m_pageList.begin(), m_pageList.end()); // Tri alphabétique
 }
 
-AbstractImage* ArchiveHandler::extractCbzPage(int index) const {
+Page ArchiveHandler::extractCbzPage(int index) const {
     QuaZip zip(QString::fromStdString(m_archivePath));
-    if(!zip.open(QuaZip::mdUnzip)) {
-        throw runtime_error("Ouverture CBZ échouée");
-    }
+    if(!zip.open(QuaZip::mdUnzip)) throw std::runtime_error("Ouverture CBZ échouée");
 
     if(zip.setCurrentFile(QString::fromStdString(m_pageList[index]))) {
         QuaZipFile file(&zip);
         if(file.open(QIODevice::ReadOnly)) {
-            QByteArray data = file.readAll();
+            QByteArray data = file.readAll(); // Ajouté
             QImage image;
-            if(image.loadFromData(data)) {
-                return new QImage(image);
+            if(image.loadFromData(data)) {   // Maintenant avec données valides
+                return Page(
+                    index,
+                    new QImageAdapter(image),
+                    {{"source", QString::fromStdString(m_pageList[index])}, {"type", "CBZ"}}
+                );
             }
         }
     }
-    throw runtime_error("Extraction CBZ échouée");
+    throw std::runtime_error("Erreur CBZ");
 }
 
 // CBR Implementation
@@ -141,7 +130,7 @@ void ArchiveHandler::loadCbrStructure() {
     archive_read_support_format_all(a);
     
     if(archive_read_open_filename(a, m_archivePath.c_str(), 10240) != ARCHIVE_OK) {
-        throw runtime_error("Ouverture CBR échouée");
+        throw std::runtime_error("Ouverture CBR échouée");
     }
 
     struct archive_entry* entry;
@@ -157,12 +146,12 @@ void ArchiveHandler::loadCbrStructure() {
     sort(m_pageList.begin(), m_pageList.end());
 }
 
-AbstractImage* ArchiveHandler::extractCbrPage(int index) const {
+Page ArchiveHandler::extractCbrPage(int index) const {
     struct archive* a = archive_read_new();
     archive_read_support_format_all(a);
     
     if(archive_read_open_filename(a, m_archivePath.c_str(), 10240) != ARCHIVE_OK) {
-        throw runtime_error("Ouverture CBR échouée");
+        throw std::runtime_error("Ouverture CBR échouée");
     }
 
     struct archive_entry* entry;
@@ -180,22 +169,23 @@ AbstractImage* ArchiveHandler::extractCbrPage(int index) const {
             
             QImage image;
             if(image.loadFromData(data)) {
-                archive_read_close(a);
-                archive_read_free(a);
-                return new QImage(image);
+                return Page(
+                    index,
+                    new QImageAdapter(image),
+                    {{"source", QString::fromStdString(m_pageList[index])}, {"type", "CBR"}}
+                );
             }
         }
     }
     
     archive_read_close(a);
     archive_read_free(a);
-    throw runtime_error("Page CBR introuvable");
+    throw std::runtime_error("Page CBR introuvable");
 }
 
 
 bool ArchiveHandler::isImageFile(const QString& filename) const {
-    static const vector<string> extensions = {".jpg", ".jpeg", ".png", ".bmp"};
-    QString qname = QString::fromStdString(filename).toLower();
-    return any_of(extensions.begin(), extensions.end(),
-        [&qname](const string& ext) { return qname.endsWith(QString::fromStdString(ext)); });
+    QString qname = filename.toLower();
+    return qname.endsWith(".jpg") || qname.endsWith(".jpeg") || 
+           qname.endsWith(".png") || qname.endsWith(".bmp");
 }

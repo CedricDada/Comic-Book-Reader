@@ -63,6 +63,12 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "iostream": "cpp",
-        "source_location": "cpp"
+        "source_location": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "bitset": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "regex": "cpp"
     }
 }

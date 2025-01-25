@@ -23,7 +23,12 @@ void BookManager::openBook(const QString& path) {
             }
             
             // Préchargement asynchrone des pages restantes
-            m_pageLoader.preloadPages(book.get(), initialPages.size(), book->pageCount() - initialPages.size());
+            m_PLoader.preloadPages(
+                book.get(), 
+                initialPages.size(),
+                book->pageCount() - initialPages.size(),
+                ContentType::AutoDetect
+            );
             
             // Émettre le signal avec ownership transféré
             emit bookReady(book.release());

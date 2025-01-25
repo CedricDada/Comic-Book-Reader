@@ -18,6 +18,10 @@ public:
     void resize(int newWidth, int newHeight) override; 
     void saveToFile(const std::string& path) const override; 
     QImage toQImage() const override;
+    AbstractImage* clone() const override {
+        return new PNGImage(*this);
+    }
+    PNGImage(const PNGImage& other);
 
 private:
     std::vector<uint8_t> m_data;

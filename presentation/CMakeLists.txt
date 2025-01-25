@@ -34,17 +34,21 @@ set(SOURCES
     ../model/AbstractImage.h
     ../infrastructure/ImageProcessor.cpp
     ../infrastructure/ImageProcessor.h  
-    ../model/Filter.h 
+    ../infrastructure/Filter.h 
+    ../infrastructure/Filter.cpp 
     ../model/Page.cpp                   
     ../model/Page.h 
+    ../model/QImageAdapter.cpp
+    ../model/QImageAdapter.h
     ../repository/ArchiveHandler.cpp    
     ../repository/ArchiveHandler.h 
     ../model/CacheManager.cpp  
     ../model/CacheManager.h 
     ../model/BookManager.cpp
     ../model/BookManager.h
-    ../model/AbstractBook.cpp
     ../model/AbstractBook.h
+    ../model/PLoader.h
+    ../model/PLoader.cpp
     ../model/CBRBook.cpp
     ../model/CBZBook.cpp 
     ../model/PDFBook.cpp

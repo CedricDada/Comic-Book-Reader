@@ -27,7 +27,7 @@ public:
     bool isDualPageMode() const;
 
     // Nouvelle méthode de mise à jour
-    void updateDisplay(const QImage& image);
+    void updateDisplay(const Page& page);
 
 public slots:
     void displayPageAsync(const Page& page);

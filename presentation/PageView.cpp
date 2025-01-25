@@ -40,23 +40,39 @@ void PageView::setZoom(float level) {
 
 void PageView::displayPageAsync(const Page& page) {
     QFuture<void> future = QtConcurrent::run([=](){
-        QImage cachedImg = m_cacheManager->getPage(page.number);
-        
-        if(cachedImg.isNull()) {
-            QImage processed = ImageProcessor::processImage(page.image);
-            m_cacheManager->storePage(page.number, processed);
-            cachedImg = processed;
-        }
+        try {
+            // 1. Tentative de récupération depuis le cache
+            Page cachedPage = m_cacheManager->getPage(page.number);
+            
+            // 2. Si non trouvé ou besoin de traitement
+            if(cachedPage.image == nullptr) {
+                // Clone profond pour ne pas modifier l'original
+                AbstractImage* processedImage = page.image->clone();
+                ImageProcessor::processImage(processedImage);
+                
+                // Création d'une nouvelle page avec l'image traitée
+                Page processedPage(page.number, processedImage, page.metadata);
+                
+                // Stockage dans le cache
+                m_cacheManager->storePage(page.number, processedPage);
+                cachedPage = processedPage;
+            }
 
-        QMetaObject::invokeMethod(this, [=](){
-            updateDisplay(cachedImg);
-        }, Qt::QueuedConnection);
+            // 3. Mise à jour UI avec métadonnées
+            QMetaObject::invokeMethod(this, [=](){
+                updateDisplay(cachedPage); // Maintenant avec Page complète
+                //updateMetadataDisplay(cachedPage.metadata); // Nouvelle méthode
+            }, Qt::QueuedConnection);
+        }
+        catch(const std::exception& e) {
+            qWarning() << "Erreur chargement page:" << e.what();
+        }
     });
     Q_UNUSED(future);
 }
 
-void PageView::updateDisplay(const QImage& image) {
-    m_scene->clear();
+void PageView::updateDisplay(const Page& page) {
+    QImage image = page.image->toQImage();
     QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(image));
     item->setTransformationMode(Qt::SmoothTransformation);
     fitInView(item, Qt::KeepAspectRatio);

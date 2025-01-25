@@ -1,36 +1,36 @@
 #include "CacheManager.h"
-#include <QList>
 #include <QMutexLocker>
 
 CacheManager::CacheManager(int maxSize) : 
     m_maxSize(maxSize),
-    m_currentSize(0) {
-    m_cache.setMaxCost(maxSize);
+    m_cache(maxSize) // Initialise QCache avec la taille max
+{
 }
 
-void CacheManager::storePage(const QImage& page) {
+void CacheManager::storePage(int number, const Page& page) {
     QMutexLocker locker(&m_mutex);
-    const int key = page.number;
     
-    if(m_cache.contains(key)) {
-        m_cache.remove(key); // Supprime l'ancienne version
+    if(m_cache.contains(number)) {
+        m_cache.remove(number);
     }
     
     Page* pageCopy = new Page(page);
-    pageCopy->image = page.image;/*->clone();*/ // Clone profond de l'image
+    m_cache.insert(number, pageCopy, calculateCost(page));
     
-    m_cache.insert(key, pageCopy, calculateCost(*pageCopy));
+    // Mise à jour de l'ordre d'accès
+    m_accessOrder.removeAll(number);
+    m_accessOrder.prepend(number);
 }
 
-Page CacheManager::getPage(int pageNumber) {
+Page CacheManager::getPage(int number) const {
     QMutexLocker locker(&m_mutex);
     
-    if(Page* cached = m_cache[pageNumber]) {
-        m_accessOrder.removeAll(pageNumber);
-        m_accessOrder.prepend(pageNumber);
-        return *cached; 
+    if(Page* cached = m_cache.object(number)) {
+        // Mise à jour de l'ordre d'accès
+        const_cast<QList<int>&>(m_accessOrder).removeAll(number);
+        const_cast<QList<int>&>(m_accessOrder).prepend(number);
+        return *cached;
     }
-    
     throw std::runtime_error("Page non trouvée dans le cache");
 }
 
@@ -40,17 +40,13 @@ void CacheManager::clear() {
     m_accessOrder.clear();
 }
 
-// Implémentation privée
 int CacheManager::calculateCost(const Page& page) const {
-    // 1 unité = 1 Mo de mémoire approximative
-    const int baseCost = 1;
-    const int sizeInMB = (page.image->byteCount() / (1024 * 1024)) + 1;
-    return baseCost * sizeInMB;
+    return page.image->dataSize() / (1024 * 1024); // Coût en MB
 }
 
 void CacheManager::enforceCacheLimits() {
     while(m_cache.totalCost() > m_maxSize) {
-        const int lastUsed = m_accessOrder.takeLast();
+        int lastUsed = m_accessOrder.takeLast();
         m_cache.remove(lastUsed);
     }
 }

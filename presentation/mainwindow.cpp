@@ -85,8 +85,8 @@ void MainWindow::on_actionOpen_files_triggered() {
         connect(m_bookManager, &BookManager::pageProcessed, 
             [this](int index) {
                 if(index == 0 && m_currentBook && !m_currentBook->pages().empty()) {
-                    QImage img = m_currentBook->pageAt(0).image->toQImage();
-                    m_pageView->updateDisplay(img);
+                    Page page = m_currentBook->pageAt(0);
+                    m_pageView->updateDisplay(page);
                 }
             });
 
@@ -121,7 +121,7 @@ void MainWindow::startPreloading() {
             for(int i = 1; i < m_currentBook->totalPages(); ++i) {
                 Page page = m_currentBook->pageAt(i);
                 ImageProcessor::processImage(page.image);
-                m_cacheManager->storePage(page.number, page.image->toQImage());
+                m_cacheManager->storePage(page.number, page);
                 QMetaObject::invokeMethod(m_pageView, "updateDisplay", 
                     Qt::QueuedConnection,
                     Q_ARG(QImage, page.image->toQImage()));

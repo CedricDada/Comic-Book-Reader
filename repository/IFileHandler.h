@@ -8,4 +8,5 @@ public:
     virtual QVector<Page> getInitialPages(int count) = 0;
     virtual int totalPages() const = 0;
     virtual bool isImageFile(const QString& filename) const = 0;
+    virtual Page extractPage(int index) const = 0; 
 };
