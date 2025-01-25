@@ -170,7 +170,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //No help, variable specified on the command line.
-CMAKE_PREFIX_PATH:UNINITIALIZED=;/lib/cmake;/usr/local
+CMAKE_PREFIX_PATH:UNINITIALIZED=~/Qt/6.5.3/gcc_64/lib/cmake
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -279,6 +279,9 @@ QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
 
 //Additional directories where find(Qt6 ...) components are searched
 QT_ADDITIONAL_PACKAGES_PREFIX_PATH:STRING=
+
+//No help, variable specified on the command line.
+QUAZIP_QT_MAJOR_VERSION:UNINITIALIZED=6
 
 //The directory containing a CMake configuration file for Qt6Concurrent.
 Qt6Concurrent_DIR:PATH=/home/cedric/Qt/6.5.3/gcc_64/lib/cmake/Qt6Concurrent
