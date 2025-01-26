@@ -95,6 +95,7 @@ public:
     QAction *action_to_width_5;
     QAction *action_to_height_6;
     QAction *action_to_width_6;
+    QAction *actionToggleTheme;
     QWidget *centralwidget;
     QMenuBar *menubar;
     QMenu *menuFile;
@@ -357,6 +358,8 @@ public:
         action_to_height_6->setObjectName("action_to_height_6");
         action_to_width_6 = new QAction(MainWindow);
         action_to_width_6->setObjectName("action_to_width_6");
+        actionToggleTheme = new QAction(MainWindow);
+        actionToggleTheme->setObjectName("actionToggleTheme");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         MainWindow->setCentralWidget(centralwidget);
@@ -430,6 +433,8 @@ public:
         menuFile->addAction(actionEntire_window);
         menuFile->addAction(actionminimize);
         menuFile->addAction(actionExit);
+        menuFile->addSeparator();
+        menuFile->addAction(actionToggleTheme);
         menuRead->addAction(actionFirst_page);
         menuRead->addAction(actionLast_page);
         menuRead->addAction(actionNext_page);
@@ -593,6 +598,7 @@ public:
         action_to_width_5->setText(QCoreApplication::translate("MainWindow", ">= to width", nullptr));
         action_to_height_6->setText(QCoreApplication::translate("MainWindow", "<= to height", nullptr));
         action_to_width_6->setText(QCoreApplication::translate("MainWindow", "<= to width", nullptr));
+        actionToggleTheme->setText(QCoreApplication::translate("MainWindow", "Theme", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuRead->setTitle(QCoreApplication::translate("MainWindow", "Read", nullptr));
         menuFavoris->setTitle(QCoreApplication::translate("MainWindow", "Favoris", nullptr));

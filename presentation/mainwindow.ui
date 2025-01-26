@@ -70,6 +70,8 @@ font: 9pt &quot;Comic Sans MS&quot;;</string>
     <addaction name="actionEntire_window"/>
     <addaction name="actionminimize"/>
     <addaction name="actionExit"/>
+    <addaction name="separator"/>
+    <addaction name="actionToggleTheme"/>
    </widget>
    <widget class="QMenu" name="menuRead">
     <property name="title">
@@ -789,6 +791,11 @@ font: 9pt &quot;Comic Sans MS&quot;;</string>
   <action name="action_to_width_6">
    <property name="text">
     <string>&lt;= to width</string>
+   </property>
+  </action>
+  <action name="actionToggleTheme">
+   <property name="text">
+    <string>Theme</string>
    </property>
   </action>
  </widget>

@@ -36,3 +36,19 @@ void PageView::setZoom(float level) {
     resetTransform();
     scale(level, level);
 }
+
+void PageView::zoomIn() {
+    setZoom(m_zoomLevel + 10);
+}
+
+void PageView::zoomOut() {
+    setZoom(m_zoomLevel - 10);
+}
+
+void PageView::resetZoom() {
+    setZoom(100);
+}
+
+int PageView::getZoomLevel() const {
+    return m_zoomLevel;
+}

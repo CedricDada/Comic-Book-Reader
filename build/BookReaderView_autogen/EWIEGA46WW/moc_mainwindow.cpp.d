@@ -5,8 +5,10 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Comic-Book-Reader/model/Filter.h \
   D:/Comic-Book-Reader/presentation/PageView.h \
   D:/Comic-Book-Reader/repository/FileHandler.h \
+  D:/Qt/6.5.8/mingw_64/include/QtCore/QPropertyAnimation \
   D:/Qt/6.5.8/mingw_64/include/QtCore/q20memory.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/q20type_traits.h \
+  D:/Qt/6.5.8/mingw_64/include/QtCore/qabstractanimation.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qalgorithms.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qanystringview.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qarraydata.h \
@@ -34,6 +36,7 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qdatastream.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qdebug.h \
+  D:/Qt/6.5.8/mingw_64/include/QtCore/qeasingcurve.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qflags.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qfloat16.h \
@@ -44,6 +47,7 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtCore/qglobalstatic.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qhash.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/Qt/6.5.8/mingw_64/include/QtCore/qiodevice.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qiterable.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qiterator.h \
@@ -67,6 +71,7 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtCore/qpair.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qpoint.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qprocessordetection.h \
+  D:/Qt/6.5.8/mingw_64/include/QtCore/qpropertyanimation.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qrect.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qrefcount.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qscopedpointer.h \
@@ -108,8 +113,10 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtCore/qtversionchecks.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qtypeinfo.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qtypes.h \
+  D:/Qt/6.5.8/mingw_64/include/QtCore/qurl.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qutf8stringview.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qvariant.h \
+  D:/Qt/6.5.8/mingw_64/include/QtCore/qvariantanimation.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qxptype_traits.h \
@@ -128,12 +135,14 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtGui/qpainter.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qpalette.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qpen.h \
+  D:/Qt/6.5.8/mingw_64/include/QtGui/qpicture.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qpixelformat.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qpixmap.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qpolygon.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qregion.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qrgb.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qrgba64.h \
+  D:/Qt/6.5.8/mingw_64/include/QtGui/qtextdocument.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qtextoption.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qtgui-config.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qtguiexports.h \
@@ -141,17 +150,24 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtGui/qtransform.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsView \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/QLabel \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/QMainWindow \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/QToolButton \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qframe.h \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/qgraphicseffect.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qgraphicsscene.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qgraphicsview.h \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/qlabel.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qscrollarea.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qtabwidget.h \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/qtoolbutton.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

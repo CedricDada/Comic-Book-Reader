@@ -17,6 +17,11 @@ public:
     int currentPage() const;
     float zoomLevel() const;
     bool isDualPageMode() const;
+    void resetZoom();
+    void zoomIn();
+    void zoomOut();
+    int getZoomLevel() const;
+    
 
 private:
     int m_currentPage;
