@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTreeWidget>
+#include <QFileIconProvider>
 #include "PageView.h"
 #include "../repository/FileHandler.h"
 #include "../infrastructure/ImageProcessor.h"
@@ -28,13 +30,17 @@ private slots:
     void on_actionZoom_in_triggered();
     void on_actionZoom_out_triggered();
     void on_actionZoom_100_triggered();
+    void addLibraryDirectory(); // Nouveau slot pour l'ajout de bibliothèque
+
     
 private:
     Ui::MainWindow *ui;
     PageView *m_pageView;
     FileHandler m_fileHandler{"chemin/par/default"};
     AbstractImage* m_currentImage = nullptr;
+
     QDockWidget* m_libraryDock; // Nouveau membre pour la vue bibliothèque
+    QTreeWidget* m_libraryTree;
     
     // Méthodes d'initialisation
     void applyLightTheme();
@@ -47,6 +53,9 @@ private:
     void setupStatusBar();
     void setupMetadataPanel();
     void setupLibraryView(); // Nouvelle méthode pour la bibliothèque
+
+    // Gestion de l'arborescence
+    void populateTree(QTreeWidgetItem* parentItem, const QString& path);
 
     // Variables membres
     QLabel* m_zoomLabel;

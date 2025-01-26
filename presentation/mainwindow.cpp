@@ -12,8 +12,10 @@
 #include <QTimer>
 #include <QToolButton>
 #include <QFileInfo>
-#include <QListWidget>
+#include <QTreeWidget>
 #include <QPushButton>
+#include <QDir>
+#include <QFileIconProvider>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
@@ -44,30 +46,72 @@ void MainWindow::setupLibraryView() {
     QWidget* libraryContent = new QWidget(m_libraryDock);
     QVBoxLayout* layout = new QVBoxLayout(libraryContent);
     
-    // Widgets pour la gestion des bibliothèques
-    QListWidget* libraryList = new QListWidget(this);
-    QPushButton* btnAddLibrary = new QPushButton("Ajouter une bibliothèque", this);
+    m_libraryTree = new QTreeWidget(this);
+    m_libraryTree->setHeaderHidden(true);
     
-    // Style similaire aux autres panneaux
+    QPushButton* btnAddLibrary = new QPushButton("Add a library", this);
+    
+    // Style
     m_libraryDock->setStyleSheet(R"(
         QDockWidget {
             background: rgb(230, 230, 230);
             border-radius: 4px;
             margin: 1px;
         }
-        QListWidget {
+        QTreeWidget {
             background: white;
             border: 1px solid #ddd;
         }
     )");
     
-    layout->addWidget(libraryList);
+    layout->addWidget(m_libraryTree);
     layout->addWidget(btnAddLibrary);
     libraryContent->setLayout(layout);
     m_libraryDock->setWidget(libraryContent);
     
     addDockWidget(Qt::LeftDockWidgetArea, m_libraryDock);
-    m_libraryDock->hide(); // Caché par défaut
+    m_libraryDock->hide();
+    
+    // Connexion directe pour simplifier
+    connect(btnAddLibrary, &QPushButton::clicked, this, &MainWindow::addLibraryDirectory);
+}
+
+void MainWindow::addLibraryDirectory() {
+    QString directory = QFileDialog::getExistingDirectory(
+        this,
+        "Sélectionner un répertoire de bibliothèque",
+        QDir::homePath(),
+        QFileDialog::ShowDirsOnly
+    );
+    
+    if (!directory.isEmpty()) {
+        QTreeWidgetItem* rootItem = new QTreeWidgetItem(m_libraryTree);
+        rootItem->setText(0, QDir(directory).dirName());
+        rootItem->setData(0, Qt::UserRole, directory);
+        rootItem->setIcon(0, QFileIconProvider().icon(QFileIconProvider::Folder));
+        
+        populateTree(rootItem, directory);
+        m_libraryTree->expandItem(rootItem);
+    }
+}
+
+void MainWindow::populateTree(QTreeWidgetItem* parentItem, const QString& path) {
+    QDir dir(path);
+    QFileInfoList entries = dir.entryInfoList(QDir::AllEntries | QDir::NoDotAndDotDot);
+    
+    foreach (const QFileInfo& entry, entries) {
+        QTreeWidgetItem* item = new QTreeWidgetItem(parentItem);
+        item->setText(0, entry.fileName());
+        item->setData(0, Qt::UserRole, entry.filePath());
+        
+        if (entry.isDir()) {
+            item->setIcon(0, QFileIconProvider().icon(QFileIconProvider::Folder));
+            populateTree(item, entry.filePath()); // Recursion pour les sous-répertoires
+        }
+        else {
+            item->setIcon(0, QFileIconProvider().icon(entry));
+        }
+    }
 }
 
 void MainWindow::setupInterface() {
@@ -149,14 +193,14 @@ void MainWindow::setupDock() {
         QToolButton* btn = new QToolButton();
         btn->setText(text);
         btn->setIcon(QIcon(iconPath));
-        btn->setIconSize(QSize(24, 24));
+        btn->setIconSize(QSize(14, 14));
         btn->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         btn->setStyleSheet(R"(
             QToolButton {
                 background: #ffffff;
                 border: 2px solid #e0e0e0;
                 border-radius: 8px;
-                padding: 15px;
+                padding: 5px;
                 margin: 5px;
                 color: #333;
                 transition: all 0.3s ease;
@@ -172,7 +216,6 @@ void MainWindow::setupDock() {
 
     shortcutLayout->addWidget(createShortcutButton("Édition", ":resources/icons/comic-open.png"));
     shortcutLayout->addWidget(createShortcutButton("Filtres", ":resources/icons/comic-open.png"));
-    shortcutLayout->addWidget(createShortcutButton("Export", ":resources/icons/comic-open.png"));
     shortcutLayout->addStretch();
 
     shortcutContent->setLayout(shortcutLayout);
@@ -217,7 +260,6 @@ void MainWindow::setupConnections() {
     connect(ui->actionZoom_out, &QAction::triggered, this, &MainWindow::on_actionZoom_out_triggered);
     connect(ui->actionZoom_100, &QAction::triggered, this, &MainWindow::on_actionZoom_100_triggered);
 
-        // Nouvelle connexion pour les bibliothèques
     QList<QAction*> actions = findChildren<QAction*>();
     foreach(QAction* action, actions) {
         if(action->text() == "Bibliothèques") {
@@ -237,18 +279,20 @@ QGraphicsDropShadowEffect* MainWindow::createHoverEffect() {
 }
 
 void MainWindow::on_actionOpen_files_triggered() {
-    QStringList fileNames = QFileDialog::getOpenFileNames(
-        this, 
-        "Ouvrir des fichiers", 
-        "", 
-        "Images (*.png *.jpg *.jpeg *.bmp)"
-    );
+    QString path = QFileDialog::getOpenFileName(this, "Ouvrir une image", 
+                "", "Images (*.png *.jpg *.bmp)");//Ouvre une boîte de dialogue pour sélectionner un fichier
     
-    if (!fileNames.isEmpty()) {
-        // Ajoutez ici la logique de traitement des fichiers
+    if (!path.isEmpty()) {
+        try {
+            m_fileHandler = FileHandler(path.toStdString()); //Initialise FileHandler avec le chemin du fichier.
+            m_currentImage = m_fileHandler.readFile(); //Lit le fichier et crée une instance de l'image.
+            m_pageView->render(*m_currentImage);
+        } 
+        catch (const std::exception& e) {
+            QMessageBox::critical(this, "Erreur", e.what());
+        }
     }
 }
-
 void MainWindow::on_actionSave_triggered() {
     // Implémentez la logique de sauvegarde
 }
