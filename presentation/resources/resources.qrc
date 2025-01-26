@@ -1,6 +1,6 @@
 <!DOCTYPE RCC>
 <RCC version="1.0">
-<qresource prefix="/icons">
+  <qresource prefix="/icons">
     <file>icons/comic-open.png</file>
-</qresource>
+  </qresource>
 </RCC>

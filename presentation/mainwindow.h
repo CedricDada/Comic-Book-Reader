@@ -36,11 +36,19 @@ private slots:
 private:
     Ui::MainWindow *ui;
     PageView *m_pageView;
-    FileHandler m_fileHandler{"chemin/par/default"};
+    FileHandler m_fileHandler{"./"};
     AbstractImage* m_currentImage = nullptr;
 
     QDockWidget* m_libraryDock; // Nouveau membre pour la vue bibliothèque
     QTreeWidget* m_libraryTree;
+
+    // AJOUTER CES DÉCLARATIONS
+    QLabel* m_fileNameLabel;
+    QLabel* m_titleLabel;
+    QLabel* m_authorLabel; 
+    QLabel* m_pagesLabel;
+    QLabel* m_zoomLabel;
+    QLabel* m_fileInfoLabel;
     
     // Méthodes d'initialisation
     void applyLightTheme();
@@ -58,8 +66,6 @@ private:
     void populateTree(QTreeWidgetItem* parentItem, const QString& path);
 
     // Variables membres
-    QLabel* m_zoomLabel;
-    QLabel* m_fileInfoLabel;
     QPropertyAnimation* m_fadeAnimation;
     bool m_isDarkTheme = false;
     

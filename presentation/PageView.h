@@ -4,6 +4,7 @@
 #include "../model/AbstractImage.h"
 #include <QGraphicsScene>
 #include <QGraphicsView>
+#include <qtmetamacros.h>
 
 class PageView : public QGraphicsView {
     Q_OBJECT
@@ -12,6 +13,7 @@ public:
     void render(const AbstractImage& page);
     void setZoom(float level);
     void toggleDualPageMode();
+    void setZoomLevel(float zoomLevel);  // Déclaration ajoutée ici
     
     // Getters
     int currentPage() const;
@@ -21,13 +23,20 @@ public:
     void zoomIn();
     void zoomOut();
     int getZoomLevel() const;
-    
+    int pageCount() const { return m_currentImage ? 1 : 0; } // Version basique
 
+signals:
+    void zoomChanged(double newZoomLevel);
+    
 private:
-    int m_currentPage;
-    float m_zoomLevel;
+    int m_currentImage;
+    float m_zoomLevel=1.0;
     bool m_dualPageMode;
     QGraphicsScene* m_scene;
+    const double ZOOM_STEP = 0.1; // 10% par clic
+
+protected:
+    void wheelEvent(QWheelEvent* event) override;
 };
 
 #endif // PAGEVIEW_H

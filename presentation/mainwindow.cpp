@@ -16,6 +16,7 @@
 #include <QPushButton>
 #include <QDir>
 #include <QFileIconProvider>
+#include <QImageReader>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
@@ -32,7 +33,11 @@ MainWindow::MainWindow(QWidget* parent)
 
     // initialisation de la vue bibliothèque
     setupLibraryView();
+    connect(m_pageView, &PageView::zoomChanged, this, [this](double level) {
+        m_zoomLabel->setText(QString("Zoom: %1%").arg(qRound(level)));
+    });
 }
+
 
 MainWindow::~MainWindow() {
     delete ui;
@@ -142,10 +147,10 @@ void MainWindow::setupInterface() {
 }
 
 void MainWindow::setupToolbar(QToolBar* toolbar) {
-    ui->actionOpen_files->setIcon(QIcon(":/icons/open_file.png"));
-    ui->actionZoom_in->setIcon(QIcon(":/icons/zoom_in.png"));
-    ui->actionZoom_out->setIcon(QIcon(":/icons/zoom_out.png"));
-    ui->actionZoom_100->setIcon(QIcon(":/icons/zoom_reset.png"));
+    ui->actionOpen_files->setIcon(QIcon(":/icons/comic_open.png"));
+    ui->actionZoom_in->setIcon(QIcon(":/icons/comic_open.png"));
+    ui->actionZoom_out->setIcon(QIcon(":/icons/comic_open.png"));
+    ui->actionZoom_100->setIcon(QIcon(":/icons/comic_open.png"));
 
     toolbar->addAction(ui->actionOpen_files);
     toolbar->addAction(ui->actionZoom_in);
@@ -200,8 +205,6 @@ void MainWindow::setupDock() {
                 background: #ffffff;
                 border: 2px solid #e0e0e0;
                 border-radius: 8px;
-                padding: 5px;
-                margin: 5px;
                 color: #333;
                 transition: all 0.3s ease;
             }
@@ -214,8 +217,8 @@ void MainWindow::setupDock() {
         return btn;
     };
 
-    shortcutLayout->addWidget(createShortcutButton("Édition", ":resources/icons/comic-open.png"));
-    shortcutLayout->addWidget(createShortcutButton("Filtres", ":resources/icons/comic-open.png"));
+    shortcutLayout->addWidget(createShortcutButton("Édition", ":/icons/comic-open.png"));
+    shortcutLayout->addWidget(createShortcutButton("Filtres", ":/icons/comic-open.png"));
     shortcutLayout->addStretch();
 
     shortcutContent->setLayout(shortcutLayout);
@@ -226,24 +229,50 @@ void MainWindow::setupDock() {
 void MainWindow::setupMetadataPanel() {
     QDockWidget* metadataPanel = new QDockWidget("Métadonnées", this);
     metadataPanel->setFeatures(QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
+    metadataPanel->setStyleSheet(R"(
+        QDockWidget {
+            background: rgb(230, 230, 230);
+            border-radius: 4px;
+            margin: 1px;
+        }
+        QLabel {
+            margin: 5px;
+            padding: 2px;
+            color: #555;
+        }
+        QLabel[objectName^="metadata_"] {
+            font-size: 12px;
+            border-bottom: 1px solid #eee;
+        }
+    )");
 
     QWidget* metadataContent = new QWidget(metadataPanel);
     QVBoxLayout* layout = new QVBoxLayout(metadataContent);
 
-    QLabel* titleLabel = new QLabel("Titre : Inconnu", this);
-    QLabel* authorLabel = new QLabel("Auteur : Inconnu", this);
-    QLabel* pagesLabel = new QLabel("Pages : 0", this);
+    m_fileNameLabel = new QLabel("Fichier : Aucun", this);
+    m_fileNameLabel->setObjectName("metadata_title");
+    m_fileNameLabel->setStyleSheet("font-weight: bold; color: #2196F3; font-size: 14px;");
 
-    layout->addWidget(titleLabel);
-    layout->addWidget(authorLabel);
-    layout->addWidget(pagesLabel);
+    m_titleLabel = new QLabel("Titre : Inconnu", this);
+    m_authorLabel = new QLabel("Auteur : Inconnu", this);
+    m_pagesLabel = new QLabel("Pages : 0", this);
+
+    QFrame* separator = new QFrame();
+    separator->setFrameShape(QFrame::HLine);
+    separator->setStyleSheet("color: #ddd;");
+
+    layout->addWidget(m_fileNameLabel);
+    layout->addWidget(separator);
+    layout->addWidget(m_titleLabel);
+    layout->addWidget(m_authorLabel);
+    layout->addWidget(m_pagesLabel);
     layout->addStretch();
 
     metadataContent->setLayout(layout);
     metadataPanel->setWidget(metadataContent);
-
     addDockWidget(Qt::LeftDockWidgetArea, metadataPanel);
 }
+
 
 void MainWindow::setupStatusBar() {
     statusBar()->setStyleSheet("background: #ffffff; color: #333; border-top: 5px solid #e0e0e0;");
@@ -280,19 +309,45 @@ QGraphicsDropShadowEffect* MainWindow::createHoverEffect() {
 
 void MainWindow::on_actionOpen_files_triggered() {
     QString path = QFileDialog::getOpenFileName(this, "Ouvrir une image", 
-                "", "Images (*.png *.jpg *.bmp)");//Ouvre une boîte de dialogue pour sélectionner un fichier
+                "", "Images (*.png *.jpg *.jpeg *.bmp *.webp)");
     
     if (!path.isEmpty()) {
         try {
-            m_fileHandler = FileHandler(path.toStdString()); //Initialise FileHandler avec le chemin du fichier.
-            m_currentImage = m_fileHandler.readFile(); //Lit le fichier et crée une instance de l'image.
+            m_fileHandler = FileHandler(path.toStdString());
+            m_currentImage = m_fileHandler.readFile();
             m_pageView->render(*m_currentImage);
+
+            // Met à jour les métadonnées
+            QFileInfo fileInfo(path);
+            QImageReader reader(path);
+            
+            // Met à jour le nom de fichier
+            m_fileNameLabel->setText("Fichier : " + fileInfo.fileName());
+            
+            // Met à jour la barre de statut
+            m_fileInfoLabel->setText(QString(" | Taille: %1 KB - Dimensions: %2x%3 - Modifié: %4")
+                .arg(fileInfo.size() / 1024)
+                .arg(reader.size().width())
+                .arg(reader.size().height())
+                .arg(fileInfo.lastModified().toString("dd/MM/yyyy hh:mm")));
+            
+            // Met à jour les autres informations
+            m_titleLabel->setText("Titre : " + fileInfo.baseName());
+            m_pagesLabel->setText("Pages : " + QString::number(m_pageView->pageCount()));
+
+            // Essaye de récupérer les métadonnées EXIF
+            if(reader.canRead()) {
+                QString author = reader.text("Author");
+                if(!author.isEmpty()) m_authorLabel->setText("Auteur : " + author);
+            }
+
         } 
         catch (const std::exception& e) {
             QMessageBox::critical(this, "Erreur", e.what());
         }
     }
 }
+
 void MainWindow::on_actionSave_triggered() {
     // Implémentez la logique de sauvegarde
 }
