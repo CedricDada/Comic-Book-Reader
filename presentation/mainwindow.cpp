@@ -6,41 +6,97 @@ des éléments de l'interface utilisateur.*/
 #include <QMessageBox>
 /*Utilisé pour afficher des messages d'erreur ou d'information*/
 
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QMenuBar>
+
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
-      ui(new Ui::MainWindow), //Crée une instance de l'interface utilisateur.
-      m_pageView(new PageView(this)), // Crée une instance de PageView (vue pour afficher l'image).
-      m_fileHandler("") // Chemin vide initial
+
+      ui(new Ui::MainWindow),
+      m_pageView(new PageView(this)),
+      m_fileHandler("")
 {
     ui->setupUi(this);
+    setCentralWidget(m_pageView);
+
+    // ===================================================================
+    // CONFIGURATION DES ICÔNES DANS LA MENUBAR
+    // ===================================================================
     
-    // Configuration de la vue
-    setCentralWidget(m_pageView);//Définit m_pageView comme widget central de la fenêtre.
+    // Définir la taille des icônes (32x32 recommandé)
+    const QSize iconSize(48, 48);
     
-    // Connexion des signaux/slots
-    /*
-    ui->actionOpen_files : L'action "Ouvrir un fichier" dans l'interface.
+    // Assigner les icônes aux actions
+    // Ajouter l'icône à l'action Open_files
+    ui->actionOpen_files->setIcon(QIcon(":/icons/comic-open.png"));
+    
+    // Optionnel : forcer l'affichage si nécessaire
+    ui->actionOpen_files->setIconVisibleInMenu(true);
 
-    &QAction::triggered : Le signal émis lorsque l'action est déclenchée.
+    // Ajouter l'icône au menu Fichier
+    ui->menuFile->setIcon(QIcon(":resources/icons/comic-open.png"));
+    
+    // ui->actionSave->setIcon(QIcon(":/icons/comic-save.png"));
+    // ui->actionSave->setIconVisibleInMenu(true);
+    
+    // ui->actionZoom_in->setIcon(QIcon(":/icons/comic-zoom-in.png"));
+    // ui->actionZoom_in->setIconVisibleInMenu(true);
+    
+    // ui->actionZoom_out->setIcon(QIcon(":/icons/comic-zoom-out.png"));
+    // ui->actionZoom_out->setIconVisibleInMenu(true);
+    
+    // ui->actionZoom_100->setIcon(QIcon(":/icons/comic-zoom-reset.png"));
+    // ui->actionZoom_100->setIconVisibleInMenu(true);
 
-    this : L'objet qui contient le slot (ici, MainWindow).
+    // Style personnalisé pour la menubar
+    QMenuBar* menuBar = this->menuBar();
+    menuBar->setStyleSheet(R"(
+        QMenuBar {
+            background-color:rgb(110, 64, 189);
+            color: #FFFFFF;
+            padding: 2px;
+            border-bottom: 1px solid #404040;
+        }
+        QMenuBar::item#menuFileAction {
+            qproperty-icon: url(:/resources/icons/comic-open.png);
+            padding: 5px 10px;
+        }
+        QMenuBar::item:selected {
+            background: #404040;
+        }
+        QMenuBar::item {
+            padding: 5px 10px;
+            background: transparent;
+        }
+        QMenuBar::item:selected {
+            background: #404040;
+        }
+        QMenu {
+            background-color: #333333;
+            color: #FFFFFF;
+            border: 1px solid #444444;
+        }
+        QMenu::item {
+            padding: 5px 25px 5px 20px;
+        }
+        QMenu::item:selected {
+            background-color: #404040;
+        }
+        QMenu::icon {
+            padding-left: 5px;
+        }
+    )");
 
-    &MainWindow::on_actionOpen_files_triggered : La méthode à appeler (slot).
-    */
+// ===================================================================
+// FIN DES MODIFICATIONS
+// ===================================================================
+
+    // Connexions existantes...
     connect(ui->actionOpen_files, &QAction::triggered, 
             this, &MainWindow::on_actionOpen_files_triggered);
-    // connect(ui->actionSave, &QAction::triggered, 
-    //         this, &MainWindow::on_actionSave_triggered);
-    // connect(ui->actionZoom_in, &QAction::triggered, 
-    //         this, &MainWindow::on_actionZoom_in_triggered);
-    // connect(ui->actionZoom_out, &QAction::triggered, 
-    //         this, &MainWindow::on_actionZoom_out_triggered);
-    /*
-    Important : Automatisation avec on_<objectName>_<signal>
-    Qt permet de connecter automatiquement les signaux et slots si la méthode suit la nomenclature on_<objectName>_<signal>.
-
-    Par exemple, on_actionOpen_files_triggered() est automatiquement connecté à actionOpen_files->triggered().
-    */
 }
 
 MainWindow::~MainWindow() {

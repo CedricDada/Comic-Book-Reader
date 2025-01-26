@@ -2,9 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "PageView.h"      // Vue des pages
-#include "../repository/FileHandler.h"   // Accès aux fichiers
-#include "../infrastructure/ImageProcessor.h"// Traitement d'images
+#include "PageView.h"
+#include "../repository/FileHandler.h"
+#include "../infrastructure/ImageProcessor.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,7 +18,6 @@ public:
     ~MainWindow();
 
 private slots:
-    // Slots pour les actions du menu
     void on_actionOpen_files_triggered();
     void on_actionSave_triggered();
     void on_actionZoom_in_triggered();
@@ -27,9 +26,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    PageView *m_pageView;    // Composant d'affichage
-    FileHandler m_fileHandler{"chemin/par/default"}; // Initialisation directe
-    AbstractImage* m_currentImage = nullptr; // Image courante
+    PageView *m_pageView;
+    FileHandler m_fileHandler{"chemin/par/default"};
+    AbstractImage* m_currentImage = nullptr;
 };
 
 #endif // MAINWINDOW_H

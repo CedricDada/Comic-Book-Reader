@@ -5,7 +5,12 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools)
 
 qt_standard_project_setup()
 
-# Liste tous les fichiers sources
+# Ajouter le dossier des ressources
+file(GLOB RESOURCE_FILES
+    "./resources/resources.qrc"
+    "./resources/icons/*.png"
+)
+
 set(SOURCES
     main.cpp
     mainwindow.cpp
@@ -24,13 +29,8 @@ set(SOURCES
     ../model/AbstractImage.h
     ../infrastructure/ImageProcessor.cpp
     ../model/Filter.h 
-    
-    # LibraryView.cpp
-    # LibraryView.h
-    # SettingView.cpp
-    # SettingView.h
-    # UIManager.cpp
-    # UIManager.h
+    ${RESOURCE_FILES}  # Inclure les ressources
+    ./resources/resources.qrc
 )
 
 qt_add_executable(BookReaderView
