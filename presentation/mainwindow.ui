@@ -350,7 +350,7 @@
   </action>
   <action name="actionNext_page">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::MediaSkipBackward"/>
@@ -361,7 +361,7 @@
   </action>
   <action name="actionPrevious_page">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::MediaSkipForward"/>

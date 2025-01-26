@@ -22,6 +22,7 @@ public:
 
     // Persistance
     virtual void loadPages() = 0;
+    virtual void loadRawPages() = 0;
     virtual void save(const QString& path) = 0;
 
     int totalPages() const { return m_pages.size(); }
@@ -31,6 +32,7 @@ public:
 protected:
     QVector<Page> m_pages;
     QVariantMap m_metadata;
+    QVector<QByteArray> m_rawPagesData;
     QString m_filePath;
 };
 

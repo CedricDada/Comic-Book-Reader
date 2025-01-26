@@ -9,7 +9,7 @@
 class CacheManager {
 public:
     explicit CacheManager(int maxSize = 100);
-    
+    bool contains(int pageNumber) const;
     void storePage(int number, const Page& page);
     Page getPage(int number) const;
     void clear();

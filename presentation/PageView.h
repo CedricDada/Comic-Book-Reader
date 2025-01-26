@@ -14,10 +14,13 @@ class ImageProcessor;
 class PageView : public QGraphicsView {
     Q_OBJECT
 public:
+    void setCacheManager(CacheManager* manager) { 
+        m_cacheManager = manager; 
+    }
     explicit PageView(QWidget* parent = nullptr);
     
     // Méthodes existantes (non modifiées)
-    void render(const AbstractImage& page);
+    void render(const Page& page);
     void setZoom(float level);
     void toggleDualPageMode();
     
@@ -28,6 +31,8 @@ public:
 
     // Nouvelle méthode de mise à jour
     void updateDisplay(const Page& page);
+    void displayPage(const Page& page);
+    QImage loadImageFromData(const QByteArray& data);
 
 public slots:
     void displayPageAsync(const Page& page);

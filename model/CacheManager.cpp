@@ -25,15 +25,14 @@ void CacheManager::storePage(int number, const Page& page) {
 Page CacheManager::getPage(int number) const {
     QMutexLocker locker(&m_mutex);
     
-    if(Page* cached = m_cache.object(number)) {
+    if (Page* cached = m_cache.object(number)) {
         // Mise à jour de l'ordre d'accès
         const_cast<QList<int>&>(m_accessOrder).removeAll(number);
         const_cast<QList<int>&>(m_accessOrder).prepend(number);
         return *cached;
     }
-    throw std::runtime_error("Page non trouvée dans le cache");
+    return Page(); // Retourne une Page vide au lieu de lancer une exception
 }
-
 void CacheManager::clear() {
     QMutexLocker locker(&m_mutex);
     m_cache.clear();
@@ -41,7 +40,12 @@ void CacheManager::clear() {
 }
 
 int CacheManager::calculateCost(const Page& page) const {
-    return page.image->dataSize() / (1024 * 1024); // Coût en MB
+    // Priorité aux données brutes
+    if(!page.rawData.isEmpty()) {
+        return page.rawData.size() / (1024 * 1024); // Coût basé sur rawData
+    }
+    // Fallback sécurisé
+    return page.image ? page.image->dataSize() / (1024 * 1024) : 0;
 }
 
 void CacheManager::enforceCacheLimits() {
@@ -49,4 +53,8 @@ void CacheManager::enforceCacheLimits() {
         int lastUsed = m_accessOrder.takeLast();
         m_cache.remove(lastUsed);
     }
+}
+bool CacheManager::contains(int pageNumber) const {
+    QMutexLocker locker(&m_mutex);
+    return m_cache.contains(pageNumber);
 }

@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSlider>
 #include "../model/AbstractBook.h"  
 #include "PageView.h"      // Vue des pages
 #include "../repository/FileHandler.h"   // Accès aux fichiers
@@ -22,22 +23,29 @@ public:
 private slots:
     // Slots pour les actions du menu
     void on_actionOpen_files_triggered();
-    void on_actionSave_triggered();
+    void on_actionSave_in_file_triggered();
     void on_actionZoom_in_triggered();
     void on_actionZoom_out_triggered();
     void on_actionZoom_100_triggered();
+    void goToPage(int pageNumber);
+    void on_actionNext_page_triggered();
+    void on_actionPrevious_page_triggered();
 
 private:
     Ui::MainWindow *ui;
+    QSlider* m_pageSlider;
     PageView *m_pageView;    // Composant d'affichage
     FileHandler m_fileHandler{"chemin/par/default"}; // Initialisation directe
     AbstractImage* m_currentImage = nullptr; // Image courante
     BookManager* m_bookManager = nullptr;
-    CacheManager* m_cacheManager = nullptr;
-    QScopedPointer<AbstractBook> m_currentBook;
-
+    CacheManager* m_cacheManager;
+    std::shared_ptr<AbstractBook> m_currentBook;
+    void preloadNextPages(int currentPage);
     void loadFirstPage(); 
     void startPreloading(); 
+    void setupUI();
+
+
 };
 
 #endif // MAINWINDOW_H

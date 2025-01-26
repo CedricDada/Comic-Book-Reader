@@ -9,6 +9,7 @@
 #include <quazipfile.h>
 #include <QFileInfo>
 #include <algorithm>
+#include <iostream>
 
 CBZBook::CBZBook(const QString& path) {
     m_filePath = path;
@@ -40,11 +41,24 @@ void CBZBook::loadPages() {
     for(const QString& fileName : imageFiles) {
         if(m_zip.setCurrentFile(fileName) && file.open(QIODevice::ReadOnly)) {
             QByteArray data = file.readAll();
+                        // Afficher les données brutes
+            std::cout << "=== Données brutes pour " << fileName.toStdString() << " ===" << std::endl;
+            std::cout << "Taille des données : " << data.size() << " octets" << std::endl;
+
+            // Afficher les premiers octets (en hexadécimal)
+            const int previewSize = 64; // Nombre d'octets à afficher
+            std::cout << "Début des données (hex) : ";
+            for (int i = 0; i < qMin(previewSize, data.size()); ++i) {
+                printf("%02X ", static_cast<unsigned char>(data[i]));
+            }
+            std::cout << std::endl;
+            //charger l'image
             QImage qImage;
             if(qImage.loadFromData(data)) {
                 Page page;
                 page.number = m_pages.size();
-                page.image = new QImageAdapter(qImage); // Utilisation de l'adaptateur
+                page.rawData = data;
+                page.image = std::shared_ptr<AbstractImage>(new QImageAdapter(qImage));
                 page.metadata.insert("source", fileName);
                 m_pages.append(page);
             }
@@ -52,7 +66,53 @@ void CBZBook::loadPages() {
         }
     }
 }
+void CBZBook::loadRawPages() {
+    m_zip.setZipName(m_filePath);
+    
+    if (!m_zip.open(QuaZip::mdUnzip)) {
+        throw std::runtime_error("Échec d'ouverture du CBZ");
+    }
 
+    QuaZipFile file(&m_zip);
+    QuaZipFileInfo info;
+
+    // Collecter les fichiers image
+    QStringList imageFiles;
+    for (bool more = m_zip.goToFirstFile(); more; more = m_zip.goToNextFile()) {
+        if (m_zip.getCurrentFileInfo(&info) && info.name.endsWith(".jpg", Qt::CaseInsensitive)) {
+            imageFiles.append(info.name);
+        }
+    }
+
+    // Trier les fichiers
+    std::sort(imageFiles.begin(), imageFiles.end(), [](const QString& a, const QString& b) {
+        return QString::compare(a, b, Qt::CaseInsensitive) < 0;
+    });
+
+    // Charger les données brutes
+    m_rawPagesData.clear();
+    for (const QString& fileName : imageFiles) {
+        if (m_zip.setCurrentFile(fileName) && file.open(QIODevice::ReadOnly)) {
+            QByteArray data = file.readAll();
+            qDebug() << "Taille données :" << data.size();
+            m_rawPagesData.append(data); 
+            file.close();
+        }
+    }
+
+    // Créer les pages avec les données brutes
+    m_pages.clear();
+    for (int i = 0; i < m_rawPagesData.size(); ++i) {
+        Page page;
+        page.number = i;
+        page.rawData = m_rawPagesData[i]; 
+        page.metadata["source"] = imageFiles[i];
+        qDebug() << "Page" << i << " - Taille rawData :" << page.rawData.size();
+        m_pages.append(page);
+    }
+
+    m_zip.close();
+}
 void CBZBook::addPage(const Page& page) {
     m_pages.append(page);
 }

@@ -2,16 +2,22 @@
 #include "ui_mainwindow.h"/*ui_mainwindow.h : Généré automatiquement par Qt à partir du fichier .ui. Contient les déclarations 
 des éléments de l'interface utilisateur.*/
 #include <QFileDialog>
+#include <iostream>
+#include <memory>
 /*Utilisé pour ouvrir/sauvegarder des fichiers. */
 #include <QMessageBox>
+#include <QToolBar>
+
 /*Utilisé pour afficher des messages d'erreur ou d'information*/
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
       ui(new Ui::MainWindow), //Crée une instance de l'interface utilisateur.
+      m_cacheManager(new CacheManager(1024)),
       m_pageView(new PageView(this)), // Crée une instance de PageView (vue pour afficher l'image).
       m_fileHandler("") // Chemin vide initial
 {
+    m_pageView->setCacheManager(m_cacheManager);
     ui->setupUi(this);
     
     // Configuration de la vue
@@ -29,8 +35,8 @@ MainWindow::MainWindow(QWidget* parent)
     */
     connect(ui->actionOpen_files, &QAction::triggered, 
             this, &MainWindow::on_actionOpen_files_triggered);
-    // connect(ui->actionSave, &QAction::triggered, 
-    //         this, &MainWindow::on_actionSave_triggered);
+    connect(ui->actionSave_in_file, &QAction::triggered, 
+             this, &MainWindow::on_actionSave_in_file_triggered);
     // connect(ui->actionZoom_in, &QAction::triggered, 
     //         this, &MainWindow::on_actionZoom_in_triggered);
     // connect(ui->actionZoom_out, &QAction::triggered, 
@@ -61,32 +67,60 @@ void MainWindow::on_actionOpen_files_triggered() {
 
     if(!paths.isEmpty()) {
         m_bookManager = new BookManager(this);
-        m_cacheManager = new CacheManager(1024); // 1GB cache
 
         // Connexions des signaux
-        connect(m_bookManager, &BookManager::bookReady, 
-            [this](AbstractBook* book) {
-                /*
-                Connexion signal-slot
+          connect(m_bookManager, &BookManager::bookReady, 
+              [this](AbstractBook* book) {
+                  /*
+                  Connexion signal-slot
 
-                    Quand un livre est prêt (bookReady) :
+                     Quand un livre est prêt (bookReady) :
 
-                    Stocke le livre
+                      Stocke le livre
 
-                    Affiche la première page
+                      Affiche la première page
 
-                    Démarre le préchargement
-                */
-                m_currentBook.reset(book);
-                loadFirstPage();
-                startPreloading();
-            });
+                      Démarre le préchargement
+                  */
+                 m_currentBook.reset(book);
+                  loadFirstPage();
+                  startPreloading();
+              });
+    // connect(m_bookManager, &BookManager::bookReady, 
+    // [this](AbstractBook* book) {
+    //     m_currentBook.reset(book);
+        
+    //     // Debug 1: Vérification basique du livre
+    //     qDebug() << "Livre reçu. Valide ?" << (m_currentBook ? "Oui" : "Non");
+        
+    //     if(m_currentBook) {
+    //         // Debug 2: Informations générales du livre
+    //         qDebug() << "Nombre de pages:" << m_currentBook->pageCount()
+    //                  << "| Format:" << m_currentBook->metadata()["format"].toString() 
+    //                  << "| Taille du cache:" << m_currentBook->pages().size();
+    //         // Debug : vérifier les données reçues
+    //         qDebug() << "Données brutes reçues :";
+    //         for (const Page& page : book->pages()) {
+    //             qDebug() << "Page" << page.number << " - Taille rawData :" << page.rawData.size();
+    //         }
+
+    //         if(m_currentBook->pageCount() > 0) {
+    //             // Accéder au thread principal pour l'UI
+    //             QMetaObject::invokeMethod(m_pageView, [this]() {
+    //                 m_pageView->render(m_currentBook->pageAt(0));
+    //             }, Qt::QueuedConnection); // Ne PAS utiliser BlockingQueuedConnection
+    //         }
+    //         else {
+    //             qWarning() << "Livre valide mais sans pages !";
+    //         }
+    //     }
+    // });
 
         connect(m_bookManager, &BookManager::pageProcessed, 
             [this](int index) {
                 if(index == 0 && m_currentBook && !m_currentBook->pages().empty()) {
                     Page page = m_currentBook->pageAt(0);
-                    m_pageView->updateDisplay(page);
+                    m_pageView->render(page);
                 }
             });
 
@@ -116,23 +150,33 @@ void MainWindow::loadFirstPage() {
 }
 
 void MainWindow::startPreloading() {
-    if(m_currentBook) {
-        QFuture<void> future = QtConcurrent::run([this](){
-            for(int i = 1; i < m_currentBook->totalPages(); ++i) {
-                Page page = m_currentBook->pageAt(i);
-                ImageProcessor::processImage(page.image);
+    auto currentBook = m_currentBook;
+    if (currentBook) {
+        QFuture<void> future = QtConcurrent::run([this, currentBook]() {
+            for (int i = 1; i < currentBook->totalPages(); ++i) {
+                Page page = currentBook->pageAt(i);
+                if (!page.image) {
+                    qWarning() << "Image non initialisée pour la page" << i;
+                    continue;
+                }
+                qDebug() << "Préchargement page" << i;
+                if(!page.image) {
+                    qWarning() << "Image null pour page" << i;
+                    continue;
+                }
+                ImageProcessor::processImage(page.image.get());
                 m_cacheManager->storePage(page.number, page);
                 QMetaObject::invokeMethod(m_pageView, "updateDisplay", 
                     Qt::QueuedConnection,
                     Q_ARG(QImage, page.image->toQImage()));
             }
         });
-        Q_UNUSED(future); // Supprime l'avertissement
+        Q_UNUSED(future);
     }
 }
 
 // Slot : Sauvegarde
-void MainWindow::on_actionSave_triggered() {
+void MainWindow::on_actionSave_in_file_triggered() {
     QString path = QFileDialog::getSaveFileName(this, "Enregistrer", 
                   "", "Images (*.png *.jpg *.bmp *.pdf *cbz)");
     
@@ -154,4 +198,63 @@ void MainWindow::on_actionZoom_out_triggered() {
 // Slot : Zoom arrière
 void MainWindow::on_actionZoom_100_triggered() {
     m_pageView->setZoom(m_pageView->zoomLevel());
+}
+// Initialisation des contrôles
+void MainWindow::setupUI() {
+    m_pageSlider = new QSlider(Qt::Horizontal, this);
+    connect(m_pageSlider, &QSlider::valueChanged, this, &MainWindow::goToPage);
+    
+    QToolBar* navBar = addToolBar("Navigation");
+    navBar->addAction("←", this, &MainWindow::on_actionPrevious_page_triggered);
+    navBar->addWidget(m_pageSlider);
+    navBar->addAction("→", this, &MainWindow::on_actionNext_page_triggered);
+}
+
+// Navigation vers une page spécifique
+void MainWindow::goToPage(int pageNumber) {
+    if(!m_currentBook || pageNumber < 0 || pageNumber >= m_currentBook->totalPages()) return;
+
+    try {
+        // Tentative de récupération depuis le cache
+        Page page = m_cacheManager->getPage(pageNumber);
+        m_pageView->displayPage(page);
+    } 
+    catch (const std::exception&) {
+        // Chargement asynchrone si absent du cache
+        m_pageView->displayPageAsync(m_currentBook->pageAt(pageNumber));
+    }
+
+    // Préchargement des 3 pages suivantes
+    preloadNextPages(pageNumber);
+}
+
+void MainWindow::on_actionNext_page_triggered() {
+    goToPage(m_pageSlider->value() + 1);
+}
+
+void MainWindow::on_actionPrevious_page_triggered() {
+    goToPage(m_pageSlider->value() - 1);
+}
+void MainWindow::preloadNextPages(int currentPage) {
+    if(!m_currentBook) return;
+
+    QtConcurrent::run([this, currentPage]() {
+        const int totalPages = m_currentBook->totalPages();
+        
+        for(int i = 1; i <= 3; ++i) {
+            const int targetPage = currentPage + i;
+            if(targetPage >= totalPages) break;
+
+            try {
+                // Vérification existence dans cache
+                m_cacheManager->getPage(targetPage);
+            }
+            catch (const std::exception&) {
+                // Chargement et stockage asynchrone
+                Page page = m_currentBook->pageAt(targetPage);
+                ImageProcessor::processRawData(page.rawData);
+                m_cacheManager->storePage(targetPage, page);
+            }
+        }
+    });
 }

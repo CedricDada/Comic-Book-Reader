@@ -65,7 +65,7 @@ void CBRBook::loadPages() {
                 if(img.loadFromData(data)) {
                     Page page;
                     page.number = m_pages.size();
-                    page.image = new QImageAdapter(img);
+                    page.image = std::shared_ptr<AbstractImage>(new QImageAdapter(img));
                     page.metadata.insert("source", filename);
                     m_pages.append(page);
                 }
@@ -73,6 +73,11 @@ void CBRBook::loadPages() {
             }
         }
     }
+}
+void CBRBook::loadRawPages() {
+
+    // Implémentation temporaire
+    throw std::runtime_error("Non implémenté");
 }
 
 // Basic implementation for abstract methods

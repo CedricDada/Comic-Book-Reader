@@ -181,12 +181,12 @@ public:
         actionLast_page->setIcon(icon9);
         actionNext_page = new QAction(MainWindow);
         actionNext_page->setObjectName("actionNext_page");
-        actionNext_page->setEnabled(false);
+        actionNext_page->setEnabled(true);
         QIcon icon10(QIcon::fromTheme(QString::fromUtf8("QIcon::ThemeIcon::MediaSkipBackward")));
         actionNext_page->setIcon(icon10);
         actionPrevious_page = new QAction(MainWindow);
         actionPrevious_page->setObjectName("actionPrevious_page");
-        actionPrevious_page->setEnabled(false);
+        actionPrevious_page->setEnabled(true);
         QIcon icon11(QIcon::fromTheme(QString::fromUtf8("QIcon::ThemeIcon::MediaSkipForward")));
         actionPrevious_page->setIcon(icon11);
         actionScroll_up = new QAction(MainWindow);

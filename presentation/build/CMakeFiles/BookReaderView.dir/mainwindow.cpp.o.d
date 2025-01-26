@@ -357,6 +357,9 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QSlider \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/AbstractBook.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/Page.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/AbstractImage.h \
@@ -365,6 +368,32 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/ImageProcessor.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/../model/AbstractImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/../infrastructure/Filter.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QBuffer \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbuffer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImageReader \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimagereader.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreevent.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qeventloop.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnativeinterface.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimageiohandler.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qplugin.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsonobject.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsonvalue.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -407,13 +436,11 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20iterator.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q23functional.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractanimation.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstracteventdispatcher.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qeventloop.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractproxymodel.h \
@@ -424,10 +451,6 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qapplicationstatic.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMutex \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreevent.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qnativeinterface.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
@@ -437,24 +460,13 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbitarray.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbuffer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearraymatcher.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborarray.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcbormap.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborstream.h \
@@ -546,7 +558,6 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /usr/include/c++/11/bits/std_thread.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrunnable.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qexception.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpointer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpromise.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfutureinterface.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfuturesynchronizer.h \
@@ -564,7 +575,6 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsonarray.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsonvalue.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsondocument.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsonobject.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsonvalue.h \
@@ -601,10 +611,8 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qanimationgroup.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpauseanimation.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qplugin.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qjsonobject.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpluginloader.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlibrary.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qplugin.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpointer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qprocess.h \
@@ -857,4 +865,6 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h \
  /usr/include/c++/11/iostream \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QMessageBox \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qmessagebox.h
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qmessagebox.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolBar \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbar.h

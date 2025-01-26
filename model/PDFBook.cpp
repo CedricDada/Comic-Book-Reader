@@ -22,6 +22,10 @@ void PDFBook::loadPages() {
         ));
     }
 }
+void PDFBook::loadRawPages() {
+    // Implémentation temporaire
+    throw std::runtime_error("Non implémenté");
+}
 
 // Implémentations minimales pour les méthodes abstraites
 void PDFBook::addPage(const Page& page) { /*...*/ }

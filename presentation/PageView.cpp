@@ -1,33 +1,34 @@
 #include "PageView.h"
 #include "../model/CacheManager.h"
 #include <QGraphicsPixmapItem>
+#include <QDebug> // Ajout pour le débogage
 
 PageView::PageView(QWidget* parent) // Modification ici
     : QGraphicsView(parent), 
       m_currentPage(0),
       m_zoomLevel(1.0),
       m_dualPageMode(false),
+      m_cacheManager(new CacheManager(1024)),
       m_scene(new QGraphicsScene(this)) // Initialisation correcte
 {
     setScene(m_scene);
 }
 
-void PageView::render(const AbstractImage& page) {
-    m_scene->clear();
+// void PageView::render(const AbstractImage& page) {
+//     m_scene->clear();
     
-    // Conversion du vector<uint8_t> vers QByteArray
-    QByteArray imageData = QByteArray::fromRawData(
-        reinterpret_cast<const char*>(page.data().data()), 
-        static_cast<int>(page.data().size())
-    );
+//     // Conversion du vector<uint8_t> vers QByteArray
+//     QByteArray imageData = QByteArray::fromRawData(
+//         reinterpret_cast<const char*>(page.data().data()), 
+//         static_cast<int>(page.data().size())
+//     );
     
-    QPixmap pixmap;
-    if (pixmap.loadFromData(imageData, page.format().c_str())) {
-        m_scene->addPixmap(pixmap);
-    } else {
-        qWarning() << "Échec du chargement de l'image";
-    }
-}
+//     QPixmap pixmap;
+//     if (pixmap.loadFromData(imageData, page.format().c_str())) {
+//         m_scene->addPixmap(pixmap);
+//     } else {
+//         qWarning() << "Échec du chargement de l'image";
+//     }
 float PageView::zoomLevel() const {
     return m_zoomLevel;
 }
@@ -39,29 +40,26 @@ void PageView::setZoom(float level) {
 }
 
 void PageView::displayPageAsync(const Page& page) {
+    if (!m_cacheManager) {
+        qCritical() << "CacheManager non initialisé !";
+        return;
+    }
     QFuture<void> future = QtConcurrent::run([=](){
         try {
-            // 1. Tentative de récupération depuis le cache
             Page cachedPage = m_cacheManager->getPage(page.number);
             
-            // 2. Si non trouvé ou besoin de traitement
-            if(cachedPage.image == nullptr) {
-                // Clone profond pour ne pas modifier l'original
-                AbstractImage* processedImage = page.image->clone();
-                ImageProcessor::processImage(processedImage);
-                
-                // Création d'une nouvelle page avec l'image traitée
-                Page processedPage(page.number, processedImage, page.metadata);
-                
-                // Stockage dans le cache
+            // Si la page du cache est vide ou nécessite un traitement
+            if (cachedPage.rawData.isEmpty() && cachedPage.image == nullptr) {
+                QByteArray processedData = ImageProcessor::processRawData(page.rawData);
+                Page processedPage(page.number, processedData, page.metadata);
                 m_cacheManager->storePage(page.number, processedPage);
                 cachedPage = processedPage;
             }
 
-            // 3. Mise à jour UI avec métadonnées
+            qDebug() << "CachedPage" << cachedPage.number << " - Taille rawData :" << cachedPage.rawData.size();
+
             QMetaObject::invokeMethod(this, [=](){
-                updateDisplay(cachedPage); // Maintenant avec Page complète
-                //updateMetadataDisplay(cachedPage.metadata); // Nouvelle méthode
+                updateDisplay(cachedPage); // Utilisez updateDisplay avec vérifications
             }, Qt::QueuedConnection);
         }
         catch(const std::exception& e) {
@@ -70,10 +68,57 @@ void PageView::displayPageAsync(const Page& page) {
     });
     Q_UNUSED(future);
 }
-
 void PageView::updateDisplay(const Page& page) {
-    QImage image = page.image->toQImage();
-    QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(image));
+    if (page.rawData.isEmpty() && !page.image) {
+        qWarning() << "Données manquantes pour la page" << page.number;
+        return;
+    }
+
+    QImage qimg;
+    if (!page.rawData.isEmpty()) {
+        qimg.loadFromData(page.rawData);
+    } else if (page.image) {
+        qimg = page.image->toQImage();
+    }
+
+    if (qimg.isNull()) {
+        qCritical() << "Échec du chargement de l'image";
+        return;
+    }
+
+    m_scene->clear();
+    QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(qimg));
     item->setTransformationMode(Qt::SmoothTransformation);
     fitInView(item, Qt::KeepAspectRatio);
+}
+// }
+void PageView::render(const Page& page) {
+    if(page.rawData.isEmpty()) {
+        qCritical() << "Données brutes vides !";
+        return;
+    }
+
+    // Conversion EXCLUSIVE dans le thread principal
+    QImage qimg;
+    if(!qimg.loadFromData(page.rawData)) {
+        qCritical() << "Échec du chargement QImage";
+        return;
+    }
+
+    m_scene->clear();
+    QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(qimg));
+    item->setTransformationMode(Qt::SmoothTransformation);
+}
+void PageView::displayPage(const Page& page) {
+    if(page.rawData.isEmpty()) {
+        qWarning() << "Page" << page.number << "non disponible";
+        return;
+    }
+
+    QImage qimg;
+    if(qimg.loadFromData(page.rawData)) {
+        m_scene->clear();
+        QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(qimg));
+        item->setTransformationMode(Qt::SmoothTransformation);
+    }
 }

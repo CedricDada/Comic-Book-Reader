@@ -11,33 +11,26 @@ BookManager::BookManager(QObject* parent)
 {}
 
 void BookManager::openBook(const QString& path) {
-    QtConcurrent::run([this, path](){
+    QFuture<void> future = QtConcurrent::run([this, path](){
         try {
             std::unique_ptr<AbstractBook> book = createBook(path);
-            book->loadPages();
-            
-            // Récupérer les 5 premières pages
-            QVector<Page> initialPages;
-            for(int i = 0; i < qMin(5, book->pageCount()); ++i) {
-                initialPages.append(book->getPage(i));
+            book->loadRawPages(); // Nouvelle méthode qui ne crée pas de QImage
+            // Debug : vérifier les données avant transfert
+            qDebug() << "Données brutes avant transfert :";
+            for (const Page& page : book->pages()) {
+                qDebug() << "Page" << page.number << " - Taille rawData :" << page.rawData.size();
             }
             
-            // Préchargement asynchrone des pages restantes
-            m_PLoader.preloadPages(
-                book.get(), 
-                initialPages.size(),
-                book->pageCount() - initialPages.size(),
-                ContentType::AutoDetect
-            );
-            
-            // Émettre le signal avec ownership transféré
-            emit bookReady(book.release());
+            QMetaObject::invokeMethod(this, [this, book = book.release()]() {
+                emit bookReady(book); // Émission dans le thread principal
+            }, Qt::QueuedConnection);
         }
         catch (const std::exception& e) {
             qWarning() << "Error opening book:" << e.what();
             emit openFailed(e.what());
         }
     });
+    Q_UNUSED(future);
 }
 
 std::unique_ptr<AbstractBook> BookManager::createBook(const QString& path) {

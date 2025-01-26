@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
             break;
         }
     }
+    qSetMessagePattern("[%{type}] %{function}:%{line} - %{message}");
+    QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     MainWindow w;
     w.show();
     return a.exec();

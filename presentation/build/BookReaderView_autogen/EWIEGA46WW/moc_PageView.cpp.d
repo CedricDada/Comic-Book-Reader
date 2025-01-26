@@ -20,6 +20,7 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/qtconcurrenttask.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/qtconcurrentthreadengine.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/qtconcurrentversion.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QBuffer \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QCache \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDeadlineTimer \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QHash \
@@ -276,6 +277,7 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qxpfunctional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImage \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImageReader \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
@@ -286,6 +288,8 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimageiohandler.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimagereader.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainter.h \
