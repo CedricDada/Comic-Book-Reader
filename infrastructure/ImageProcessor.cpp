@@ -2,6 +2,9 @@
 #include <QtMath>
 #include <vector>
 #include "Filter.h"
+#include <QBuffer>
+#include <QImageReader>
+
 
 // Conversion sécurisée avec copie indépendante
 QImage ImageProcessor::convertToQImage(const AbstractImage* image) {
@@ -26,17 +29,18 @@ QImage::Format ImageProcessor::parseFormat(AbstractImage::Format format) {
 
 // Mise à jour des données de l'image source
 void ImageProcessor::updateImageData(AbstractImage* image, const QImage& processed) {
-    QByteArray newData(
-        reinterpret_cast<const char*>(processed.constBits()),
-        processed.sizeInBytes()
-    );
-    
-    std::vector<unsigned char> newDataVector(newData.begin(), newData.end());
+    // Convert QImage to the AbstractImage's native format
+    QByteArray byteArray;
+    QBuffer buffer(&byteArray);
+    buffer.open(QIODevice::WriteOnly);
+    processed.save(&buffer, AbstractImage::formatToString(image->format()).c_str());
+
+    // Update using the abstract interface
     image->setData(
-        newDataVector,
+        std::vector<unsigned char>(byteArray.begin(), byteArray.end()),
         processed.width(),
         processed.height(),
-        AbstractImage::formatToString(image->format())    
+        AbstractImage::formatToString(image->format())
     );
 }
 
@@ -61,7 +65,7 @@ void ImageProcessor::resize(AbstractImage* image, int width, int height, bool ke
 }
 
 void ImageProcessor::applyFilter(AbstractImage* image, ContentType contentType, float intensity) {
-    QImage qimg = convertToQImage(image);
+    QImage qimg = convertToQImage(image); // internal conversion
     intensity = qBound(0.0f, intensity, 1.0f);
     
     // Sélection dynamique des filtres
@@ -86,7 +90,7 @@ void ImageProcessor::applyFilter(AbstractImage* image, ContentType contentType, 
         filter->apply(qimg, contentType);
     }
     
-    updateImageData(image, qimg);
+    updateImageData(image, qimg); // write back to the image
 }
 
 void ImageProcessor::optimizeForDisplay(AbstractImage* image) {

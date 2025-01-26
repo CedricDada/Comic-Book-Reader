@@ -168,6 +168,15 @@ void MainWindow::setupToolbar(QToolBar* toolbar) {
         toolbar->addAction(ui->actionOpen_files);
     toolbar->addAction(actionManageLib); // Ajout du nouveau bouton
 
+    QAction* actionLowPassFilter = new QAction(QIcon(":/icons/lowpass.png"), "Low Pass Filter", this);
+    QAction* actionTextEnhancementFilter = new QAction(QIcon(":/icons/textenhance.png"), "Text Enhancement Filter", this);
+
+    toolbar->addAction(actionLowPassFilter);
+    toolbar->addAction(actionTextEnhancementFilter);
+
+    connect(actionLowPassFilter, &QAction::triggered, this, &MainWindow::applyLowPassFilter);
+    connect(actionTextEnhancementFilter, &QAction::triggered, this, &MainWindow::applyTextEnhancementFilter);
+    
     for (QAction* action : toolbar->actions()) {
         QToolButton* btn = qobject_cast<QToolButton*>(toolbar->widgetForAction(action));
         if (btn) {
@@ -423,4 +432,20 @@ void MainWindow::animateZoom() {
     animation->setStartValue(m_pageView->getZoomLevel());
     animation->setEndValue(100);
     animation->start(QAbstractAnimation::DeleteWhenStopped);
+}
+
+// After: Work through AbstractImage interface
+void MainWindow::applyLowPassFilter() {
+    if (m_currentImage) {
+        // Let ImageProcessor handle conversions internally
+        ImageProcessor::applyFilter(m_currentImage, ContentType::GraphicDominant, 0.7f);
+        m_pageView->render(*m_currentImage);
+    }
+}
+
+void MainWindow::applyTextEnhancementFilter() {
+    if (m_currentImage) {
+        ImageProcessor::applyFilter(m_currentImage, ContentType::TextDominant, 1.0f);
+        m_pageView->render(*m_currentImage); // Pass AbstractImage reference
+    }
 }

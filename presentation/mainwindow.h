@@ -39,6 +39,8 @@ private slots:
     void on_actionZoom_out_triggered();
     void on_actionZoom_100_triggered();
     void addLibraryDirectory(); // Nouveau slot pour l'ajout de bibliothèque
+    void applyLowPassFilter();
+    void applyTextEnhancementFilter();
     
 private:
     Ui::MainWindow *ui;
@@ -56,6 +58,7 @@ private:
     QLabel* m_pagesLabel;
     QLabel* m_zoomLabel;
     QLabel* m_fileInfoLabel;
+    
     
     // Méthodes d'initialisation
     void applyLightTheme();
