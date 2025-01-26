@@ -55,6 +55,12 @@
 },
 {
   "directory": "D:/Comic-Book-Reader/build",
+  "command": "D:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -ID:/Comic-Book-Reader/build/BookReaderView_autogen/include -isystem D:/Qt/6.5.8/mingw_64/include/QtCore -isystem D:/Qt/6.5.8/mingw_64/include -isystem D:/Qt/6.5.8/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.5.8/mingw_64/include/QtWidgets -isystem D:/Qt/6.5.8/mingw_64/include/QtGui -g -o CMakeFiles\\BookReaderView.dir\\D_\\Comic-Book-Reader\\infrastructure\\Filter.cpp.obj -c D:\\Comic-Book-Reader\\infrastructure\\Filter.cpp",
+  "file": "D:\\Comic-Book-Reader\\infrastructure\\Filter.cpp",
+  "output": "CMakeFiles\\BookReaderView.dir\\D_\\Comic-Book-Reader\\infrastructure\\Filter.cpp.obj"
+},
+{
+  "directory": "D:/Comic-Book-Reader/build",
   "command": "D:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -ID:/Comic-Book-Reader/build/BookReaderView_autogen/include -isystem D:/Qt/6.5.8/mingw_64/include/QtCore -isystem D:/Qt/6.5.8/mingw_64/include -isystem D:/Qt/6.5.8/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.5.8/mingw_64/include/QtWidgets -isystem D:/Qt/6.5.8/mingw_64/include/QtGui -g -o CMakeFiles\\BookReaderView.dir\\.rcc\\qrc_BookReaderView_translations.cpp.obj -c D:\\Comic-Book-Reader\\build\\.rcc\\qrc_BookReaderView_translations.cpp",
   "file": "D:\\Comic-Book-Reader\\build\\.rcc\\qrc_BookReaderView_translations.cpp",
   "output": "CMakeFiles\\BookReaderView.dir\\.rcc\\qrc_BookReaderView_translations.cpp.obj"

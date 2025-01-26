@@ -1,8 +1,8 @@
 D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/Comic-Book-Reader/presentation/mainwindow.h \
   D:/Comic-Book-Reader/build/BookReaderView_autogen/moc_predefs.h \
+  D:/Comic-Book-Reader/infrastructure/Filter.h \
   D:/Comic-Book-Reader/infrastructure/ImageProcessor.h \
   D:/Comic-Book-Reader/model/AbstractImage.h \
-  D:/Comic-Book-Reader/model/Filter.h \
   D:/Comic-Book-Reader/presentation/PageView.h \
   D:/Comic-Book-Reader/repository/FileHandler.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/QPropertyAnimation \
@@ -129,6 +129,7 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qxptype_traits.h \
+  D:/Qt/6.5.8/mingw_64/include/QtGui/QImage \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qabstractfileiconprovider.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qaction.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qbitmap.h \

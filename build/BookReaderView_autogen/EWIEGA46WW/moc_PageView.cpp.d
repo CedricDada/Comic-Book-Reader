@@ -109,6 +109,7 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_PageView.cpp: D
   D:/Qt/6.5.8/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.5.8/mingw_64/include/QtCore/qxptype_traits.h \
+  D:/Qt/6.5.8/mingw_64/include/QtGui/QImage \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qaction.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qbitmap.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qbrush.h \

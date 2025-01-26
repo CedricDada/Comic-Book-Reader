@@ -17,6 +17,8 @@
 #include <QDir>
 #include <QFileIconProvider>
 #include <QImageReader>
+#include <qimage.h>
+#include "../infrastructure/Filter.h"
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
@@ -41,6 +43,11 @@ MainWindow::MainWindow(QWidget* parent)
 
 MainWindow::~MainWindow() {
     delete ui;
+}
+
+void MainWindow::applyFilterToImage(QImage &image, ContentType contentType) {
+    auto filter = AbstractFilter::createLowPassFilter(0.5f); // Exemple de filtre passe-bas
+    filter->apply(image, contentType);
 }
 
 // Ajout de la configuration de la vue bibliothèque
@@ -315,8 +322,13 @@ void MainWindow::on_actionOpen_files_triggered() {
         try {
             m_fileHandler = FileHandler(path.toStdString());
             m_currentImage = m_fileHandler.readFile();
-            m_pageView->render(*m_currentImage);
+            QImage image = m_currentImage->toQImage();
 
+            // Appliquer le filtre avant de rendre l'image
+            applyFilterToImage(image, ContentType::AutoDetect);
+
+            //m_pageView->render(image);
+            m_pageView->render(*m_currentImage); // Assuming m_currentImage is a AbstractImage
             // Met à jour les métadonnées
             QFileInfo fileInfo(path);
             QImageReader reader(path);
@@ -337,14 +349,14 @@ void MainWindow::on_actionOpen_files_triggered() {
 
             // Essaye de récupérer les métadonnées EXIF
             if (reader.canRead()) {
-            QString author = reader.text("Author");
-            if (!author.isEmpty()) {
-                m_authorLabel->setText("Auteur : " + author);
-            } else {
-                m_authorLabel->setText("Auteur : Inconnu");
+                QString author = reader.text("Author");
+                if (!author.isEmpty()) {
+                    m_authorLabel->setText("Auteur : " + author);
+                } else {
+                    m_authorLabel->setText("Auteur : Inconnu");
             }
             } else {
-            m_authorLabel->setText("Auteur : Inconnu");
+                m_authorLabel->setText("Auteur : Inconnu");
             }
         } 
         catch (const std::exception& e) {

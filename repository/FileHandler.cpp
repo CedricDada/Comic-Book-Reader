@@ -4,10 +4,12 @@
 #include "../model/BMPImage.h"
 #include <fstream>
 #include <cstring> // Pour memcmp
+#include <QImageReader>
 
 FileHandler::FileHandler(const std::string& path) : m_filePath(path) {}
 
 AbstractImage* FileHandler::readFile() {
+    
     std::ifstream file(m_filePath, std::ios::binary);
     if (!file.is_open()) throw std::runtime_error("Erreur d'ouverture");
     
@@ -17,10 +19,15 @@ AbstractImage* FileHandler::readFile() {
     );
     
     std::string format = detectFormat(data);
+
+    // First extract dimensions from the file
+    QImageReader reader(QString::fromStdString(m_filePath));
+    int width = reader.size().width();
+    int height = reader.size().height();
     
-    if (format == "PNG") return new PNGImage(data);
-    if (format == "JPEG") return new JPEGImage(data);
-    if (format == "BMP") return new BMPImage(data);
+    if (format == "PNG") return new PNGImage(data, width, height);
+    if (format == "JPEG") return new JPEGImage(data, width, height);
+    if (format == "BMP") return new BMPImage(data, width, height);
     
     throw std::runtime_error("Format non supporté");
 }

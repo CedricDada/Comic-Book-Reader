@@ -12,6 +12,13 @@
 #include <QLabel>
 #include <QGraphicsDropShadowEffect>
 #include <QDockWidget>
+#include <QMainWindow>
+#include <QGraphicsDropShadowEffect>
+#include <QLabel>
+#include <QDockWidget>
+#include <QTreeWidget>
+#include "../infrastructure/Filter.h"
+#include "../presentation/PageView.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,6 +29,7 @@ class MainWindow : public QMainWindow {
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    void applyFilterToImage(QImage& image, ContentType contentType);
     ~MainWindow();
 
 private slots:
@@ -31,7 +39,6 @@ private slots:
     void on_actionZoom_out_triggered();
     void on_actionZoom_100_triggered();
     void addLibraryDirectory(); // Nouveau slot pour l'ajout de bibliothèque
-
     
 private:
     Ui::MainWindow *ui;

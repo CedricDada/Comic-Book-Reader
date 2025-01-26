@@ -28,7 +28,8 @@ set(SOURCES
     ../repository/FileHandler.h
     ../model/AbstractImage.h
     ../infrastructure/ImageProcessor.cpp
-    ../model/Filter.h 
+    ../infrastructure/Filter.h
+    ../infrastructure/Filter.cpp 
     ${RESOURCE_FILES}  # Inclure les ressources
     ./resources/resources.qrc
 )
