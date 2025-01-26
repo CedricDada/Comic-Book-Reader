@@ -9,6 +9,7 @@
 #include <QPropertyAnimation>
 #include <QLabel>
 #include <QGraphicsDropShadowEffect>
+#include <QDockWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -28,30 +29,35 @@ private slots:
     void on_actionZoom_out_triggered();
     void on_actionZoom_100_triggered();
     
-
 private:
     Ui::MainWindow *ui;
     PageView *m_pageView;
     FileHandler m_fileHandler{"chemin/par/default"};
     AbstractImage* m_currentImage = nullptr;
-        void applyLightTheme();
+    QDockWidget* m_libraryDock; // Nouveau membre pour la vue bibliothèque
+    
+    // Méthodes d'initialisation
+    void applyLightTheme();
     void applyDarkTheme();
     QGraphicsDropShadowEffect* createHoverEffect();
+    void setupInterface();
+    void setupConnections();
+    void setupToolbar(QToolBar* toolbar);
+    void setupDock();
+    void setupStatusBar();
+    void setupMetadataPanel();
+    void setupLibraryView(); // Nouvelle méthode pour la bibliothèque
 
     // Variables membres
     QLabel* m_zoomLabel;
     QLabel* m_fileInfoLabel;
     QPropertyAnimation* m_fadeAnimation;
     bool m_isDarkTheme = false;
+    
+    // Méthodes utilitaires
     void toggleTheme();
     void updateZoomLabel();
     void animateZoom();
-    void setupInterface();      // Déclaration
-    void setupConnections();    // Déclaration
-    void setupToolbar(QToolBar* toolbar);  // Déclaration
-    void setupDock();           // Déclaration
-    void setupStatusBar();      // Déclaration
-    void setupMetadataPanel();
 };
 
 #endif // MAINWINDOW_H

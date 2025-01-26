@@ -150,6 +150,7 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtGui/qtransform.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Qt/6.5.8/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/QDockWidget \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsScene \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsView \
@@ -158,6 +159,7 @@ D:/Comic-Book-Reader/build/BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/QToolButton \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/Qt/6.5.8/mingw_64/include/QtWidgets/qdockwidget.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qframe.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qgraphicseffect.h \
   D:/Qt/6.5.8/mingw_64/include/QtWidgets/qgraphicsscene.h \

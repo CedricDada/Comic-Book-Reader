@@ -511,6 +511,7 @@ D:/Comic-Book-Reader/presentation/mainwindow.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtGui/qtransform.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/QDockWidget
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsScene
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/QGraphicsView
@@ -519,6 +520,7 @@ D:/Comic-Book-Reader/presentation/mainwindow.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/QToolButton
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/qabstractscrollarea.h
+ mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/qdockwidget.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/qframe.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/qgraphicseffect.h
  mdp:D:/Qt/6.5.8/mingw_64/include/QtWidgets/qgraphicsscene.h

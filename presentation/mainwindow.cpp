@@ -12,6 +12,8 @@
 #include <QTimer>
 #include <QToolButton>
 #include <QFileInfo>
+#include <QListWidget>
+#include <QPushButton>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
@@ -25,10 +27,47 @@ MainWindow::MainWindow(QWidget* parent)
     setupInterface();
     setupConnections();
     applyLightTheme(); // Par défaut, thème clair
+
+    // initialisation de la vue bibliothèque
+    setupLibraryView();
 }
 
 MainWindow::~MainWindow() {
     delete ui;
+}
+
+// Ajout de la configuration de la vue bibliothèque
+void MainWindow::setupLibraryView() {
+    m_libraryDock = new QDockWidget("Bibliothèques", this);
+    m_libraryDock->setFeatures(QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
+    
+    QWidget* libraryContent = new QWidget(m_libraryDock);
+    QVBoxLayout* layout = new QVBoxLayout(libraryContent);
+    
+    // Widgets pour la gestion des bibliothèques
+    QListWidget* libraryList = new QListWidget(this);
+    QPushButton* btnAddLibrary = new QPushButton("Ajouter une bibliothèque", this);
+    
+    // Style similaire aux autres panneaux
+    m_libraryDock->setStyleSheet(R"(
+        QDockWidget {
+            background: rgb(230, 230, 230);
+            border-radius: 4px;
+            margin: 1px;
+        }
+        QListWidget {
+            background: white;
+            border: 1px solid #ddd;
+        }
+    )");
+    
+    layout->addWidget(libraryList);
+    layout->addWidget(btnAddLibrary);
+    libraryContent->setLayout(layout);
+    m_libraryDock->setWidget(libraryContent);
+    
+    addDockWidget(Qt::LeftDockWidgetArea, m_libraryDock);
+    m_libraryDock->hide(); // Caché par défaut
 }
 
 void MainWindow::setupInterface() {
@@ -68,6 +107,10 @@ void MainWindow::setupToolbar(QToolBar* toolbar) {
     toolbar->addAction(ui->actionZoom_in);
     toolbar->addAction(ui->actionZoom_out);
     toolbar->addAction(ui->actionZoom_100);
+        // Nouvel action pour les bibliothèques
+    QAction* actionManageLib = new QAction(QIcon(":/icons/library.png"), "Bibliothèques", this);
+        toolbar->addAction(ui->actionOpen_files);
+    toolbar->addAction(actionManageLib); // Ajout du nouveau bouton
 
     for (QAction* action : toolbar->actions()) {
         QToolButton* btn = qobject_cast<QToolButton*>(toolbar->widgetForAction(action));
@@ -173,6 +216,16 @@ void MainWindow::setupConnections() {
     connect(ui->actionZoom_in, &QAction::triggered, this, &MainWindow::on_actionZoom_in_triggered);
     connect(ui->actionZoom_out, &QAction::triggered, this, &MainWindow::on_actionZoom_out_triggered);
     connect(ui->actionZoom_100, &QAction::triggered, this, &MainWindow::on_actionZoom_100_triggered);
+
+        // Nouvelle connexion pour les bibliothèques
+    QList<QAction*> actions = findChildren<QAction*>();
+    foreach(QAction* action, actions) {
+        if(action->text() == "Bibliothèques") {
+            connect(action, &QAction::triggered, [this]() {
+                m_libraryDock->setVisible(!m_libraryDock->isVisible());
+            });
+        }
+    }
 }
 
 QGraphicsDropShadowEffect* MainWindow::createHoverEffect() {
