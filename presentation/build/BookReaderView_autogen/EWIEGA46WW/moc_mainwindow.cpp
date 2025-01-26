@@ -41,7 +41,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "MainWindow",
     "on_actionOpen_files_triggered",
     "",
-    "on_actionSave_triggered",
+    "on_actionSave_in_file_triggered",
     "on_actionZoom_in_triggered",
     "on_actionZoom_out_triggered",
     "on_actionZoom_100_triggered"
@@ -52,7 +52,7 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata0[11];
     char stringdata1[30];
     char stringdata2[1];
-    char stringdata3[24];
+    char stringdata3[32];
     char stringdata4[27];
     char stringdata5[28];
     char stringdata6[28];
@@ -64,15 +64,15 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
         QT_MOC_LITERAL(11, 29),  // "on_actionOpen_files_triggered"
         QT_MOC_LITERAL(41, 0),  // ""
-        QT_MOC_LITERAL(42, 23),  // "on_actionSave_triggered"
-        QT_MOC_LITERAL(66, 26),  // "on_actionZoom_in_triggered"
-        QT_MOC_LITERAL(93, 27),  // "on_actionZoom_out_triggered"
-        QT_MOC_LITERAL(121, 27)   // "on_actionZoom_100_triggered"
+        QT_MOC_LITERAL(42, 31),  // "on_actionSave_in_file_triggered"
+        QT_MOC_LITERAL(74, 26),  // "on_actionZoom_in_triggered"
+        QT_MOC_LITERAL(101, 27),  // "on_actionZoom_out_triggered"
+        QT_MOC_LITERAL(129, 27)   // "on_actionZoom_100_triggered"
     },
     "MainWindow",
     "on_actionOpen_files_triggered",
     "",
-    "on_actionSave_triggered",
+    "on_actionSave_in_file_triggered",
     "on_actionZoom_in_triggered",
     "on_actionZoom_out_triggered",
     "on_actionZoom_100_triggered"
@@ -122,7 +122,7 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
         // method 'on_actionOpen_files_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_actionSave_triggered'
+        // method 'on_actionSave_in_file_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_actionZoom_in_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -141,7 +141,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         (void)_t;
         switch (_id) {
         case 0: _t->on_actionOpen_files_triggered(); break;
-        case 1: _t->on_actionSave_triggered(); break;
+        case 1: _t->on_actionSave_in_file_triggered(); break;
         case 2: _t->on_actionZoom_in_triggered(); break;
         case 3: _t->on_actionZoom_out_triggered(); break;
         case 4: _t->on_actionZoom_100_triggered(); break;

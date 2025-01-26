@@ -312,4 +312,56 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtaggedpointer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QThread \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qthread.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/ctime \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdeadlinetimer.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qelapsedtimer.h \
+ /usr/include/c++/11/future /usr/include/c++/11/mutex \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/bits/atomic_futex.h \
+ /usr/include/c++/11/bits/std_thread.h
