@@ -58,7 +58,7 @@ void PageView::setZoom(float zoom) {
 
 
 void PageView::zoomIn() {
-    if(m_zoomLevel < 3.0) {
+    if(m_zoomLevel < 5.0) {
         scale(1.0 + ZOOM_STEP, 1.0 + ZOOM_STEP);
         m_zoomLevel *= (1.0 + ZOOM_STEP);
         emit zoomChanged(m_zoomLevel * 100); // Convertir en pourcentage
@@ -77,9 +77,9 @@ void PageView::zoomOut() {
     }
 }
 
-
 void PageView::resetZoom() {
-    setZoom(1);
+    setZoom(100.0);
+    emit zoomChanged(100);
 }
 
 int PageView::getZoomLevel() const {

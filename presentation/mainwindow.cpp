@@ -336,11 +336,16 @@ void MainWindow::on_actionOpen_files_triggered() {
             m_pagesLabel->setText("Pages : " + QString::number(m_pageView->pageCount()));
 
             // Essaye de récupérer les métadonnées EXIF
-            if(reader.canRead()) {
-                QString author = reader.text("Author");
-                if(!author.isEmpty()) m_authorLabel->setText("Auteur : " + author);
+            if (reader.canRead()) {
+            QString author = reader.text("Author");
+            if (!author.isEmpty()) {
+                m_authorLabel->setText("Auteur : " + author);
+            } else {
+                m_authorLabel->setText("Auteur : Inconnu");
             }
-
+            } else {
+            m_authorLabel->setText("Auteur : Inconnu");
+            }
         } 
         catch (const std::exception& e) {
             QMessageBox::critical(this, "Erreur", e.what());

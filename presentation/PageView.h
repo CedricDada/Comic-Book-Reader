@@ -13,7 +13,7 @@ public:
     void render(const AbstractImage& page);
     void setZoom(float level);
     void toggleDualPageMode();
-    void setZoomLevel(float zoomLevel);  // Déclaration ajoutée ici
+    void setZoomLevel(float zoomLevel);
     
     // Getters
     int currentPage() const;
