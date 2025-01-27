@@ -3,6 +3,7 @@
 
 #include <QImage>
 #include <memory>
+#include <vector>
 
 enum class ContentType {
     AutoDetect,
@@ -24,6 +25,7 @@ public:
     // Méthode statique pour créer des filtres prédéfinis
     static std::unique_ptr<AbstractFilter> createLowPassFilter(float cutoffFrequency);
     static std::unique_ptr<AbstractFilter> createTextOptimizedFilter();
+
 };
 
 // Filtre passe-bas paramétrable
@@ -34,13 +36,18 @@ public:
     
     void apply(QImage& image, ContentType contentType) const override;
     std::unique_ptr<AbstractFilter> clone() const override;
+    void applyToText(QImage& image) const;
+    void applyToGraphics(QImage& image) const;
+    void applyAdaptive(QImage& image) const;
+    void applySeparableFilter(QImage& image, const std::vector<float>& kernel) const;
+    void generateGaussianKernel(std::vector<float>& kernel, float sigma) const;
+    void applyConvolution(const QImage& src, QImage& dst, 
+                                   const std::vector<float>& kernel, 
+                                   bool horizontal) const;
 
 private:
     float m_cutoffFrequency; 
     int m_kernelSize;        
-    void applyToText(QImage& image) const;
-    void applyToGraphics(QImage& image) const;
-    void applyAdaptive(QImage& image) const;
 };
 
 class TextEnhancementFilter : public AbstractFilter {
@@ -55,4 +62,3 @@ private:
     void reduceJPEGArtifacts(QImage& image) const;
 };
 #endif // FILTER_H
-

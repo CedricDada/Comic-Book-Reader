@@ -29,6 +29,7 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMutex \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPropertyAnimation \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
@@ -281,6 +282,7 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImage \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImageReader \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qabstractfileiconprovider.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
@@ -298,32 +300,57 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QDockWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QFileIconProvider \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsScene \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsView \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QSlider \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolButton \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QTreeWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemview.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdockwidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qfileiconprovider.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicseffect.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsscene.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qscrollarea.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreeview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \

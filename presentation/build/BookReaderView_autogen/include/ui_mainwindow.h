@@ -95,6 +95,7 @@ public:
     QAction *action_to_width_5;
     QAction *action_to_height_6;
     QAction *action_to_width_6;
+    QAction *actionToggleTheme;
     QWidget *centralwidget;
     QMenuBar *menubar;
     QMenu *menuFile;
@@ -117,6 +118,16 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(1011, 667);
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Comic Sans MS")});
+        font.setPointSize(11);
+        font.setItalic(false);
+        font.setUnderline(false);
+        font.setStrikeOut(false);
+        font.setKerning(true);
+        MainWindow->setFont(font);
+        MainWindow->setCursor(QCursor(Qt::ArrowCursor));
+        MainWindow->setMouseTracking(true);
         actionOpen_files = new QAction(MainWindow);
         actionOpen_files->setObjectName("actionOpen_files");
         QIcon icon(QIcon::fromTheme(QString::fromUtf8("QIcon::ThemeIcon::FolderOpen")));
@@ -142,7 +153,7 @@ public:
         actionOpen_the_previous_file->setEnabled(false);
         actionOpen_a_document = new QAction(MainWindow);
         actionOpen_a_document->setObjectName("actionOpen_a_document");
-        QIcon icon3(QIcon::fromTheme(QString::fromUtf8("QIcon::ThemeIcon::FolderNew")));
+        QIcon icon3(QIcon::fromTheme(QString::fromUtf8("accessories-calculator")));
         actionOpen_a_document->setIcon(icon3);
         actionSave_in_file = new QAction(MainWindow);
         actionSave_in_file->setObjectName("actionSave_in_file");
@@ -347,12 +358,19 @@ public:
         action_to_height_6->setObjectName("action_to_height_6");
         action_to_width_6 = new QAction(MainWindow);
         action_to_width_6->setObjectName("action_to_width_6");
+        actionToggleTheme = new QAction(MainWindow);
+        actionToggleTheme->setObjectName("actionToggleTheme");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1011, 26));
+        menubar->setGeometry(QRect(0, 0, 1011, 23));
+        menubar->setLayoutDirection(Qt::LeftToRight);
+        menubar->setAutoFillBackground(false);
+        menubar->setStyleSheet(QString::fromUtf8("font: 9pt \"Comic Sans MS\";\n"
+"background-color: rgb(170, 170, 255);\n"
+"font: 9pt \"Comic Sans MS\";"));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName("menuFile");
         menuRead = new QMenu(menubar);
@@ -379,7 +397,7 @@ public:
         menuRotate_all->setObjectName("menuRotate_all");
         menuAdjust_to_portrait_mode = new QMenu(menuOptions);
         menuAdjust_to_portrait_mode->setObjectName("menuAdjust_to_portrait_mode");
-        menuAdjust_to_portrait_mode->setFocusPolicy(Qt::FocusPolicy::NoFocus);
+        menuAdjust_to_portrait_mode->setFocusPolicy(Qt::NoFocus);
         QIcon icon25(QIcon::fromTheme(QString::fromUtf8("QIcon::ThemeIcon::CameraWeb")));
         menuAdjust_to_portrait_mode->setIcon(icon25);
         menuAdjust_to_paysage_mode = new QMenu(menuOptions);
@@ -415,6 +433,8 @@ public:
         menuFile->addAction(actionEntire_window);
         menuFile->addAction(actionminimize);
         menuFile->addAction(actionExit);
+        menuFile->addSeparator();
+        menuFile->addAction(actionToggleTheme);
         menuRead->addAction(actionFirst_page);
         menuRead->addAction(actionLast_page);
         menuRead->addAction(actionNext_page);
@@ -578,6 +598,7 @@ public:
         action_to_width_5->setText(QCoreApplication::translate("MainWindow", ">= to width", nullptr));
         action_to_height_6->setText(QCoreApplication::translate("MainWindow", "<= to height", nullptr));
         action_to_width_6->setText(QCoreApplication::translate("MainWindow", "<= to width", nullptr));
+        actionToggleTheme->setText(QCoreApplication::translate("MainWindow", "Theme", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuRead->setTitle(QCoreApplication::translate("MainWindow", "Read", nullptr));
         menuFavoris->setTitle(QCoreApplication::translate("MainWindow", "Favoris", nullptr));

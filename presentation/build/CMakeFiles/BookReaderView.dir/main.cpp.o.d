@@ -360,6 +360,33 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QSlider \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QDockWidget \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdockwidget.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QTreeWidget \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidget.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreeview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qitemselectionmodel.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/AbstractBook.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/Page.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/AbstractImage.h \
@@ -370,7 +397,6 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QBuffer \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbuffer.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImageReader \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimagereader.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
@@ -386,14 +412,12 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -428,8 +452,6 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qscrollarea.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsscene.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/QtConcurrent \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/QtConcurrentDepends \
@@ -446,7 +468,6 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractproxymodel.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qanimationgroup.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractanimation.h \
@@ -841,6 +862,16 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/AbstractBook.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/PLoader.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/CacheManager.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QFileIconProvider \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qfileiconprovider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qabstractfileiconprovider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolButton \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbutton.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPropertyAnimation \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicseffect.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication.h \

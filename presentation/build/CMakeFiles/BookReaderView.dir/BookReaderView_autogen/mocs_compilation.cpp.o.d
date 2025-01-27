@@ -375,6 +375,7 @@ CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/WY75ZTYLUQ/../../../../model/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -843,9 +844,41 @@ CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QSlider \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QDockWidget \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdockwidget.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QTreeWidget \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidget.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreeview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemview.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qitemselectionmodel.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../../model/AbstractBook.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../PageView.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../../repository/FileHandler.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../../repository/../model/AbstractImage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../../infrastructure/ImageProcessor.h \
- /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../../model/BookManager.h
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../../model/BookManager.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QFileIconProvider \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qfileiconprovider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qabstractfileiconprovider.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolButton \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbutton.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPropertyAnimation \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicseffect.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/EWIEGA46WW/../../../../infrastructure/Filter.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h

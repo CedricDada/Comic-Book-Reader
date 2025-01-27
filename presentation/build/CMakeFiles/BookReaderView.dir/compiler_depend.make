@@ -430,6 +430,7 @@ CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o: Boo
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -911,12 +912,44 @@ CMakeFiles/BookReaderView.dir/BookReaderView_autogen/mocs_compilation.cpp.o: Boo
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QSlider \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QDockWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdockwidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QTreeWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreeview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qitemselectionmodel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
   ../PageView.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/FileHandler.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/ImageProcessor.h \
-  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BookManager.h
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BookManager.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QFileIconProvider \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qfileiconprovider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qabstractfileiconprovider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolButton \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPropertyAnimation \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicseffect.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h
 
 CMakeFiles/BookReaderView.dir/PageView.cpp.o: ../PageView.cpp \
   /usr/include/stdc-predef.h \
@@ -1344,6 +1377,7 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.o: ../PageView.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -1813,7 +1847,20 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.o: ../PageView.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QThread \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsitem.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainterpath.h
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainterpath.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QWheelEvent \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qevent.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qeventpoint.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvector2d.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvectornd.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpointingdevice.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qinputdevice.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qscreen.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QRect \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSize \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSizeF \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QTransform \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h
 
 CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \
@@ -2229,6 +2276,33 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QSlider \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QDockWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdockwidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QTreeWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreeview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qitemselectionmodel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
@@ -2239,7 +2313,6 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QBuffer \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbuffer.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImageReader \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimagereader.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
@@ -2255,14 +2328,12 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -2297,8 +2368,6 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qscrollarea.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsscene.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/QtConcurrent \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/QtConcurrentDepends \
@@ -2315,7 +2384,6 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractproxymodel.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qanimationgroup.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractanimation.h \
@@ -2723,6 +2791,16 @@ CMakeFiles/BookReaderView.dir/main.cpp.o: ../main.cpp \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PLoader.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CacheManager.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QFileIconProvider \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qfileiconprovider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qabstractfileiconprovider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolButton \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPropertyAnimation \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicseffect.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication.h \
@@ -3145,6 +3223,33 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QSlider \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QDockWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdockwidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QTreeWidget \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidget.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreeview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemview.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qitemselectionmodel.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractImage.h \
@@ -3155,7 +3260,6 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QBuffer \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qbuffer.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QImageReader \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimagereader.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
@@ -3171,14 +3275,12 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -3213,8 +3315,6 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qscrollarea.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsscene.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/QtConcurrent \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/QtConcurrentDepends \
@@ -3231,7 +3331,6 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractproxymodel.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qanimationgroup.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractanimation.h \
@@ -3639,6 +3738,16 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/AbstractBook.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PLoader.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/CacheManager.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QFileIconProvider \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qfileiconprovider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qabstractfileiconprovider.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolButton \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPropertyAnimation \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicseffect.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   BookReaderView_autogen/include/ui_mainwindow.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QAction \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
@@ -3666,7 +3775,19 @@ CMakeFiles/BookReaderView.dir/mainwindow.cpp.o: ../mainwindow.cpp \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QMessageBox \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qmessagebox.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolBar \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbar.h
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbar.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QMenuBar \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QFileInfo \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDir
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/Filter.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.cpp \
   /usr/include/stdc-predef.h \
@@ -4028,7 +4149,8 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QColor \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QtMath \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/infrastructure/ImageProcessor.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/ImageProcessor.cpp \
   /usr/include/stdc-predef.h \
@@ -4451,7 +4573,11 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
-  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QtMath \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h
 
 CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/model/BMPImage.cpp.o: /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/BMPImage.cpp \
   /usr/include/stdc-predef.h \
@@ -5240,6 +5366,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -6179,6 +6306,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -6702,6 +6830,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -7262,6 +7391,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -8054,6 +8184,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -8558,6 +8689,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -9775,6 +9907,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -10630,6 +10763,7 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -11177,8 +11311,6 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 
 /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/ArchiveHandler.h:
 
-/media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/ArchiveHandler.cpp:
-
 /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/Page.cpp:
 
 /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PNGImage.h:
@@ -11251,8 +11383,6 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 
 /usr/include/asm-generic/types.h:
 
-/usr/include/x86_64-linux-gnu/asm/types.h:
-
 /usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx.h:
@@ -11267,7 +11397,17 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
 
 /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/ImageProcessor.cpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h:
+
 /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QColor:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qmessagebox.h:
 
@@ -11291,6 +11431,20 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSizeF:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSize:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QRect:
+
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qinputdevice.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvector2d.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qevent.h:
+
 /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsPixmapItem:
 
 /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/PLoader.cpp:
@@ -11301,7 +11455,31 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 
 ../PageView.cpp:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicseffect.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtoolbutton.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QToolButton:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QFileIconProvider:
+
 /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/FileHandler.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h:
+
+/media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/repository/ArchiveHandler.cpp:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QTreeWidget:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h:
 
@@ -11413,6 +11591,8 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvectornd.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h:
@@ -11439,7 +11619,11 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QWheelEvent:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
 
@@ -11452,6 +11636,8 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h:
 
@@ -11545,6 +11731,8 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qpromise.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QTimer:
+
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qrunnable.h:
 
 /usr/include/c++/11/bits/std_thread.h:
@@ -11554,6 +11742,8 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 /usr/include/c++/11/mutex:
 
 /usr/include/c++/11/future:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemview.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
 
@@ -11615,6 +11805,8 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstring.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
@@ -11622,6 +11814,8 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 /usr/include/c++/11/experimental/source_location:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
@@ -11702,6 +11896,8 @@ BookReaderView_autogen/include/ui_mainwindow.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qabstractproxymodel.h:
 
@@ -11809,6 +12005,8 @@ BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/c++/11/cstdint:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qfileiconprovider.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMap:
@@ -11848,6 +12046,8 @@ BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QtMath:
 
 /usr/include/c++/11/bits/hash_bytes.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QDockWidget:
 
 /usr/include/c++/11/bits/move.h:
 
@@ -11933,6 +12133,8 @@ BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidgetitemiterator.h:
+
 /usr/include/c++/11/debug/debug.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
@@ -11969,6 +12171,8 @@ BookReaderView_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/wctype.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h:
+
 BookReaderView_autogen/WY75ZTYLUQ/moc_BookManager.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h:
@@ -11990,6 +12194,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qset.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qassert.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h:
 
 /usr/include/time.h:
 
@@ -12241,6 +12447,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QPropertyAnimation:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/wchar.h:
@@ -12258,6 +12466,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h:
 
 /usr/include/c++/11/bits/unique_ptr.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qeventpoint.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qconstructormacros.h:
 
@@ -12331,6 +12541,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout:
+
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvector.h:
 
 /usr/include/c++/11/bits/stl_list.h:
@@ -12382,6 +12594,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h:
 
 /usr/include/c++/11/bits/algorithmfwd.h:
 
@@ -12485,6 +12699,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/stdlib.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qscreen.h:
+
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfiledevice.h:
@@ -12525,6 +12741,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qhash.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qabstractfileiconprovider.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
@@ -12562,6 +12780,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 /usr/include/c++/11/bits/list.tcc:
 
 /usr/include/c++/11/map:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreewidget.h:
 
 /usr/include/c++/11/bits/stl_tree.h:
 
@@ -12602,6 +12822,8 @@ BookReaderView_autogen/mocs_compilation.cpp:
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qprocess.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qtreeview.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcborstreamwriter.h:
 
@@ -12823,6 +13045,10 @@ BookReaderView_autogen/EWIEGA46WW/moc_PageView.cpp:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsDropShadowEffect:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h:
+
 /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h:
 
 /usr/include/c++/11/tr1/exp_integral.tcc:
@@ -12875,9 +13101,13 @@ BookReaderView_autogen/EWIEGA46WW/moc_PageView.cpp:
 
 /usr/include/c++/11/filesystem:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qdockwidget.h:
+
 /usr/include/c++/11/cwctype:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpointingdevice.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
@@ -12909,11 +13139,15 @@ BookReaderView_autogen/EWIEGA46WW/moc_PageView.cpp:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfileinfo.h:
 
+/home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qeasingcurve.h:
+
+/home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QTransform:
 
 /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h:
 

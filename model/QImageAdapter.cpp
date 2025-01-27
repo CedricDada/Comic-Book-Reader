@@ -81,3 +81,11 @@ void QImageAdapter::debugPrint() const {
     std::cout << "Taille mémoire: " << dataSize() << " octets" << std::endl;
     std::cout << "Profondeur de couleur: " << m_image.depth() << " bits" << std::endl;
 }
+
+
+AbstractImage::Format QImageAdapter::format_for_filter() const { return AbstractImage::JPEG; }
+
+void QImageAdapter::setData(const std::vector<unsigned char>& data, int width, int height, const std::string& format) {
+    QImage qimg(data.data(), width, height, QImage::Format_RGB32);
+    m_image = qimg.copy();
+}

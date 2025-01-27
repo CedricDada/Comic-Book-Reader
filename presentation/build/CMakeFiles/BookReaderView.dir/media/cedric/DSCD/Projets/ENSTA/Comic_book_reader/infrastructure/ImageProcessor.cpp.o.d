@@ -372,4 +372,8 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QtMath \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/infrastructure/Filter.h

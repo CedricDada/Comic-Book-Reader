@@ -25,6 +25,13 @@ public:
         return new BMPImage(*this);
     }
     BMPImage(const BMPImage& other);
+    void setData(const std::vector<unsigned char>& data,
+                 int width, int height,
+                 const std::string& format) override;
+
+    // Méthode supplémentaire
+    int bytesPerLine() const;
+    Format format_for_filter() const override;
 private:
     std::vector<uint8_t> m_data;
     int m_width;

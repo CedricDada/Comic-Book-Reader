@@ -35,3 +35,14 @@ JPEGImage::JPEGImage(const JPEGImage& other) :
     m_data(other.m_data), // Copie profonde du vecteur
     m_width(other.m_width),
     m_height(other.m_height) {}
+
+
+AbstractImage::Format JPEGImage::format_for_filter() const { return AbstractImage::JPEG; }
+
+void JPEGImage::setData(const std::vector<unsigned char>& data,
+                        int width, int height,
+                        const std::string& /* format */) {
+    this->m_data = data;
+    this->m_width = width;
+    this->m_height = height;
+}

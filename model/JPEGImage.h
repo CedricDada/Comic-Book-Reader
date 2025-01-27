@@ -17,12 +17,19 @@ public:
     size_t dataSize() const override;
     void resize(int newWidth, int newHeight) override;
     void saveToFile(const std::string& path) const override;
+    void setData(const std::vector<unsigned char>& data,
+                 int width, int height,
+                 const std::string& format) override;
+
+    // Méthode supplémentaire
+    int bytesPerLine() const;
 
     QImage toQImage() const override;
     AbstractImage* clone() const override {
         return new JPEGImage(*this); // Utilise le constructeur de copie
     }
     JPEGImage(const JPEGImage& other);
+    Format format_for_filter() const override;
 
 private:
     std::vector<uint8_t> m_data;

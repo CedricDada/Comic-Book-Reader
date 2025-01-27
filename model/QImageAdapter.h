@@ -16,6 +16,8 @@ public:
         return new QImageAdapter(m_image.copy()); 
     }
     explicit QImageAdapter(const QImage& img);
+    Format format_for_filter() const override;
+    void setData(const std::vector<unsigned char>& data, int width, int height, const std::string& format) override;
     
     QImage toQImage() const override;
     int width() const override;

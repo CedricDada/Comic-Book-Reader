@@ -3,12 +3,20 @@
 
 #include <QMainWindow>
 #include <QSlider>
+#include <QLabel>
+#include <QDockWidget>
+#include <QTreeWidget>
 #include "../model/AbstractBook.h"  
 #include "PageView.h"      // Vue des pages
 #include "../repository/FileHandler.h"   // Accès aux fichiers
 #include "../infrastructure/ImageProcessor.h"// Traitement d'images
 #include "../model/BookManager.h"
 
+#include <QFileIconProvider>
+#include <QToolButton>
+#include <QPropertyAnimation>
+#include <QGraphicsDropShadowEffect>
+#include "../infrastructure/Filter.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -19,6 +27,7 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void applyFilterToImage(QImage& image, ContentType contentType);
 
 private slots:
     // Slots pour les actions du menu
@@ -30,12 +39,15 @@ private slots:
     void goToPage(int pageNumber);
     void on_actionNext_page_triggered();
     void on_actionPrevious_page_triggered();
+    void addLibraryDirectory(); // Nouveau slot pour l'ajout de bibliothèque
+    void applyLowPassFilter();
+    void applyTextEnhancementFilter();
 
 private:
     Ui::MainWindow *ui;
     QSlider* m_pageSlider;
     PageView *m_pageView;    // Composant d'affichage
-    FileHandler m_fileHandler{"chemin/par/default"}; // Initialisation directe
+    FileHandler m_fileHandler{"./"}; // Initialisation directe
     AbstractImage* m_currentImage = nullptr; // Image courante
     BookManager* m_bookManager = nullptr;
     CacheManager* m_cacheManager;
@@ -44,8 +56,37 @@ private:
     void preloadNextPages(int currentPage);
     void loadFirstPage(); 
     void startPreloading(); 
+    void setupInterface();
+    void setupConnections();
+    void applyLightTheme();
+    void setupLibraryView();
+    void applyDarkTheme();
+    void toggleTheme();
+    void updateZoomLabel();
+    void animateZoom();
+    QLabel* m_fileNameLabel;
+    QLabel* m_titleLabel;
+    QLabel* m_authorLabel; 
+    QLabel* m_pagesLabel;
+    QLabel* m_zoomLabel;
+    QLabel* m_fileInfoLabel;
 
+    QDockWidget* m_libraryDock; // Nouveau membre pour la vue bibliothèque
+    QTreeWidget* m_libraryTree;
+    
+    QGraphicsDropShadowEffect* createHoverEffect();
+    void setupToolbar(QToolBar* toolbar);
+    void setupDock();
+    void setupStatusBar();
+    void setupMetadataPanel();
 
+    // Gestion de l'arborescence
+    void populateTree(QTreeWidgetItem* parentItem, const QString& path);
+
+    // Variables membres
+    QPropertyAnimation* m_fadeAnimation;
+    bool m_isDarkTheme = false;
 };
+
 
 #endif // MAINWINDOW_H

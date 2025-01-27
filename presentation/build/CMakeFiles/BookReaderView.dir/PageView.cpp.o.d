@@ -377,6 +377,7 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20algorithm.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/q20functional.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qfactoryinterface.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
@@ -833,4 +834,17 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QThread \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsitem.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainterpath.h
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainterpath.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QWheelEvent \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qevent.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qeventpoint.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvector2d.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qvectornd.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpointingdevice.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qinputdevice.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qscreen.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QRect \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSize \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QSizeF \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QTransform \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h

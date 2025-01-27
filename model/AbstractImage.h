@@ -20,6 +20,21 @@ public:
     virtual void resize(int newWidth, int newHeight) = 0;
     virtual void saveToFile(const std::string& path) const = 0;
     virtual AbstractImage* clone() const = 0;
+
+    enum Format { PNG, JPEG, BMP, UNKNOWN };
+    virtual Format format_for_filter() const = 0;
+        virtual void setData(const std::vector<unsigned char>& data,
+                        int width, int height,
+                        const std::string& format) = 0;
+    
+    static std::string formatToString(Format format) {
+        switch (format) {
+            case PNG: return "PNG";
+            case JPEG: return "JPEG";
+            case BMP: return "BMP";
+            default: return "UNKNOWN";
+        }
+    }
 };
 
 #endif // ABSTRACTIMAGE_H

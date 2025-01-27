@@ -35,3 +35,14 @@ PNGImage::PNGImage(const PNGImage& other) :
     m_data(other.m_data),
     m_width(other.m_width),
     m_height(other.m_height) {}
+
+AbstractImage::Format PNGImage::format_for_filter() const { return AbstractImage::PNG; }
+
+void PNGImage::setData(const std::vector<unsigned char>& data,
+                       int width, int height,
+                       const std::string& format) {
+    m_data = data;
+    m_width = width;
+    m_height = height;
+    //m_format = AbstractImage::PNG; // Enum défini dans AbstractImage
+}

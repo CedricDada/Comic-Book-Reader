@@ -311,4 +311,5 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/QColor \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QtMath \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h

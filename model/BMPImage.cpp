@@ -39,3 +39,22 @@ BMPImage::BMPImage(const BMPImage& other) :
     m_data(other.m_data),
     m_width(other.m_width),
     m_height(other.m_height) {}
+
+
+AbstractImage::Format BMPImage::format_for_filter() const { return AbstractImage::BMP; }
+
+void BMPImage::setData(
+    const std::vector<unsigned char>& data,  // Problem: unsigned char vs uint8_t
+    int width,
+    int height,
+    const std::string& format
+) {
+    if (format != "BMP") {
+        throw std::invalid_argument("Invalid format for BMPImage");
+    }
+    
+    // Convert vector<unsigned char> to vector<uint8_t>
+    m_data.assign(data.begin(), data.end());  // Fix type mismatch
+    m_width = width;
+    m_height = height;
+}

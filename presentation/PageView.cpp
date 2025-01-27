@@ -3,6 +3,7 @@
 #include "../model/QImageAdapter.h"
 #include <QGraphicsPixmapItem>
 #include <QDebug> // Ajout pour le débogage
+#include <QWheelEvent>
 
 PageView::PageView(QWidget* parent) // Modification ici
     : QGraphicsView(parent), 
@@ -13,6 +14,22 @@ PageView::PageView(QWidget* parent) // Modification ici
       m_scene(new QGraphicsScene(this)) // Initialisation correcte
 {
     setScene(m_scene);
+    setDragMode(QGraphicsView::ScrollHandDrag);
+    setTransformationAnchor(QGraphicsView::AnchorUnderMouse);
+    setRenderHint(QPainter::SmoothPixmapTransform);
+    setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
+}
+
+void PageView::wheelEvent(QWheelEvent* event) {
+    if(event->modifiers() & Qt::ControlModifier) { // Zoom uniquement si Ctrl enfoncé
+        if(event->angleDelta().y() > 0) {
+            zoomIn();
+        } else {
+            zoomOut();
+        }
+    } else {
+        QGraphicsView::wheelEvent(event); // Comportement normal sinon
+    }
 }
 
 // void PageView::render(const AbstractImage& page) {
@@ -34,11 +51,11 @@ float PageView::zoomLevel() const {
     return m_zoomLevel;
 }
 
-void PageView::setZoom(float level) {
-    m_zoomLevel = level;
-    resetTransform();
-    scale(level, level);
-}
+// void PageView::setZoom(float level) {
+//     m_zoomLevel = level;
+//     resetTransform();
+//     scale(level, level);
+// }
 
 void PageView::displayPageAsync(const Page& page) {
     if (!m_cacheManager) {
@@ -131,4 +148,39 @@ QImage PageView::loadImageFromData(const QByteArray& data) {
     QImage img;
     img.loadFromData(data);
     return img;
+}
+void PageView::setZoom(float zoom) {
+    double newZoom = zoom / 100.0;
+    double factor = newZoom / m_zoomLevel;
+
+    // Appliquer la mise à l'échelle et mettre à jour le niveau de zoom
+    scale(factor, factor);
+    m_zoomLevel = newZoom;
+
+    emit zoomChanged(m_zoomLevel * 100); // Émettre un signal avec le zoom en pourcentage
+}
+
+void PageView::zoomIn() {
+    if(m_zoomLevel < 5.0) {
+        scale(1.0 + ZOOM_STEP, 1.0 + ZOOM_STEP);
+        m_zoomLevel *= (1.0 + ZOOM_STEP);
+        emit zoomChanged(m_zoomLevel * 100); // Convertir en pourcentage
+    }
+}
+
+void PageView::zoomOut() {
+    if(m_zoomLevel > 0.2) {
+        scale(1.0 - ZOOM_STEP, 1.0 - ZOOM_STEP);
+        m_zoomLevel *= (1.0 - ZOOM_STEP);
+        emit zoomChanged(m_zoomLevel * 100); // Convertir en pourcentage
+    }
+}
+
+void PageView::resetZoom() {
+    setZoom(100.0);
+    emit zoomChanged(100);
+}
+
+int PageView::getZoomLevel() const {
+    return static_cast<int>(m_zoomLevel * 100); // Retourne un entier en pourcentage
 }
