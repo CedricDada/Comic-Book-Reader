@@ -9,6 +9,7 @@
 
 class QImageAdapter : public AbstractImage {
     QImage m_image;
+    mutable std::vector<uint8_t> m_data;
 public:
     AbstractImage* clone() const { 
         qDebug() << "Clonage de QImageAdapter - Thread:" << QThread::currentThreadId();

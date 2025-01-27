@@ -380,6 +380,8 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.o: \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/CacheManager.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QCache \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcache.h \
@@ -581,7 +583,6 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qcryptographichash.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetaobject.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmimedata.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmimedatabase.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmimetype.h \
@@ -826,7 +827,10 @@ CMakeFiles/BookReaderView.dir/PageView.cpp.o: \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/qtaskbuilder.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/qtconcurrentthreadengine.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtConcurrent/qtconcurrentversion.h \
+ /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/../model/QImageAdapter.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /usr/include/c++/11/iostream \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QThread \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtWidgets/qgraphicsitem.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainterpath.h \
- /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QDebug
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtGui/qpainterpath.h

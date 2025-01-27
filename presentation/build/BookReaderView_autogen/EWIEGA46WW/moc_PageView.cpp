@@ -42,16 +42,18 @@ static constexpr auto qt_meta_stringdata_CLASSPageViewENDCLASS = QtMocHelpers::s
     "displayPageAsync",
     "",
     "Page",
-    "page"
+    "page",
+    "updateDisplay"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSPageViewENDCLASS_t {
-    uint offsetsAndSizes[10];
+    uint offsetsAndSizes[12];
     char stringdata0[9];
     char stringdata1[17];
     char stringdata2[1];
     char stringdata3[5];
     char stringdata4[5];
+    char stringdata5[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSPageViewENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -61,13 +63,15 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPageViewENDCLASS_t qt_meta_stri
         QT_MOC_LITERAL(9, 16),  // "displayPageAsync"
         QT_MOC_LITERAL(26, 0),  // ""
         QT_MOC_LITERAL(27, 4),  // "Page"
-        QT_MOC_LITERAL(32, 4)   // "page"
+        QT_MOC_LITERAL(32, 4),  // "page"
+        QT_MOC_LITERAL(37, 13)   // "updateDisplay"
     },
     "PageView",
     "displayPageAsync",
     "",
     "Page",
-    "page"
+    "page",
+    "updateDisplay"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -79,7 +83,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPageViewENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -87,9 +91,11 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPageViewENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   20,    2, 0x0a,    1 /* Public */,
+       1,    1,   26,    2, 0x0a,    1 /* Public */,
+       5,    1,   29,    2, 0x0a,    3 /* Public */,
 
  // slots: parameters
+    QMetaType::Void, 0x80000000 | 3,    4,
     QMetaType::Void, 0x80000000 | 3,    4,
 
        0        // eod
@@ -106,6 +112,9 @@ Q_CONSTINIT const QMetaObject PageView::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<PageView, std::true_type>,
         // method 'displayPageAsync'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const Page &, std::false_type>,
+        // method 'updateDisplay'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const Page &, std::false_type>
     >,
     nullptr
@@ -118,7 +127,26 @@ void PageView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         (void)_t;
         switch (_id) {
         case 0: _t->displayPageAsync((*reinterpret_cast< std::add_pointer_t<Page>>(_a[1]))); break;
+        case 1: _t->updateDisplay((*reinterpret_cast< std::add_pointer_t<Page>>(_a[1]))); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 0:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< Page >(); break;
+            }
+            break;
+        case 1:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< Page >(); break;
+            }
+            break;
         }
     }
 }
@@ -142,13 +170,13 @@ int PageView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
     }
     return _id;
 }

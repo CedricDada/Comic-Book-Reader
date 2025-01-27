@@ -39,11 +39,11 @@ private:
     AbstractImage* m_currentImage = nullptr; // Image courante
     BookManager* m_bookManager = nullptr;
     CacheManager* m_cacheManager;
-    std::shared_ptr<AbstractBook> m_currentBook;
+    // std::shared_ptr<AbstractBook> m_currentBook;
+    QSharedPointer<AbstractBook> m_currentBook;
     void preloadNextPages(int currentPage);
     void loadFirstPage(); 
     void startPreloading(); 
-    void setupUI();
 
 
 };

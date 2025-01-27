@@ -382,4 +382,6 @@ CMakeFiles/BookReaderView.dir/media/cedric/DSCD/Projets/ENSTA/Comic_book_reader/
  /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/model/../infrastructure/Filter.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
+ /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMutexLocker

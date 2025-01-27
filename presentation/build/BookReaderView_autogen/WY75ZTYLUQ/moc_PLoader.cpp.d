@@ -2,6 +2,7 @@
   /media/cedric/DSCD/Projets/ENSTA/Comic\ book\ reader/presentation/build/BookReaderView_autogen/moc_predefs.h \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QBuffer \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QVariant \

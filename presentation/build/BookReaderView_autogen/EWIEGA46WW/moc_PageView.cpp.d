@@ -26,6 +26,7 @@
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QHash \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QList \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+  /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QMutex \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/cedric/Qt/6.5.3/gcc_64/include/QtCore/QString \

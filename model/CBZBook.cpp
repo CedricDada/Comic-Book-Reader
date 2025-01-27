@@ -105,12 +105,19 @@ void CBZBook::loadRawPages() {
     for (int i = 0; i < m_rawPagesData.size(); ++i) {
         Page page;
         page.number = i;
-        page.rawData = m_rawPagesData[i]; 
+        page.rawData = m_rawPagesData[i];
+        
+        // Initialiser l'image ici si nécessaire
+        QImage qImg;
+        if(qImg.loadFromData(page.rawData)) {
+            QImage clonedImg = qImg.copy(); 
+            page.image = std::make_shared<QImageAdapter>(clonedImg);
+        }
+        
         page.metadata["source"] = imageFiles[i];
-        qDebug() << "Page" << i << " - Taille rawData :" << page.rawData.size();
         m_pages.append(page);
     }
-
+    
     m_zip.close();
 }
 void CBZBook::addPage(const Page& page) {

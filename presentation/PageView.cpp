@@ -1,5 +1,6 @@
 #include "PageView.h"
 #include "../model/CacheManager.h"
+#include "../model/QImageAdapter.h"
 #include <QGraphicsPixmapItem>
 #include <QDebug> // Ajout pour le débogage
 
@@ -48,18 +49,20 @@ void PageView::displayPageAsync(const Page& page) {
         try {
             Page cachedPage = m_cacheManager->getPage(page.number);
             
-            // Si la page du cache est vide ou nécessite un traitement
-            if (cachedPage.rawData.isEmpty() && cachedPage.image == nullptr) {
-                QByteArray processedData = ImageProcessor::processRawData(page.rawData);
-                Page processedPage(page.number, processedData, page.metadata);
-                m_cacheManager->storePage(page.number, processedPage);
-                cachedPage = processedPage;
+            // Si rawData existe mais image est null
+            if(cachedPage.rawData.isEmpty() || !cachedPage.image) {
+                if(!page.rawData.isEmpty()) {
+                    // Convertir rawData en image
+                    QImage qimg = loadImageFromData(page.rawData);
+                    if(!qimg.isNull()) {
+                        cachedPage.image.reset(new QImageAdapter(qimg));
+                    }
+                }
+                m_cacheManager->storePage(page.number, cachedPage);
             }
 
-            qDebug() << "CachedPage" << cachedPage.number << " - Taille rawData :" << cachedPage.rawData.size();
-
             QMetaObject::invokeMethod(this, [=](){
-                updateDisplay(cachedPage); // Utilisez updateDisplay avec vérifications
+                updateDisplay(cachedPage); // Utiliser la version sécurisée
             }, Qt::QueuedConnection);
         }
         catch(const std::exception& e) {
@@ -90,6 +93,7 @@ void PageView::updateDisplay(const Page& page) {
     QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(qimg));
     item->setTransformationMode(Qt::SmoothTransformation);
     fitInView(item, Qt::KeepAspectRatio);
+    m_currentPage = page.number;
 }
 // }
 void PageView::render(const Page& page) {
@@ -120,5 +124,11 @@ void PageView::displayPage(const Page& page) {
         m_scene->clear();
         QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(qimg));
         item->setTransformationMode(Qt::SmoothTransformation);
+        m_currentPage = page.number; // Mettre à jour la page courante
     }
+}
+QImage PageView::loadImageFromData(const QByteArray& data) {
+    QImage img;
+    img.loadFromData(data);
+    return img;
 }

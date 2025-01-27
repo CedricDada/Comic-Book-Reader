@@ -7,6 +7,8 @@
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QtConcurrent>
+#include <QImage>
+#include <QMetaType>
 
 class CacheManager;
 class ImageProcessor;
@@ -19,23 +21,25 @@ public:
     }
     explicit PageView(QWidget* parent = nullptr);
     
+    int currentPageNumber() const { return m_currentPage; }
     // Méthodes existantes (non modifiées)
     void render(const Page& page);
     void setZoom(float level);
     void toggleDualPageMode();
     
     // Getters existants
-    int currentPage() const;
     float zoomLevel() const;
     bool isDualPageMode() const;
+    int currentPage() const { return m_currentPage; }
+    void setCurrentPage(int page) { m_currentPage = page; }
 
-    // Nouvelle méthode de mise à jour
-    void updateDisplay(const Page& page);
+
     void displayPage(const Page& page);
     QImage loadImageFromData(const QByteArray& data);
 
 public slots:
     void displayPageAsync(const Page& page);
+    void updateDisplay(const Page& page);
 
 private:
     int m_currentPage;

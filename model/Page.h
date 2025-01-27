@@ -6,6 +6,7 @@
 #include "../infrastructure/ImageProcessor.h" 
 #include "../infrastructure/Filter.h" 
 #include <QVariant>          // Ajouté pour QVariantMap
+#include <QMetaType> 
 
 class AbstractImage;
 class ImageProcessor;
@@ -56,4 +57,5 @@ public:
     void applyFilter(ContentType contentType);
     void resize(int width, int height);
 };
+Q_DECLARE_METATYPE(Page)
 #endif // PAGE_H

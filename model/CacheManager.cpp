@@ -22,16 +22,26 @@ void CacheManager::storePage(int number, const Page& page) {
     m_accessOrder.prepend(number);
 }
 
+// Page CacheManager::getPage(int number) const {
+//     QMutexLocker locker(&m_mutex);
+    
+//     if (Page* cached = m_cache.object(number)) {
+//         // Mise à jour de l'ordre d'accès
+//         const_cast<QList<int>&>(m_accessOrder).removeAll(number);
+//         const_cast<QList<int>&>(m_accessOrder).prepend(number);
+//         return *cached;
+//     }
+//     return Page(); // Retourne une Page vide au lieu de lancer une exception
+// }
 Page CacheManager::getPage(int number) const {
     QMutexLocker locker(&m_mutex);
     
     if (Page* cached = m_cache.object(number)) {
-        // Mise à jour de l'ordre d'accès
         const_cast<QList<int>&>(m_accessOrder).removeAll(number);
         const_cast<QList<int>&>(m_accessOrder).prepend(number);
         return *cached;
     }
-    return Page(); // Retourne une Page vide au lieu de lancer une exception
+    throw std::out_of_range("Page non trouvée dans le cache"); // Lancer une exception
 }
 void CacheManager::clear() {
     QMutexLocker locker(&m_mutex);

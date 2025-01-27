@@ -4,8 +4,10 @@
 #include <QLocale>
 #include <QTranslator>
 
-int main(int argc, char *argv[])
-{
+#include "../model/Page.h"
+
+int main(int argc, char *argv[]) {
+    qRegisterMetaType<Page>("Page");
     QApplication a(argc, argv);
 
     QTranslator translator;
@@ -18,7 +20,7 @@ int main(int argc, char *argv[])
         }
     }
     qSetMessagePattern("[%{type}] %{function}:%{line} - %{message}");
-    QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    //QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     MainWindow w;
     w.show();
     return a.exec();

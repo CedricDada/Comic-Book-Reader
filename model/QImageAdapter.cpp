@@ -34,20 +34,24 @@ std::string QImageAdapter::format() const {
     }
 }
 
+// const std::vector<uint8_t>& QImageAdapter::data() const { 
+//     static std::vector<uint8_t> vec;
+//     vec.assign(m_image.constBits(), m_image.constBits() + m_image.sizeInBytes());
+    
+//     // Affiche les infos des données
+//     std::cout << "\n=== Données brutes ===" << std::endl;
+//     std::cout << "Taille: " << vec.size() << " octets" << std::endl;
+//     std::cout << "Début (hex): ";
+//     for(size_t i = 0; i < std::min<size_t>(10, vec.size()); ++i) {
+//         printf("%02X ", vec[i]);
+//     }
+//     std::cout << std::endl;
+    
+//     return vec;
+// }
 const std::vector<uint8_t>& QImageAdapter::data() const { 
-    static std::vector<uint8_t> vec;
-    vec.assign(m_image.constBits(), m_image.constBits() + m_image.sizeInBytes());
-    
-    // Affiche les infos des données
-    std::cout << "\n=== Données brutes ===" << std::endl;
-    std::cout << "Taille: " << vec.size() << " octets" << std::endl;
-    std::cout << "Début (hex): ";
-    for(size_t i = 0; i < std::min<size_t>(10, vec.size()); ++i) {
-        printf("%02X ", vec[i]);
-    }
-    std::cout << std::endl;
-    
-    return vec;
+    m_data.assign(m_image.constBits(), m_image.constBits() + m_image.sizeInBytes());
+    return m_data;
 }
 
 size_t QImageAdapter::dataSize() const { 
