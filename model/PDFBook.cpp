@@ -23,8 +23,31 @@ void PDFBook::loadPages() {
     }
 }
 void PDFBook::loadRawPages() {
-    // Implémentation temporaire
-    throw std::runtime_error("Non implémenté");
+    if(!m_document || m_document->isLocked()) {
+        throw std::runtime_error("PDF corrompu ou protégé");
+    }
+
+    m_pages.clear();
+    for(int i = 0; i < m_document->numPages(); ++i) {
+        std::unique_ptr<Poppler::Page> pdfPage(m_document->page(i));
+        
+        // Rendu en QImage
+        QImage image = pdfPage->renderToImage(200.0, 200.0);
+        
+        // Conversion en données brutes JPEG
+        QByteArray imageData;
+        QBuffer buffer(&imageData);
+        buffer.open(QIODevice::WriteOnly);
+        image.save(&buffer, "JPEG", 80);
+        
+        Page page;
+        page.number = i;
+        page.rawData = imageData;
+        page.metadata.insert("source", m_filePath);
+        page.metadata.insert("page", i + 1);
+        m_pages.append(page);
+    }
+    
 }
 
 // Implémentations minimales pour les méthodes abstraites

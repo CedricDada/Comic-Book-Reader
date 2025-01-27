@@ -75,9 +75,60 @@ void CBRBook::loadPages() {
     }
 }
 void CBRBook::loadRawPages() {
+    // Réinitialiser l'archive
+    archive_read_free(m_archive);
+    m_archive = archive_read_new();
+    archive_read_support_format_all(m_archive);
+    
+    if(archive_read_open_filename(m_archive, m_filePath.toUtf8().constData(), 10240) != ARCHIVE_OK) {
+        throw std::runtime_error("Échec d'ouverture du fichier CBR");
+    }
 
-    // Implémentation temporaire
-    throw std::runtime_error("Non implémenté");
+    struct archive_entry* entry;
+    QStringList imageFiles;
+
+    // Collecter les fichiers image
+    while(archive_read_next_header(m_archive, &entry) == ARCHIVE_OK) {
+        QString filename = QString::fromUtf8(archive_entry_pathname(entry));
+        if(isImageFile(filename)) {
+            imageFiles.append(filename);
+        }
+        archive_read_data_skip(m_archive);
+    }
+
+    // Tri naturel des fichiers
+    std::sort(imageFiles.begin(), imageFiles.end(), [](const QString& a, const QString& b) {
+        return QString::compare(a, b, Qt::CaseInsensitive) < 0;
+    });
+
+    // Charger les données brutes
+    m_pages.clear();
+    for(const QString& filename : imageFiles) {
+        archive_read_free(m_archive);
+        m_archive = archive_read_new();
+        archive_read_support_format_all(m_archive);
+        archive_read_open_filename(m_archive, m_filePath.toUtf8().constData(), 10240);
+
+        while(archive_read_next_header(m_archive, &entry) == ARCHIVE_OK) {
+            if(QString::fromUtf8(archive_entry_pathname(entry)) == filename) {
+                QByteArray data;
+                const void* buff;
+                size_t size;
+                int64_t offset;
+
+                while(archive_read_data_block(m_archive, &buff, &size, &offset) == ARCHIVE_OK) {
+                    data.append(static_cast<const char*>(buff), size);
+                }
+
+                Page page;
+                page.number = m_pages.size();
+                page.rawData = data;
+                page.metadata["source"] = filename;
+                m_pages.append(page);
+                break;
+            }
+        }
+    }
 }
 
 // Basic implementation for abstract methods

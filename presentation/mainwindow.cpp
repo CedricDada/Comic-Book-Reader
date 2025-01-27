@@ -13,7 +13,7 @@ des éléments de l'interface utilisateur.*/
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
       ui(new Ui::MainWindow), //Crée une instance de l'interface utilisateur.
-      m_cacheManager(new CacheManager(1024)),
+      m_cacheManager(new CacheManager(1024 * 100)),
       m_pageView(new PageView(this)), // Crée une instance de PageView (vue pour afficher l'image).
       m_fileHandler("") // Chemin vide initial
 {
@@ -156,21 +156,26 @@ void MainWindow::startPreloading() {
     if (currentBook) {
         QFuture<void> future = QtConcurrent::run([this, currentBook]() {
             for (int i = 0; i < 3; ++i) {
-                Page page = currentBook->pageAt(i);
-                if (!page.image) {
-                    qWarning() << "Image non initialisée pour la page" << i;
-                    continue;
+                 try {
+                    Page page = currentBook->pageAt(i);
+                    if (!page.image) {
+                        qWarning() << "Image non initialisée pour la page" << i;
+                        continue;
+                    }
+                    qDebug() << "Préchargement page" << i;
+                    if(!page.image) {
+                        qWarning() << "Image null pour page" << i;
+                        continue;
+                    }
+                    ImageProcessor::processImage(page.image.get());
+                    m_cacheManager->storePage(page.number, page);
+                    QMetaObject::invokeMethod(m_pageView, "updateDisplay", 
+                        Qt::QueuedConnection,
+                        Q_ARG(Page, page));
                 }
-                qDebug() << "Préchargement page" << i;
-                if(!page.image) {
-                    qWarning() << "Image null pour page" << i;
-                    continue;
+                catch (const std::exception& e) {
+                    qWarning() << "Cache miss for page" << ":" << e.what();
                 }
-                ImageProcessor::processImage(page.image.get());
-                m_cacheManager->storePage(page.number, page);
-                QMetaObject::invokeMethod(m_pageView, "updateDisplay", 
-                    Qt::QueuedConnection,
-                    Q_ARG(Page, page));
             }
         });
         Q_UNUSED(future);
