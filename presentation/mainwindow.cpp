@@ -155,7 +155,7 @@ void MainWindow::startPreloading() {
     auto currentBook = m_currentBook;
     if (currentBook) {
         QFuture<void> future = QtConcurrent::run([this, currentBook]() {
-            for (int i = 0; i < currentBook->totalPages(); ++i) {
+            for (int i = 0; i < 3; ++i) {
                 Page page = currentBook->pageAt(i);
                 if (!page.image) {
                     qWarning() << "Image non initialisée pour la page" << i;
@@ -228,7 +228,7 @@ void MainWindow::goToPage(int pageNumber) {
         Q_UNUSED(future);
     }
     
-    //preloadNextPages(pageNumber);
+    preloadNextPages(pageNumber);
 }
 
 void MainWindow::on_actionNext_page_triggered() {
@@ -256,7 +256,7 @@ void MainWindow::preloadNextPages(int currentPage) {
     QFuture<void> future = QtConcurrent::run([this, currentPage]() {
         const int totalPages = m_currentBook->totalPages();
         
-        for(int i = 1; i <= 3; ++i) {
+        for(int i = 0; i <= 3; ++i) {
             const int targetPage = currentPage + i;
             if(targetPage >= totalPages) break;
 
