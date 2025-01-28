@@ -17,7 +17,6 @@ QImage ImageProcessor::convertToQImage(const AbstractImage* image) {
                   bytesPerLine, 
                   format);
 }
-// Helper function to convert format string to QImage::Format
 QImage::Format ImageProcessor::parseFormat(AbstractImage::Format format) {
     switch(format) {
         case AbstractImage::PNG: return QImage::Format_RGBA8888;
@@ -29,13 +28,11 @@ QImage::Format ImageProcessor::parseFormat(AbstractImage::Format format) {
 
 // Mise à jour des données de l'image source
 void ImageProcessor::updateImageData(AbstractImage* image, const QImage& processed) {
-    // Convert QImage to the AbstractImage's native format
     QByteArray byteArray;
     QBuffer buffer(&byteArray);
     buffer.open(QIODevice::WriteOnly);
     processed.save(&buffer, AbstractImage::formatToString(image->format_for_filter()).c_str());
 
-    // Update using the abstract interface
     image->setData(
         std::vector<unsigned char>(byteArray.begin(), byteArray.end()),
         processed.width(),
@@ -65,7 +62,7 @@ void ImageProcessor::resize(AbstractImage* image, int width, int height, bool ke
 }
 
 void ImageProcessor::applyFilter(AbstractImage* image, ContentType contentType, float intensity) {
-    QImage qimg = convertToQImage(image); // internal conversion
+    QImage qimg = convertToQImage(image);
     intensity = qBound(0.0f, intensity, 1.0f);
     
     // Sélection dynamique des filtres
@@ -90,7 +87,7 @@ void ImageProcessor::applyFilter(AbstractImage* image, ContentType contentType, 
         filter->apply(qimg, contentType);
     }
     
-    updateImageData(image, qimg); // write back to the image
+    updateImageData(image, qimg);
 }
 
 void ImageProcessor::optimizeForDisplay(AbstractImage* image) {
@@ -112,7 +109,6 @@ void ImageProcessor::optimizeForDisplay(AbstractImage* image) {
     // 2. Filtrage adaptatif
     applyFilter(image, ContentType::AutoDetect, 0.8f);
     
-    // 3. Dernières optimisations
     QImage optimized = qimg.convertToFormat(QImage::Format_RGB888);
     updateImageData(image, optimized);
 }

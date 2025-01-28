@@ -100,7 +100,7 @@ void ArchiveHandler::loadCbzStructure() {
     }
     zip.close();
     
-    sort(m_pageList.begin(), m_pageList.end()); // Tri alphabétique
+    sort(m_pageList.begin(), m_pageList.end());
 }
 
 Page ArchiveHandler::extractCbzPage(int index) const {
@@ -110,9 +110,9 @@ Page ArchiveHandler::extractCbzPage(int index) const {
     if(zip.setCurrentFile(QString::fromStdString(m_pageList[index]))) {
         QuaZipFile file(&zip);
         if(file.open(QIODevice::ReadOnly)) {
-            QByteArray data = file.readAll(); // Ajouté
+            QByteArray data = file.readAll();
             QImage image;
-            if(image.loadFromData(data)) {   // Maintenant avec données valides
+            if(image.loadFromData(data)) {
                 return Page(
                     index,
                     new QImageAdapter(image),

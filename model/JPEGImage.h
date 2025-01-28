@@ -21,12 +21,11 @@ public:
                  int width, int height,
                  const std::string& format) override;
 
-    // Méthode supplémentaire
     int bytesPerLine() const;
 
     QImage toQImage() const override;
     AbstractImage* clone() const override {
-        return new JPEGImage(*this); // Utilise le constructeur de copie
+        return new JPEGImage(*this);
     }
     JPEGImage(const JPEGImage& other);
     Format format_for_filter() const override;

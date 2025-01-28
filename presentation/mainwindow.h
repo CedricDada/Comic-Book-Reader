@@ -39,16 +39,16 @@ private slots:
     void goToPage(int pageNumber);
     void on_actionNext_page_triggered();
     void on_actionPrevious_page_triggered();
-    void addLibraryDirectory(); // Nouveau slot pour l'ajout de bibliothèque
+    void addLibraryDirectory(); 
     void applyLowPassFilter();
     void applyTextEnhancementFilter();
 
 private:
     Ui::MainWindow *ui;
     QSlider* m_pageSlider;
-    PageView *m_pageView;    // Composant d'affichage
-    FileHandler m_fileHandler{"./"}; // Initialisation directe
-    AbstractImage* m_currentImage = nullptr; // Image courante
+    PageView *m_pageView;    
+    FileHandler m_fileHandler{"./"}; 
+    AbstractImage* m_currentImage = nullptr; 
     BookManager* m_bookManager = nullptr;
     CacheManager* m_cacheManager;
     // std::shared_ptr<AbstractBook> m_currentBook;
@@ -71,7 +71,7 @@ private:
     QLabel* m_zoomLabel;
     QLabel* m_fileInfoLabel;
 
-    QDockWidget* m_libraryDock; // Nouveau membre pour la vue bibliothèque
+    QDockWidget* m_libraryDock; 
     QTreeWidget* m_libraryTree;
     
     QGraphicsDropShadowEffect* createHoverEffect();
@@ -83,7 +83,6 @@ private:
     // Gestion de l'arborescence
     void populateTree(QTreeWidgetItem* parentItem, const QString& path);
 
-    // Variables membres
     QPropertyAnimation* m_fadeAnimation;
     bool m_isDarkTheme = false;
 };

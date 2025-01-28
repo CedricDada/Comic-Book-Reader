@@ -5,13 +5,13 @@
 #include <QDebug> // Ajout pour le débogage
 #include <QWheelEvent>
 
-PageView::PageView(QWidget* parent) // Modification ici
+PageView::PageView(QWidget* parent) 
     : QGraphicsView(parent), 
       m_currentPage(0),
       m_zoomLevel(1.0),
       m_dualPageMode(false),
       m_cacheManager(new CacheManager(1024)),
-      m_scene(new QGraphicsScene(this)) // Initialisation correcte
+      m_scene(new QGraphicsScene(this)) 
 {
     setScene(m_scene);
     setDragMode(QGraphicsView::ScrollHandDrag);
@@ -21,14 +21,14 @@ PageView::PageView(QWidget* parent) // Modification ici
 }
 
 void PageView::wheelEvent(QWheelEvent* event) {
-    if(event->modifiers() & Qt::ControlModifier) { // Zoom uniquement si Ctrl enfoncé
+    if(event->modifiers() & Qt::ControlModifier) {
         if(event->angleDelta().y() > 0) {
             zoomIn();
         } else {
             zoomOut();
         }
     } else {
-        QGraphicsView::wheelEvent(event); // Comportement normal sinon
+        QGraphicsView::wheelEvent(event);
     }
 }
 
@@ -79,7 +79,7 @@ void PageView::displayPageAsync(const Page& page) {
             }
 
             QMetaObject::invokeMethod(this, [=](){
-                updateDisplay(cachedPage); // Utiliser la version sécurisée
+                updateDisplay(cachedPage);
             }, Qt::QueuedConnection);
         }
         catch(const std::exception& e) {
@@ -141,7 +141,7 @@ void PageView::displayPage(const Page& page) {
         m_scene->clear();
         QGraphicsPixmapItem* item = m_scene->addPixmap(QPixmap::fromImage(qimg));
         item->setTransformationMode(Qt::SmoothTransformation);
-        m_currentPage = page.number; // Mettre à jour la page courante
+        m_currentPage = page.number;
     }
 }
 QImage PageView::loadImageFromData(const QByteArray& data) {
@@ -164,7 +164,7 @@ void PageView::zoomIn() {
     if(m_zoomLevel < 5.0) {
         scale(1.0 + ZOOM_STEP, 1.0 + ZOOM_STEP);
         m_zoomLevel *= (1.0 + ZOOM_STEP);
-        emit zoomChanged(m_zoomLevel * 100); // Convertir en pourcentage
+        emit zoomChanged(m_zoomLevel * 100); //  en pourcentage
     }
 }
 
@@ -172,7 +172,7 @@ void PageView::zoomOut() {
     if(m_zoomLevel > 0.2) {
         scale(1.0 - ZOOM_STEP, 1.0 - ZOOM_STEP);
         m_zoomLevel *= (1.0 - ZOOM_STEP);
-        emit zoomChanged(m_zoomLevel * 100); // Convertir en pourcentage
+        emit zoomChanged(m_zoomLevel * 100); //  en pourcentage
     }
 }
 

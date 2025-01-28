@@ -17,13 +17,13 @@ void PLoader::preloadPages(AbstractBook* book, int start, int count, ContentType
                 Page p = book->getPage(i);
                 ContentType finalType = contentType;
                 if(contentType == ContentType::AutoDetect) {
-                    finalType = detectContentType(p.image.get()); // Méthode maintenant déclarée
+                    finalType = detectContentType(p.image.get());
                 }
                 processImage(p.image.get(), finalType);
                 emit pageLoaded(i, p.image.get());
             }
             catch(const std::exception& e) {
-                emit loadError(i, QString::fromStdString(e.what())); // Signal maintenant déclaré
+                emit loadError(i, QString::fromStdString(e.what()));
             }
         });
         Q_UNUSED(future); // Supprime l'avertissement
@@ -51,7 +51,6 @@ ContentType PLoader::detectContentType(AbstractImage* image) {
         }
     }
     
-    // Seuil empirique (à ajuster)
     double edgeRatio = static_cast<double>(edgeCount) / (qimg.width() * qimg.height());
     return edgeRatio > 0.05 ? ContentType::GraphicDominant : ContentType::TextDominant;
 }

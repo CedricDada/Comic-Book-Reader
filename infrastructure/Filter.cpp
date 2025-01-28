@@ -10,7 +10,7 @@
 //-----------------------------------------------------------------------------
 
 LowPassFilter::LowPassFilter(float cutoffFrequency, int kernelSize)
-    : m_cutoffFrequency(qBound(0.1f, cutoffFrequency, 1.0f)), // Limite la fréquence entre 0.1 et 1.0
+    : m_cutoffFrequency(qBound(0.1f, cutoffFrequency, 1.0f)),
       m_kernelSize(qBound(3, kernelSize, 15)) // Taille de noyau entre 3 et 15
 {
     // Garantit un noyau impair pour symétrie
@@ -20,11 +20,6 @@ LowPassFilter::LowPassFilter(float cutoffFrequency, int kernelSize)
 
 void LowPassFilter::apply(QImage& image, ContentType contentType) const
 {
-    /* Stratégie d'application adaptative :
-     * 1. Conversion en ARGB32 pour manipulation rapide
-     * 2. Application du filtre spécialisé
-     * 3. Reconversion au format original
-     */
     QImage::Format originalFormat = image.format();
     QImage processed = image.convertToFormat(QImage::Format_ARGB32);
 
@@ -44,10 +39,6 @@ void LowPassFilter::apply(QImage& image, ContentType contentType) const
 
 void LowPassFilter::applyToText(QImage& image) const
 {
-    /* Paramétrage pour le texte :
-     * - Sigma proportionnel à la fréquence de coupure
-     * - Noyau moyen pour éliminer le crénelage
-     */
     const float sigma = 0.3f + (0.7f * m_cutoffFrequency);
     std::vector<float> kernel(m_kernelSize);
     generateGaussianKernel(kernel, sigma);
@@ -56,10 +47,6 @@ void LowPassFilter::applyToText(QImage& image) const
 
 void LowPassFilter::applyToGraphics(QImage& image) const
 {
-    /* Paramétrage pour les graphiques :
-     * - Noyau plus large (11 éléments)
-     * - Sigma élevé pour lissage prononcé
-     */
     std::vector<float> kernel(11);
     generateGaussianKernel(kernel, 2.0f);
     applySeparableFilter(image, kernel);
@@ -67,8 +54,6 @@ void LowPassFilter::applyToGraphics(QImage& image) const
 
 void LowPassFilter::applyAdaptive(QImage& image) const
 {
-    /* Implémentation de la méthode adaptative */
-    // Exemple d'implémentation
     if (image.width() > image.height()) {
         applyToGraphics(image);
     } else {
@@ -78,9 +63,8 @@ void LowPassFilter::applyAdaptive(QImage& image) const
 
 void LowPassFilter::generateGaussianKernel(std::vector<float>& kernel, float sigma) const
 {
-    /* Génère un noyau gaussien 1D :
+    /*
      * Formule : G(x) = (1/(σ√(2π))) * e^(-x²/(2σ²))
-     * Simplifié car la normalisation compensera
      */
     const int radius = kernel.size() / 2;
     float sum = 0.0f;
@@ -98,11 +82,6 @@ void LowPassFilter::generateGaussianKernel(std::vector<float>& kernel, float sig
 
 void LowPassFilter::applySeparableFilter(QImage& image, const std::vector<float>& kernel) const
 {
-    /* Implémentation optimisée de la convolution séparable :
-     * 1. Passe horizontale → résultat dans image temporaire
-     * 2. Passe verticale → résultat final
-     * Réduction de complexité de O(n²) à O(n)
-     */
     QImage temp(image.size(), image.format());
     applyConvolution(image, temp, kernel, true);  // Horizontale
     applyConvolution(temp, image, kernel, false); // Verticale
@@ -123,7 +102,7 @@ void LowPassFilter::applyConvolution(const QImage& src, QImage& dst,
             float r = 0, g = 0, b = 0;
             
             for(int k = -radius; k <= radius; ++k) {
-                // Gestion des bords par clamp
+
                 int px = horizontal ? std::clamp(x + k, 0, src.width()-1) : x;
                 int py = horizontal ? y : std::clamp(y + k, 0, src.height()-1);
                 
@@ -135,7 +114,6 @@ void LowPassFilter::applyConvolution(const QImage& src, QImage& dst,
                 b += qBlue(pixel) * weight;
             }
             
-            // Clamping et conversion en entier
             dstLine[x] = qRgb(static_cast<int>(qBound(0.0f, r, 255.0f)),
                              static_cast<int>(qBound(0.0f, g, 255.0f)),
                              static_cast<int>(qBound(0.0f, b, 255.0f)));
@@ -149,10 +127,6 @@ void LowPassFilter::applyConvolution(const QImage& src, QImage& dst,
 
 void TextEnhancementFilter::apply(QImage& image, ContentType contentType) const
 {
-    /* Enchaînement des opérations :
-     * 1. Réduction des artefacts JPEG (sauf sur contenu graphique pur)
-     * 2. Accentuation des contours pour améliorer la lisibilité
-     */
     if(contentType != ContentType::GraphicDominant) {
         reduceJPEGArtifacts(image);
     }
@@ -161,17 +135,11 @@ void TextEnhancementFilter::apply(QImage& image, ContentType contentType) const
 
 void TextEnhancementFilter::enhanceEdges(QImage& image) const
 {
-    /* Noyau de convolution "unsharp masking" adapté aux BD :
-     * [ -0.5, -1.0, -0.5 ]
-     * [ -1.0,  7.0, -1.0 ]
-     * [ -0.5, -1.0, -0.5 ]
-     * Renforce les contours sans sur-accentuation
-     */
     const float kernel[3][3] = {{-0.5f, -1.0f, -0.5f}, 
                                {-1.0f,  7.0f, -1.0f}, 
                                {-0.5f, -1.0f, -0.5f}};
     
-    QImage temp = image.copy(); // Copie pour lecture sécurisée
+    QImage temp = image.copy();
     
     #pragma omp parallel for // Parallélisation par ligne
     for(int y = 1; y < image.height()-1; ++y) {
@@ -203,12 +171,6 @@ void TextEnhancementFilter::enhanceEdges(QImage& image) const
 
 void TextEnhancementFilter::reduceJPEGArtifacts(QImage& image) const
 {
-    /* Filtre bilatéral simplifié :
-     * - Combine lissage spatial et préservation des contours
-     * - Paramètres :
-     *   * spatialSigma : contrôle la zone de lissage (1.5 pixels)
-     *   * rangeSigma : tolérance aux variations de couleur (25 niveaux)
-     */
     const int radius = 2;
     const float spatialSigma = 1.5f;
     const float rangeSigma = 25.0f;
@@ -224,7 +186,6 @@ void TextEnhancementFilter::reduceJPEGArtifacts(QImage& image) const
             float r = 0, g = 0, b = 0;
             QRgb centerPixel = temp.pixel(x, y);
             
-            // Parcours du voisinage
             for(int ky = -radius; ky <= radius; ++ky) {
                 const QRgb* srcLine = reinterpret_cast<const QRgb*>(temp.scanLine(y + ky));
                 
@@ -247,7 +208,6 @@ void TextEnhancementFilter::reduceJPEGArtifacts(QImage& image) const
                 }
             }
             
-            // Normalisation et application
             line[x] = qRgb(static_cast<int>(std::clamp(r/sumWeights, 0.0f, 255.0f)),
                           static_cast<int>(std::clamp(g/sumWeights, 0.0f, 255.0f)),
                           static_cast<int>(std::clamp(b/sumWeights, 0.0f, 255.0f)));
@@ -255,11 +215,7 @@ void TextEnhancementFilter::reduceJPEGArtifacts(QImage& image) const
     }
 }
 
-//-----------------------------------------------------------------------------
-// Factory Methods
-//-----------------------------------------------------------------------------
 
-// Factory Methods Implementation
 std::unique_ptr<AbstractFilter> AbstractFilter::createLowPassFilter(float cutoffFrequency) {
     return std::make_unique<LowPassFilter>(cutoffFrequency);
 }
@@ -267,10 +223,6 @@ std::unique_ptr<AbstractFilter> AbstractFilter::createLowPassFilter(float cutoff
 std::unique_ptr<AbstractFilter> AbstractFilter::createTextOptimizedFilter() {
     return std::make_unique<TextEnhancementFilter>();
 }
-
-//-----------------------------------------------------------------------------
-// Cloning Methods
-//-----------------------------------------------------------------------------
 
 std::unique_ptr<AbstractFilter> LowPassFilter::clone() const {
     return std::make_unique<LowPassFilter>(*this);

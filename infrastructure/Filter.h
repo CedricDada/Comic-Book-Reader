@@ -32,7 +32,7 @@ public:
 class LowPassFilter : public AbstractFilter {
 public:
     explicit LowPassFilter(float cutoffFrequency = 0.5f, int kernelSize = 5);
-    LowPassFilter(const LowPassFilter&) = default; // Constructeur de copie
+    LowPassFilter(const LowPassFilter&) = default;
     
     void apply(QImage& image, ContentType contentType) const override;
     std::unique_ptr<AbstractFilter> clone() const override;

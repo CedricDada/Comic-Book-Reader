@@ -3,7 +3,7 @@
 
 PDFBook::PDFBook(const QString& path) {
     m_filePath = path;
-    m_document = Poppler::Document::load(path); // Assignation directe
+    m_document = Poppler::Document::load(path);
 }
 
 void PDFBook::loadPages() {
@@ -50,7 +50,6 @@ void PDFBook::loadRawPages() {
     
 }
 
-// Implémentations minimales pour les méthodes abstraites
 void PDFBook::addPage(const Page& page) { /*...*/ }
 void PDFBook::removePage(int index) { /*...*/ }
 Page PDFBook::getPage(int index) const {

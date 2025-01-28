@@ -16,7 +16,6 @@ size_t JPEGImage::dataSize() const { return m_data.size(); }
 void JPEGImage::resize(int newWidth, int newHeight) {
     QImage img(m_data.data(), m_width, m_height, QImage::Format_RGB888);
     QImage resized = img.scaled(newWidth, newHeight, Qt::KeepAspectRatio);
-    // Convertir resized en données brutes (exemple simplifié)
     m_data.assign(resized.bits(), resized.bits() + resized.sizeInBytes());
     m_width = newWidth;
     m_height = newHeight;

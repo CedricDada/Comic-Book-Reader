@@ -1,6 +1,5 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"/*ui_mainwindow.h : Généré automatiquement par Qt à partir du fichier .ui. Contient les déclarations 
-des éléments de l'interface utilisateur.*/
+#include "ui_mainwindow.h"
 #include <QFileDialog>
 #include <iostream>
 #include <memory>
@@ -27,25 +26,23 @@ des éléments de l'interface utilisateur.*/
 
 
 
-/*Utilisé pour afficher des messages d'erreur ou d'information*/
-
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
-      ui(new Ui::MainWindow), //Crée une instance de l'interface utilisateur.
+      ui(new Ui::MainWindow),
       m_cacheManager(new CacheManager(1024 * 100)),
-      m_pageView(new PageView(this)), // Crée une instance de PageView (vue pour afficher l'image).
-      m_fileHandler(""), // Chemin vide initial
+      m_pageView(new PageView(this)),
+      m_fileHandler(""),
       m_isDarkTheme(false) 
 {
     m_pageView->setCacheManager(m_cacheManager);
     ui->setupUi(this);
     
     // Configuration de la vue
-    setCentralWidget(m_pageView);//Définit m_pageView comme widget central de la fenêtre.
+    setCentralWidget(m_pageView);
 
     setupInterface();
     setupConnections();
-    applyLightTheme(); // Par défaut, thème clair
+    applyLightTheme(); 
 
     // initialisation de la vue bibliothèque
     setupLibraryView();
@@ -80,7 +77,7 @@ MainWindow::MainWindow(QWidget* parent)
 }
 
 MainWindow::~MainWindow() {
-    delete ui; //Libère la mémoire allouée pour l'interface utilisateur.
+    delete ui;
     delete m_currentImage;//Libère la mémoire allouée pour l'image actuellement chargée.
 }
 
@@ -172,7 +169,6 @@ void MainWindow::on_actionOpen_files_triggered() {
     }
 }
 
-// Méthodes auxiliaires
 void MainWindow::loadFirstPage() {
     if(m_currentBook && !m_currentBook->pages().empty()) {
         m_pageView->displayPageAsync(m_currentBook->pages().first());
@@ -374,7 +370,7 @@ void MainWindow::applyFilterToImage(QImage &image, ContentType contentType) {
     filter->apply(image, contentType);
 }
 
-// Ajout de la configuration de la vue bibliothèque
+// configuration de la vue bibliothèque
 void MainWindow::setupLibraryView() {
     m_libraryDock = new QDockWidget("Bibliothèques", this);
     m_libraryDock->setFeatures(QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
@@ -408,7 +404,6 @@ void MainWindow::setupLibraryView() {
     addDockWidget(Qt::LeftDockWidgetArea, m_libraryDock);
     m_libraryDock->hide();
     
-    // Connexion directe pour simplifier
     connect(btnAddLibrary, &QPushButton::clicked, this, &MainWindow::addLibraryDirectory);
 }
 
@@ -442,7 +437,7 @@ void MainWindow::populateTree(QTreeWidgetItem* parentItem, const QString& path) 
         
         if (entry.isDir()) {
             item->setIcon(0, QFileIconProvider().icon(QFileIconProvider::Folder));
-            populateTree(item, entry.filePath()); // Recursion pour les sous-répertoires
+            populateTree(item, entry.filePath()); 
         }
         else {
             item->setIcon(0, QFileIconProvider().icon(entry));
@@ -622,7 +617,6 @@ void MainWindow::setupStatusBar() {
     statusBar()->addPermanentWidget(m_fileInfoLabel);
 }
 
-// Nouvelles implémentations ajoutées
 void MainWindow::setupConnections() {
     connect(ui->actionOpen_files, &QAction::triggered, this, &MainWindow::on_actionOpen_files_triggered);
     connect(ui->actionZoom_in, &QAction::triggered, this, &MainWindow::on_actionZoom_in_triggered);

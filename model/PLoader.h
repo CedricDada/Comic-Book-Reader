@@ -18,11 +18,11 @@ public:
 
 signals:
     void pageLoaded(int index, AbstractImage* image);
-    void loadError(int pageNumber, const QString& error); // Ajout du signal
+    void loadError(int pageNumber, const QString& error); 
 
 private:
-    int m_targetDpi; // Déclaration du membre manquant
-    ContentType detectContentType(AbstractImage* image); // Déclaration de la méthode
+    int m_targetDpi;
+    ContentType detectContentType(AbstractImage* image);
 };
 
 #endif // PLOADER_H

@@ -36,5 +36,5 @@ std::string FileHandler::detectFormat(const std::vector<uint8_t>& data) {
 
 void FileHandler::writeFile(const AbstractImage* image, const std::string& path) {
     if (!image) return;
-    image->saveToFile(path); // Polymorphisme
+    image->saveToFile(path);
 }

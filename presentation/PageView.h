@@ -22,7 +22,6 @@ public:
     explicit PageView(QWidget* parent = nullptr);
     
     int currentPageNumber() const { return m_currentPage; }
-    // Méthodes existantes (non modifiées)
     void render(const Page& page);
     void setZoom(float level);
     void toggleDualPageMode();
@@ -53,7 +52,6 @@ private:
     float m_zoomLevel = 1.0;
     bool m_dualPageMode;
     QGraphicsScene* m_scene;
-    // Nouveau membre pour le cache
     CacheManager* m_cacheManager;
     const double ZOOM_STEP = 0.1;
 

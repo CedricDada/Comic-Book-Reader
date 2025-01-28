@@ -5,7 +5,7 @@
 
 
 #include "CBZBook.h"
-#include "QImageAdapter.h" // Ajout important
+#include "QImageAdapter.h"
 #include <quazipfile.h>
 #include <QFileInfo>
 #include <algorithm>
@@ -107,7 +107,6 @@ void CBZBook::loadRawPages() {
         page.number = i;
         page.rawData = m_rawPagesData[i];
         
-        // Initialiser l'image ici si nécessaire
         QImage qImg;
         if(qImg.loadFromData(page.rawData)) {
             QImage clonedImg = qImg.copy(); 
@@ -139,8 +138,6 @@ Page CBZBook::getPage(int index) const {
 }
 
 void CBZBook::save(const QString& path) {
-    // Implémentation de la sauvegarde en format CBZ
-    // Utiliser QuaZip pour recréer l'archive
 }
 int CBZBook::pageCount() const {
     return m_pages.size();

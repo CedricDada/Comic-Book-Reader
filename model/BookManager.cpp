@@ -15,7 +15,6 @@ void BookManager::openBook(const QString& path) {
         try {
             std::unique_ptr<AbstractBook> book = createBook(path);
             book->loadRawPages(); // Nouvelle méthode qui ne crée pas de QImage
-            // Debug : vérifier les données avant transfert
             qDebug() << "Données brutes avant transfert :";
             for (const Page& page : book->pages()) {
                 qDebug() << "Page" << page.number << " - Taille rawData :" << page.rawData.size();

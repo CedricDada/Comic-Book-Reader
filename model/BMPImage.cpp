@@ -7,7 +7,7 @@ BMPImage::BMPImage(const std::vector<uint8_t>& data) : m_data(data) {
     m_height = img.height();
 }
 
-// Getters standards
+// Getters
 int BMPImage::width() const { return m_width; }
 int BMPImage::height() const { return m_height; }
 std::string BMPImage::format() const { return "BMP"; }
@@ -44,7 +44,7 @@ BMPImage::BMPImage(const BMPImage& other) :
 AbstractImage::Format BMPImage::format_for_filter() const { return AbstractImage::BMP; }
 
 void BMPImage::setData(
-    const std::vector<unsigned char>& data,  // Problem: unsigned char vs uint8_t
+    const std::vector<unsigned char>& data, 
     int width,
     int height,
     const std::string& format

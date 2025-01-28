@@ -3,7 +3,7 @@
 
 #include "AbstractImage.h"
 #include <QImage>
-#include <QDebug> // Ajout pour le débogage
+#include <QDebug>
 #include <iostream> 
 #include <QThread> 
 
@@ -29,7 +29,7 @@ public:
     void saveToFile(const std::string& path) const override;
 
 private:
-    void debugPrint() const; // Nouvelle méthode de débogage
+    void debugPrint() const;
 };
 
 #endif // QIMAGEADAPTER_H

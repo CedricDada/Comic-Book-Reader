@@ -5,7 +5,7 @@
 #include "AbstractImage.h"
 #include "../infrastructure/ImageProcessor.h" 
 #include "../infrastructure/Filter.h" 
-#include <QVariant>          // Ajouté pour QVariantMap
+#include <QVariant>      
 #include <QMetaType> 
 
 class AbstractImage;
@@ -19,7 +19,6 @@ public:
     QByteArray rawData; 
     QVariantMap metadata;
 
-    // Constructeur par défaut
     Page() : number(0), image(), rawData(), metadata() {}
 
     // Constructeur paramétré
@@ -53,7 +52,6 @@ public:
         return *this;
     }
 
-    // Méthodes utilitaires
     void applyFilter(ContentType contentType);
     void resize(int width, int height);
 };
