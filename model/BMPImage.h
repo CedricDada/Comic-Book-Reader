@@ -9,14 +9,12 @@ class BMPImage : public AbstractImage {
 public:
     explicit BMPImage(const std::vector<uint8_t>& data);
     
-    // Méthodes communes standardisées
     int width() const override;
     int height() const override;
     std::string format() const override;
     const std::vector<uint8_t>& data() const override;
     size_t dataSize() const override;
     
-    // Méthodes spécifiques
     void resize(int newWidth, int newHeight) override;
     void saveToFile(const std::string& path) const override;
 

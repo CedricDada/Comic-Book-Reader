@@ -7,7 +7,7 @@ BMPImage::BMPImage(const std::vector<uint8_t>& data) : m_data(data) {
     m_height = img.height();
 }
 
-// Getters standards
+// Getters
 int BMPImage::width() const { return m_width; }
 int BMPImage::height() const { return m_height; }
 std::string BMPImage::format() const { return "BMP"; }

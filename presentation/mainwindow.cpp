@@ -1,6 +1,5 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"/*ui_mainwindow.h : Généré automatiquement par Qt à partir du fichier .ui. Contient les déclarations 
-des éléments de l'interface utilisateur.*/
+#include "ui_mainwindow.h"
 #include <QFileDialog>
 /*Utilisé pour ouvrir/sauvegarder des fichiers. */
 #include <QMessageBox>

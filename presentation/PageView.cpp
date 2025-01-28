@@ -1,12 +1,12 @@
 #include "PageView.h"
 #include <QGraphicsPixmapItem>
 
-PageView::PageView(QWidget* parent) // Modification ici
+PageView::PageView(QWidget* parent)
     : QGraphicsView(parent), 
       m_currentPage(0),
       m_zoomLevel(1.0),
       m_dualPageMode(false),
-      m_scene(new QGraphicsScene(this)) // Initialisation correcte
+      m_scene(new QGraphicsScene(this))
 {
     setScene(m_scene);
 }

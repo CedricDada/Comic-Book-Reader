@@ -3,7 +3,7 @@
 #define IMAGEPROCESSOR_H
 
 #include "../model/AbstractImage.h"
-#include "../model/Filter.h"  // Inclusion ajoutée
+#include "../model/Filter.h"
 
 class ImageProcessor {
 public:

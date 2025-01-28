@@ -8,8 +8,7 @@ void ImageProcessor::resize(AbstractImage* image, int width, int height) {
                 image->height(), 
                 QImage::Format_ARGB32);
     QImage resized = qimg.scaled(width, height, Qt::KeepAspectRatio);
-    // Mettre à jour les données de l'image
+    
 }
 void ImageProcessor::applyFilter(AbstractImage* image, const Filter& filter) {
-    // Implémentation des filtres avec Qt
 }

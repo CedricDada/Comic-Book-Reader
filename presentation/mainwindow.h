@@ -27,9 +27,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    PageView *m_pageView;    // Composant d'affichage
-    FileHandler m_fileHandler{"chemin/par/default"}; // Initialisation directe
-    AbstractImage* m_currentImage = nullptr; // Image courante
+    PageView *m_pageView;
+    FileHandler m_fileHandler{"chemin/par/default"}; 
+    AbstractImage* m_currentImage = nullptr;
 };
 
 #endif // MAINWINDOW_H
