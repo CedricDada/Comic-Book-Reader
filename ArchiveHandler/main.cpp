@@ -9,7 +9,7 @@
 #include <poppler/cpp/poppler-document.h>
 #include <poppler/cpp/poppler-page.h>
 #include <poppler/cpp/poppler-image.h>
-#include <poppler/cpp/poppler-page-renderer.h> // Inclure le header pour page_renderer
+#include <poppler/cpp/poppler-page-renderer.h>
 
 
 namespace fs = std::filesystem;
@@ -148,18 +148,18 @@ void extractPDF(const std::string& pdfPath, const std::string& outputPath) {
 
     std::cout << "Ouverture réussie du fichier PDF : " << pdfPath << std::endl;
 
-    // Créer le dossier de sortie s'il n'existe pas
+    // Crée le dossier de sortie s'il n'existe pas
     if (!fs::exists(outputPath)) {
         fs::create_directories(outputPath);
         std::cout << "Dossier de sortie créé : " << outputPath << std::endl;
     }
 
-    // Créer un renderer pour dessiner les pages
+    // Crée un renderer pour dessiner les pages
     poppler::page_renderer renderer;
     renderer.set_render_hint(poppler::page_renderer::antialiasing, true);
     renderer.set_render_hint(poppler::page_renderer::text_antialiasing, true);
 
-    // Parcourir toutes les pages du PDF
+    // Parcours toutes les pages du PDF
     for (int i = 0; i < doc->pages(); i++) {
         poppler::page* page = doc->create_page(i);
         if (!page) {
@@ -167,7 +167,7 @@ void extractPDF(const std::string& pdfPath, const std::string& outputPath) {
             continue;
         }
 
-        // Rendre la page en image avec une résolution de 144 DPI
+        // Rend la page en image avec une résolution de 144 DPI
         poppler::image image = renderer.render_page(page, 144.0, 144.0);
         if (image.is_valid()) {
             std::string outputFilePath = (fs::path(outputPath) / ("page_" + std::to_string(i + 1) + ".png")).string();
@@ -180,11 +180,11 @@ void extractPDF(const std::string& pdfPath, const std::string& outputPath) {
             std::cerr << "Erreur : Impossible de rendre la page " << i + 1 << std::endl;
         }
 
-        // Libérer la mémoire de la page
+        // Libère la mémoire de la page
         delete page;
     }
 
-    // Libérer la mémoire du document
+    // Libère la mémoire du document
     delete doc;
     std::cout << "Extraction terminée pour le fichier PDF : " << pdfPath << std::endl;
 }
@@ -206,12 +206,12 @@ void extractComic(const std::string& comicPath, const std::string& outputPath) {
 
 int main() {
     // Chemin du fichier comic (CBZ, CBR, CBT, CB7, PDF)
-    std::string comicPath = "../Art.cbr"; // Remplacez par le chemin de votre fichier
+    std::string comicPath = "../Art.cbr"; //test
 
     // Chemin du dossier de sortie
     std::string outputPath = "./output";
 
-    // Extraire le comic
+    // Extrait le comic
     extractComic(comicPath, outputPath);
 
     return 0;

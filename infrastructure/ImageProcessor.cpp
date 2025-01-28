@@ -6,10 +6,8 @@
 #include <QImageReader>
 
 
-// Conversion sécurisée avec copie indépendante
 QImage ImageProcessor::convertToQImage(const AbstractImage* image) {
     QImage::Format format = parseFormat(image->format());
-    // Calculate bytes per line (assuming 4 bytes per pixel for RGBA8888)
     int bytesPerLine = image->width() * 4;
     return QImage(image->data().data(), 
                   image->width(), 
@@ -29,7 +27,6 @@ QImage::Format ImageProcessor::parseFormat(AbstractImage::Format format) {
 
 // Mise à jour des données de l'image source
 void ImageProcessor::updateImageData(AbstractImage* image, const QImage& processed) {
-    // Convert QImage to the AbstractImage's native format
     QByteArray byteArray;
     QBuffer buffer(&byteArray);
     buffer.open(QIODevice::WriteOnly);
@@ -51,7 +48,6 @@ void ImageProcessor::resize(AbstractImage* image, int width, int height, bool ke
         Qt::SmoothTransformation : 
         Qt::FastTransformation;
     
-    // Calcul du ratio de préservation
     QSize newSize = qimg.size().scaled(width, height, Qt::KeepAspectRatio);
     
     // Algorithme adaptatif
@@ -65,7 +61,7 @@ void ImageProcessor::resize(AbstractImage* image, int width, int height, bool ke
 }
 
 void ImageProcessor::applyFilter(AbstractImage* image, ContentType contentType, float intensity) {
-    QImage qimg = convertToQImage(image); // internal conversion
+    QImage qimg = convertToQImage(image);
     intensity = qBound(0.0f, intensity, 1.0f);
     
     // Sélection dynamique des filtres
@@ -80,17 +76,16 @@ void ImageProcessor::applyFilter(AbstractImage* image, ContentType contentType, 
             filters.emplace_back(AbstractFilter::createLowPassFilter(0.7f * intensity));
             break;
             
-        default: // MixedContent et AutoDetect
+        default:
             filters.emplace_back(AbstractFilter::createLowPassFilter(0.5f * intensity));
             filters.emplace_back(AbstractFilter::createTextOptimizedFilter());
     }
     
-    // Application en chaîne
     for(auto& filter : filters) {
         filter->apply(qimg, contentType);
     }
     
-    updateImageData(image, qimg); // write back to the image
+    updateImageData(image, qimg);
 }
 
 void ImageProcessor::optimizeForDisplay(AbstractImage* image) {

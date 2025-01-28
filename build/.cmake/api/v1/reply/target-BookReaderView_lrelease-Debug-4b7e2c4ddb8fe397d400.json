@@ -5,7 +5,7 @@
 		"commands" : 
 		[
 			"add_custom_target",
-			"qt6_add_lupdate",
+			"qt6_add_lrelease",
 			"qt6_add_translations",
 			"qt_add_translations"
 		],
@@ -22,7 +22,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 42,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
@@ -34,19 +34,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 376,
+				"line" : 381,
 				"parent" : 2
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 185,
+				"line" : 327,
 				"parent" : 3
 			}
 		]
 	},
-	"id" : "BookReaderView_lupdate::@6890427a1f51a3e7e1df",
-	"name" : "BookReaderView_lupdate",
+	"id" : "BookReaderView_lrelease::@6890427a1f51a3e7e1df",
+	"name" : "BookReaderView_lrelease",
 	"paths" : 
 	{
 		"build" : ".",
@@ -65,7 +65,8 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -74,13 +75,19 @@
 		{
 			"backtrace" : 4,
 			"isGenerated" : true,
-			"path" : "D:/Comic-Book-Reader/build/CMakeFiles/BookReaderView_lupdate",
+			"path" : "D:/Comic-Book-Reader/build/CMakeFiles/BookReaderView_lrelease",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "D:/Comic-Book-Reader/build/CMakeFiles/BookReaderView_lupdate.rule",
+			"path" : "D:/Comic-Book-Reader/build/CMakeFiles/BookReaderView_lrelease.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "D:/Comic-Book-Reader/build/BookReaderView_en_US.qm.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

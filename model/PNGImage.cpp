@@ -6,7 +6,6 @@
 
 PNGImage::PNGImage(const std::vector<uint8_t>& data, int width, int height)
     : m_data(data), m_width(width), m_height(height), m_format(AbstractImage::PNG) {
-    // Valider les dimensions et les données si nécessaire
 }
 
 int PNGImage::width() const { 
@@ -72,5 +71,5 @@ void PNGImage::setData(const std::vector<unsigned char>& data,
     m_data = data;
     m_width = width;
     m_height = height;
-    m_format = AbstractImage::PNG; // Enum défini dans AbstractImage
+    m_format = AbstractImage::PNG;
 }

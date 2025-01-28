@@ -14,14 +14,12 @@ class ArchiveHandler {
 public:
     virtual ~ArchiveHandler() = default;
 
-    // Factory method
     static std::unique_ptr<ArchiveHandler> create(const std::string& filePath);
 
     // Interface ToC
     virtual std::string readTableOfContents() = 0;
     virtual void writeTableOfContents(const std::string& tocContent) = 0;
     
-    // Méthodes existantes
     virtual void extract(const std::string& outputPath) = 0;
     virtual void compress(const std::vector<std::string>& files) = 0;
 

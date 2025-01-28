@@ -129,7 +129,6 @@ void CBZHandler::writeTableOfContents(const std::string& tocContent) {
         zip_add(m_archive, "toc.xml", src);
     }
 }
-// Implémentations similaires pour CBRHandler et PDFHandler...
 
 // Implémentation PDFHandler
 PDFHandler::PDFHandler(const std::string& path) : m_path(path) {

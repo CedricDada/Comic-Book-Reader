@@ -20,7 +20,6 @@ AbstractImage* FileHandler::readFile() {
     
     std::string format = detectFormat(data);
 
-    // First extract dimensions from the file
     QImageReader reader(QString::fromStdString(m_filePath));
     int width = reader.size().width();
     int height = reader.size().height();
@@ -43,5 +42,5 @@ std::string FileHandler::detectFormat(const std::vector<uint8_t>& data) {
 
 void FileHandler::writeFile(const AbstractImage* image, const std::string& path) {
     if (!image) return;
-    image->saveToFile(path); // Polymorphisme
+    image->saveToFile(path);
 }

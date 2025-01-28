@@ -50,7 +50,7 @@ void MainWindow::applyFilterToImage(QImage &image, ContentType contentType) {
     filter->apply(image, contentType);
 }
 
-// Ajout de la configuration de la vue bibliothèque
+//configuration de la vue bibliothèque
 void MainWindow::setupLibraryView() {
     m_libraryDock = new QDockWidget("Bibliothèques", this);
     m_libraryDock->setFeatures(QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable);
@@ -62,8 +62,7 @@ void MainWindow::setupLibraryView() {
     m_libraryTree->setHeaderHidden(true);
     
     QPushButton* btnAddLibrary = new QPushButton("Add a library", this);
-    
-    // Style
+
     m_libraryDock->setStyleSheet(R"(
         QDockWidget {
             background: rgb(230, 230, 230);
@@ -84,7 +83,6 @@ void MainWindow::setupLibraryView() {
     addDockWidget(Qt::LeftDockWidgetArea, m_libraryDock);
     m_libraryDock->hide();
     
-    // Connexion directe pour simplifier
     connect(btnAddLibrary, &QPushButton::clicked, this, &MainWindow::addLibraryDirectory);
 }
 
@@ -298,7 +296,6 @@ void MainWindow::setupStatusBar() {
     statusBar()->addPermanentWidget(m_fileInfoLabel);
 }
 
-// Nouvelles implémentations ajoutées
 void MainWindow::setupConnections() {
     connect(ui->actionOpen_files, &QAction::triggered, this, &MainWindow::on_actionOpen_files_triggered);
     connect(ui->actionZoom_in, &QAction::triggered, this, &MainWindow::on_actionZoom_in_triggered);
@@ -333,11 +330,10 @@ void MainWindow::on_actionOpen_files_triggered() {
             m_currentImage = m_fileHandler.readFile();
             QImage image = m_currentImage->toQImage();
 
-            // Appliquer le filtre avant de rendre l'image
             applyFilterToImage(image, ContentType::AutoDetect);
 
             //m_pageView->render(image);
-            m_pageView->render(*m_currentImage); // Assuming m_currentImage is a AbstractImage
+            m_pageView->render(*m_currentImage);
             // Met à jour les métadonnées
             QFileInfo fileInfo(path);
             QImageReader reader(path);
@@ -375,7 +371,6 @@ void MainWindow::on_actionOpen_files_triggered() {
 }
 
 void MainWindow::on_actionSave_triggered() {
-    // Implémentez la logique de sauvegarde
 }
 
 void MainWindow::on_actionZoom_in_triggered() {
@@ -437,7 +432,6 @@ void MainWindow::animateZoom() {
 // After: Work through AbstractImage interface
 void MainWindow::applyLowPassFilter() {
     if (m_currentImage) {
-        // Let ImageProcessor handle conversions internally
         ImageProcessor::applyFilter(m_currentImage, ContentType::GraphicDominant, 0.7f);
         m_pageView->render(*m_currentImage);
     }

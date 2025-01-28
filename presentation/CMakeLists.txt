@@ -5,7 +5,6 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools)
 
 qt_standard_project_setup()
 
-# Ajouter le dossier des ressources
 file(GLOB RESOURCE_FILES
     "./resources/resources.qrc"
     "./resources/icons/*.png"
@@ -30,7 +29,7 @@ set(SOURCES
     ../infrastructure/ImageProcessor.cpp
     ../infrastructure/Filter.h
     ../infrastructure/Filter.cpp 
-    ${RESOURCE_FILES}  # Inclure les ressources
+    ${RESOURCE_FILES} 
     ./resources/resources.qrc
 )
 
@@ -49,7 +48,6 @@ target_link_libraries(BookReaderView
         Qt6::Widgets
 )
 
-# Configurer l'installation
 include(GNUInstallDirs)
 
 install(TARGETS BookReaderView
@@ -58,7 +56,6 @@ install(TARGETS BookReaderView
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
 
-# Générer le script de déploiement
 qt_generate_deploy_app_script(
     TARGET BookReaderView
     OUTPUT_SCRIPT deploy_script

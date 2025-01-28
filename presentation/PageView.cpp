@@ -19,21 +19,21 @@ PageView::PageView(QWidget* parent)
 }
 
 void PageView::wheelEvent(QWheelEvent* event) {
-    if(event->modifiers() & Qt::ControlModifier) { // Zoom uniquement si Ctrl enfoncé
+    if(event->modifiers() & Qt::ControlModifier) { 
         if(event->angleDelta().y() > 0) {
             zoomIn();
         } else {
             zoomOut();
         }
     } else {
-        QGraphicsView::wheelEvent(event); // Comportement normal sinon
+        QGraphicsView::wheelEvent(event); 
     }
 }
 
 void PageView::render(const AbstractImage& page) {
     m_scene->clear();
 
-    // Fixed line: Convert enum to string first
+    //Convert enum to string first
     QByteArray format = QByteArray::fromStdString(
         AbstractImage::formatToString(page.format())
     );

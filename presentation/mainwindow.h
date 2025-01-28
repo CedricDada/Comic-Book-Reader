@@ -38,7 +38,7 @@ private slots:
     void on_actionZoom_in_triggered();
     void on_actionZoom_out_triggered();
     void on_actionZoom_100_triggered();
-    void addLibraryDirectory(); // Nouveau slot pour l'ajout de bibliothèque
+    void addLibraryDirectory();
     void applyLowPassFilter();
     void applyTextEnhancementFilter();
     
@@ -48,10 +48,9 @@ private:
     FileHandler m_fileHandler{"./"};
     AbstractImage* m_currentImage = nullptr;
 
-    QDockWidget* m_libraryDock; // Nouveau membre pour la vue bibliothèque
+    QDockWidget* m_libraryDock; 
     QTreeWidget* m_libraryTree;
 
-    // AJOUTER CES DÉCLARATIONS
     QLabel* m_fileNameLabel;
     QLabel* m_titleLabel;
     QLabel* m_authorLabel; 
@@ -60,7 +59,6 @@ private:
     QLabel* m_fileInfoLabel;
     
     
-    // Méthodes d'initialisation
     void applyLightTheme();
     void applyDarkTheme();
     QGraphicsDropShadowEffect* createHoverEffect();
@@ -70,16 +68,14 @@ private:
     void setupDock();
     void setupStatusBar();
     void setupMetadataPanel();
-    void setupLibraryView(); // Nouvelle méthode pour la bibliothèque
+    void setupLibraryView();
 
     // Gestion de l'arborescence
     void populateTree(QTreeWidgetItem* parentItem, const QString& path);
 
-    // Variables membres
     QPropertyAnimation* m_fadeAnimation;
     bool m_isDarkTheme = false;
     
-    // Méthodes utilitaires
     void toggleTheme();
     void updateZoomLabel();
     void animateZoom();

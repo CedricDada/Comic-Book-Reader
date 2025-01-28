@@ -68,7 +68,7 @@ QImage BMPImage::toQImage() const {
 }
 
 void BMPImage::setData(
-    const std::vector<unsigned char>& data,  // Problem: unsigned char vs uint8_t
+    const std::vector<unsigned char>& data,
     int width,
     int height,
     const std::string& format
@@ -78,7 +78,7 @@ void BMPImage::setData(
     }
     
     // Convert vector<unsigned char> to vector<uint8_t>
-    m_data.assign(data.begin(), data.end());  // Fix type mismatch
+    m_data.assign(data.begin(), data.end());
     m_width = width;
     m_height = height;
 }

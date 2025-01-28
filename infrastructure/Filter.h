@@ -19,10 +19,9 @@ public:
     // Applique le filtre en fonction du type de contenu
     virtual void apply(QImage& image, ContentType contentType) const = 0;
     
-    // Crée une copie polymorphique
     virtual std::unique_ptr<AbstractFilter> clone() const = 0;
     
-    // Méthode statique pour créer des filtres prédéfinis
+    // Méthode statique pour créer des filtres
     static std::unique_ptr<AbstractFilter> createLowPassFilter(float cutoffFrequency);
     static std::unique_ptr<AbstractFilter> createTextOptimizedFilter();
 
@@ -32,7 +31,7 @@ public:
 class LowPassFilter : public AbstractFilter {
 public:
     explicit LowPassFilter(float cutoffFrequency = 0.5f, int kernelSize = 5);
-    LowPassFilter(const LowPassFilter&) = default; // Constructeur de copie
+    LowPassFilter(const LowPassFilter&) = default;
     
     void apply(QImage& image, ContentType contentType) const override;
     std::unique_ptr<AbstractFilter> clone() const override;
@@ -53,7 +52,7 @@ private:
 class TextEnhancementFilter : public AbstractFilter {
 public:
     TextEnhancementFilter(){};
-    TextEnhancementFilter(const TextEnhancementFilter&) = default; // Constructeur de copie
+    TextEnhancementFilter(const TextEnhancementFilter&) = default;
     void apply(QImage& image, ContentType contentType) const override;
     std::unique_ptr<AbstractFilter> clone() const override;
 

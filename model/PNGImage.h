@@ -10,7 +10,6 @@ class PNGImage : public AbstractImage {
 public:
     explicit PNGImage(const std::vector<uint8_t>& data, int width, int height);
 
-    // Implémentation des méthodes abstraites
     int width() const override;
     int height() const override;
     Format format() const override;
@@ -23,7 +22,6 @@ public:
                  int width, int height,
                  const std::string& format) override;
 
-    // Méthode supplémentaire
     int bytesPerLine() const;
 
 private:

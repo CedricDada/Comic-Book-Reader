@@ -15,7 +15,6 @@ public:
     void toggleDualPageMode();
     void setZoomLevel(float zoomLevel);
     
-    // Getters
     int currentPage() const;
     float zoomLevel() const;
     bool isDualPageMode() const;
@@ -23,7 +22,7 @@ public:
     void zoomIn();
     void zoomOut();
     int getZoomLevel() const;
-    int pageCount() const { return m_currentImage ? 1 : 0; } // Version basique
+    int pageCount() const { return m_currentImage ? 1 : 0; } 
 
 signals:
     void zoomChanged(double newZoomLevel);
@@ -33,7 +32,7 @@ private:
     float m_zoomLevel=1.0;
     bool m_dualPageMode;
     QGraphicsScene* m_scene;
-    const double ZOOM_STEP = 0.1; // 10% par clic
+    const double ZOOM_STEP = 0.1; 
 
 protected:
     void wheelEvent(QWheelEvent* event) override;
