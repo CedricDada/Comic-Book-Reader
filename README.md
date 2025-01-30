@@ -16,4 +16,4 @@ Une liseuse pour les passionnés de bandes dessinées.
 
 ### diagrammes de séquence
 
-- voir *.md à la racine du projet 
+- diagramme_seq_open_file_avec_architecture.md et diagramme_open_book.md de la branche CedricDada
