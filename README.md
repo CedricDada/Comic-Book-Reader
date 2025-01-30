@@ -14,6 +14,10 @@ Une liseuse pour les passionnés de bandes dessinées.
 ### Rapport
 - voir /Rapport final.docx
 
-### diagrammes de séquence
+### Diagrammes de séquence
 
 - diagramme_seq_open_file_avec_architecture.md et diagramme_open_book.md de la branche CedricDada
+
+### Diagramme de classe
+
+- diagramme_classes.pdf de la branche CedricDada
